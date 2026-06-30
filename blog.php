@@ -27,11 +27,11 @@
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-body py-2 pe-3 border-end" href=""><small>FAQs</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Support</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Privacy</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Policy</small></a>
-                    <a class="text-body py-2 ps-3" href=""><small>Career</small></a>
+                    <a class="text-body py-2 pe-3 border-end" href="contact.php"><small>FAQs</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="contact.php"><small>Support</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="contact.php"><small>Privacy</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="contact.php"><small>Policy</small></a>
+                    <a class="text-body py-2 ps-3" href="contact.php"><small>Career</small></a>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
@@ -91,7 +91,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0 fixed-top">
-        <a href="index.html" class="navbar-brand p-0">
+        <a href="index.php" class="navbar-brand p-0">
             <h1 class=" text-uppercase text-primary"></i>Rudder Research & Data Analytics</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -101,8 +101,8 @@
             <div class="navbar-nav ms-auto py-0 me-n3">
                 <a href="index.php" class="nav-item nav-link ">Home</a>
                 <a href="about.php" class="nav-item nav-link ">About</a>
-                <a href="services.php" class="nav-item nav-link">Service</a>
-                <a href="blog.php" class="nav-item nav-link active">BLOG</a>
+                <a href="services.php" class="nav-item nav-link">Services</a>
+                <a href="blog.php" class="nav-item nav-link active">Blog</a>
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
         </div>
@@ -114,9 +114,9 @@
     <div class="row">
       <div class="col-12 text-center">
         <h1 class="display-4 text-white">Blog Grid</h1>
-        <a href="index.html" class="text-white">Home</a>
+        <a href="index.php" class="text-white">Home</a>
         <i class="far fa-square text-primary px-2"></i>
-        <a href="blog.html" class="text-white">Blog Grid</a>
+        <a href="blog.php" class="text-white">Blog</a>
       </div>
     </div>
   </div>

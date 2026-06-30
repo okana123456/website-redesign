@@ -49,7 +49,7 @@ document.querySelector(".back-to-top").addEventListener("click", function (e) {
     "brandSetting":{
         "brandName":"Rudder",
         "brandSubTitle":"undefined",
-        "brandImg":"https://rudderdatanalytics.co.ke/index.html#",
+        "brandImg":"https://rudderdatanalytics.co.ke/img/rudderlogo.png",
         "welcomeText":"Hi there!\nHow can I help you?",
         "messageText":"Hello, %0A I have a question about {{page_link}}",
         "backgroundColor":"#00e785",

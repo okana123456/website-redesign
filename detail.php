@@ -36,11 +36,11 @@
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-body py-2 pe-3 border-end" href=""><small>FAQs</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Support</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Privacy</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Policy</small></a>
-                    <a class="text-body py-2 ps-3" href=""><small>Career</small></a>
+                    <a class="text-body py-2 pe-3 border-end" href="contact.php"><small>FAQs</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="contact.php"><small>Support</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="contact.php"><small>Privacy</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="contact.php"><small>Policy</small></a>
+                    <a class="text-body py-2 ps-3" href="contact.php"><small>Career</small></a>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
@@ -60,29 +60,19 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-uppercase text-primary"><i class="far fa-smile text-primary me-2"></i>consult</h1>
+        <a href="index.php" class="navbar-brand p-0">
+            <h1 class="m-0 text-uppercase text-primary">Rudder Research & Data Analytics</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 me-n3">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="detail.html" class="dropdown-item active">Blog Detail</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="quote.html" class="dropdown-item">Quote Form</a>
-                        <a href="team.html" class="dropdown-item">The Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="index.php" class="nav-item nav-link">Home</a>
+                <a href="about.php" class="nav-item nav-link">About</a>
+                <a href="services.php" class="nav-item nav-link">Services</a>
+                <a href="blog.php" class="nav-item nav-link active">Blog</a>
+                <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
@@ -94,9 +84,9 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="display-4 text-white">Blog Detail</h1>
-                <a href="">Home</a>
+                <a href="index.php">Home</a>
                 <i class="far fa-square text-primary px-2"></i>
-                <a href="">Blog Detail</a>
+                <a href="blog.php">Blog</a>
             </div>
         </div>
     </div>
@@ -308,21 +298,21 @@
             <div class="col-lg-3 col-md-6">
                 <h3 class="text-white mb-4">Quick Links</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
-                    <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    <a class="text-secondary mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-secondary mb-2" href="about.php"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-secondary mb-2" href="services.php"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-secondary mb-2" href="blog.php"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
+                    <a class="text-secondary" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3 class="text-white mb-4">Popular Links</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
-                    <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    <a class="text-secondary mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-secondary mb-2" href="about.php"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-secondary mb-2" href="services.php"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-secondary mb-2" href="blog.php"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
+                    <a class="text-secondary" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -343,7 +333,7 @@
         </div>
     </div>
     <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Your Site Name</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="index.php">Rudder Research & Data Analytics</a>. All Rights Reserved.</p>
     </div>
     <!-- Footer End -->
 

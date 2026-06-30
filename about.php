@@ -608,11 +608,11 @@
   <div class="container">
     <div class="topbar-inner">
       <ul class="topbar-links">
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Policy</a></li>
-        <li><a href="#">Career</a></li>
+        <li><a href="contact.php">FAQs</a></li>
+        <li><a href="contact.php">Support</a></li>
+        <li><a href="contact.php">Privacy</a></li>
+        <li><a href="contact.php">Policy</a></li>
+        <li><a href="contact.php">Career</a></li>
       </ul>
       <div class="topbar-contact">
         <a href="mailto:admin@rudderdatanalytics.co.ke">
@@ -638,7 +638,7 @@
 <header class="navbar" id="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="#" class="logo">
+      <a href="index.php" class="logo">
         <div class="logo-icon">
           <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 12h18M3 6l9-3 9 3M3 18l9 3 9-3"/></svg>
         </div>
@@ -649,15 +649,16 @@
       </a>
 
       <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#industries">Industries</a>
-        <a href="#contact">Contact</a>
+        <a href="index.php">Home</a>
+        <a href="about.php">About</a>
+        <a href="services.php">Services</a>
+        <a href="services.php">Industries</a>
+        <a href="blog.php">Blog</a>
+        <a href="contact.php">Contact</a>
       </nav>
 
       <div style="display:flex;align-items:center;gap:12px;">
-        <button class="btn-quote btn-quote-desktop" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+        <button class="btn-quote btn-quote-desktop" onclick="window.location.href='contact.php'">Get a Quote</button>
         <button class="btn-hamburger" id="hamburger" aria-label="Toggle menu">
           <svg id="hamburger-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20" height="20"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
           <svg id="close-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20" height="20" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -668,12 +669,13 @@
   <div class="mobile-menu" id="mobileMenu">
     <div class="container">
       <div class="mobile-menu-inner">
-        <a href="#" onclick="closeMobile()">Home</a>
-        <a href="#about" onclick="closeMobile()">About</a>
-        <a href="#services" onclick="closeMobile()">Services</a>
-        <a href="#industries" onclick="closeMobile()">Industries</a>
-        <a href="#contact" onclick="closeMobile()">Contact</a>
-        <button class="btn-quote" onclick="closeMobile();document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+        <a href="index.php" onclick="closeMobile()">Home</a>
+        <a href="about.php" onclick="closeMobile()">About</a>
+        <a href="services.php" onclick="closeMobile()">Services</a>
+        <a href="services.php" onclick="closeMobile()">Industries</a>
+        <a href="blog.php" onclick="closeMobile()">Blog</a>
+        <a href="contact.php" onclick="closeMobile()">Contact</a>
+        <button class="btn-quote" onclick="closeMobile();window.location.href='contact.php'">Get a Quote</button>
       </div>
     </div>
   </div>
@@ -1060,21 +1062,21 @@
       <div>
         <h4>Company</h4>
         <ul class="footer-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="#">Career</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="services.php">Services</a></li>
+          <li><a href="services.php">Industries</a></li>
+          <li><a href="contact.php">Career</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Resources</h4>
         <ul class="footer-list">
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Policy</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="contact.php">FAQs</a></li>
+          <li><a href="contact.php">Support</a></li>
+          <li><a href="contact.php">Privacy</a></li>
+          <li><a href="contact.php">Policy</a></li>
+          <li><a href="blog.php">Blog</a></li>
         </ul>
       </div>
 

@@ -589,10 +589,10 @@
   <div class="container">
     <div class="topbar-inner">
       <ul class="topbar-links">
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Career</a></li>
+        <li><a href="contact.php">FAQs</a></li>
+        <li><a href="contact.php">Support</a></li>
+        <li><a href="contact.php">Privacy Policy</a></li>
+        <li><a href="contact.php">Career</a></li>
       </ul>
       <div class="topbar-right">
         <a href="mailto:admin@rudderdatanalytics.co.ke">
@@ -619,7 +619,7 @@
   <div class="container">
     <div class="navbar-inner">
       <!-- Logo -->
-      <a href="/" class="logo">
+      <a href="index.php" class="logo">
         <div class="logo-icon">
           <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 12h18M3 6l9-3 9 3M3 18l9 3 9-3"/></svg>
         </div>
@@ -631,29 +631,30 @@
 
       <!-- Desktop nav -->
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="/">Home</a>
-        <a href="about.html">About</a>
+        <a href="index.php">Home</a>
+        <a href="about.php">About</a>
         <div class="nav-dropdown">
-          <a href="services.html">Services
+          <a href="services.php">Services
             <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </a>
           <div class="dropdown-menu" role="menu">
-            <a href="#">Focus Group Discussions</a>
-            <a href="#">Point of Sale Systems</a>
-            <a href="#">Hospital Management Systems</a>
-            <a href="#">School Management Systems</a>
-            <a href="#">Loan Management Systems</a>
-            <a href="#">Research and Data Analytics</a>
-            <a href="#">Import and Export Data</a>
+            <a href="services.php">Focus Group Discussions</a>
+            <a href="services.php">Point of Sale Systems</a>
+            <a href="services.php">Hospital Management Systems</a>
+            <a href="services.php">School Management Systems</a>
+            <a href="services.php">Loan Management Systems</a>
+            <a href="services.php">Research and Data Analytics</a>
+            <a href="services.php">Import and Export Data</a>
           </div>
         </div>
-        <a href="industries.html">Industries</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="services.php">Industries</a>
+        <a href="services.php">Projects</a>
+        <a href="blog.php">Blog</a>
+        <a href="contact.php">Contact</a>
       </nav>
 
       <div style="display:flex;align-items:center;gap:10px;">
-        <a href="contact.html" class="btn-nav-cta" style="display:none;" id="navCta">Get a Quote</a>
+        <a href="contact.php" class="btn-nav-cta" style="display:none;" id="navCta">Get a Quote</a>
         <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
           <svg id="hIcon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
           <svg id="xIcon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -666,19 +667,20 @@
   <div class="mobile-nav" id="mobileNav" aria-hidden="true">
     <div class="container">
       <div class="mobile-nav-inner">
-        <a href="/" onclick="closeNav()">Home</a>
-        <a href="about.html" onclick="closeNav()">About Us</a>
-        <a href="services.html" onclick="closeNav()">All Services</a>
-        <a href="#" class="mobile-sub" onclick="closeNav()">Focus Group Discussions</a>
-        <a href="#" class="mobile-sub" onclick="closeNav()">Point of Sale Systems</a>
-        <a href="#" class="mobile-sub" onclick="closeNav()">Hospital Management Systems</a>
-        <a href="#" class="mobile-sub" onclick="closeNav()">School Management Systems</a>
-        <a href="#" class="mobile-sub" onclick="closeNav()">Loan Management Systems</a>
-        <a href="#" class="mobile-sub" onclick="closeNav()">Research and Data Analytics</a>
-        <a href="industries.html" onclick="closeNav()">Industries</a>
-        <a href="projects.html" onclick="closeNav()">Projects</a>
-        <a href="contact.html" onclick="closeNav()">Contact</a>
-        <a href="contact.html" class="mobile-cta" onclick="closeNav()">Get a Free Quote</a>
+        <a href="index.php" onclick="closeNav()">Home</a>
+        <a href="about.php" onclick="closeNav()">About Us</a>
+        <a href="services.php" onclick="closeNav()">All Services</a>
+        <a href="services.php" class="mobile-sub" onclick="closeNav()">Focus Group Discussions</a>
+        <a href="services.php" class="mobile-sub" onclick="closeNav()">Point of Sale Systems</a>
+        <a href="services.php" class="mobile-sub" onclick="closeNav()">Hospital Management Systems</a>
+        <a href="services.php" class="mobile-sub" onclick="closeNav()">School Management Systems</a>
+        <a href="services.php" class="mobile-sub" onclick="closeNav()">Loan Management Systems</a>
+        <a href="services.php" class="mobile-sub" onclick="closeNav()">Research and Data Analytics</a>
+        <a href="services.php" onclick="closeNav()">Industries</a>
+        <a href="services.php" onclick="closeNav()">Projects</a>
+        <a href="blog.php" onclick="closeNav()">Blog</a>
+        <a href="contact.php" onclick="closeNav()">Contact</a>
+        <a href="contact.php" class="mobile-cta" onclick="closeNav()">Get a Free Quote</a>
       </div>
     </div>
   </div>
@@ -710,11 +712,11 @@
           </p>
 
           <div class="hero-actions">
-            <a href="contact.html" class="btn-primary-hero">
+            <a href="contact.php" class="btn-primary-hero">
               Request a Demo
               <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
-            <a href="services.html" class="btn-ghost-hero">Explore Services</a>
+            <a href="services.php" class="btn-ghost-hero">Explore Services</a>
           </div>
 
           <div class="hero-trust">
@@ -808,7 +810,7 @@
             <span>Actionable Reports and Dashboards</span>
           </div>
         </div>
-        <a href="contact.html" class="btn-main reveal d4">
+        <a href="contact.php" class="btn-main reveal d4">
           Get a Free Quote
           <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
@@ -1277,11 +1279,11 @@
       <div>
         <h4>Company</h4>
         <ul class="footer-list">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="industries.html">Industries</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="#">Career</a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="services.php">Our Services</a></li>
+          <li><a href="services.php">Industries</a></li>
+          <li><a href="services.php">Projects</a></li>
+          <li><a href="contact.php">Career</a></li>
         </ul>
       </div>
 
@@ -1289,11 +1291,11 @@
       <div>
         <h4>Resources</h4>
         <ul class="footer-list">
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">FAQs</a></li>
+          <li><a href="contact.php">Support</a></li>
+          <li><a href="contact.php">Privacy Policy</a></li>
+          <li><a href="blog.php">Blog</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
       </div>
 
