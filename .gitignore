@@ -1,0 +1,15 @@
+mail-config.php
+api/config.php
+subscribers.txt
+*.log
+error_log
+.env
+.DS_Store
+Thumbs.db
+*.zip
+*.tar
+*.tar.gz
+blog/wp-config.php
+data/wp-config.php
+blog/wp-content/cache/
+data/wp-content/cache/

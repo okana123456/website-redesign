@@ -1,0 +1,82 @@
+[
+  {
+    "code": "27100000",
+    "product": "Petroleum oils (processed, excl. crude)"
+  },
+  {
+    "code": "27101220",
+    "product": "Motor spirit (premium gasoline)"
+  },
+  {
+    "code": "27101932",
+    "product": "Diesel oil"
+  },
+  {
+    "code": "27101921",
+    "product": "Kerosene-type jet fuel"
+  },
+  {
+    "code": "15111000",
+    "product": "Crude palm oil"
+  },
+  {
+    "code": "15119000",
+    "product": "Palm oil, other (fractions)"
+  },
+  {
+    "code": "10011100",
+    "product": "Wheat, durum (seed)"
+  },
+  {
+    "code": "10060000",
+    "product": "Rice (all forms)"
+  },
+  {
+    "code": "10029000",
+    "product": "Cereal flours (non-wheat)"
+  },
+  {
+    "code": "30049000",
+    "product": "Medicaments (measured doses)"
+  },
+  {
+    "code": "30049090 (suggested split)",
+    "product": "Broader pharmaceuticals"
+  },
+  {
+    "code": "72082400",
+    "product": "Hot-rolled steel coils"
+  },
+  {
+    "code": "72082500",
+    "product": "Flat-rolled iron/steel, not coils"
+  },
+  {
+    "code": "72079900",
+    "product": "Semi-finished iron/steel"
+  },
+  {
+    "code": "87030000",
+    "product": "Passenger motor vehicles"
+  },
+  {
+    "code": "31052000",
+    "product": "Fertilizers (NPK mixes)"
+  },
+  {
+    "code": "39209000",
+    "product": "Plastics (plates, sheets, film)"
+  },
+  {
+    "code": "85177000",
+    "product": "Electrical telecom apparatus"
+  },
+  {
+    "code": "84713000 (portable) / 84714900 (other)",
+    "product": "Computers & data processing machines"
+  },
+  {
+    "code": "84295200 (excavators) / 84295900 (cranes)",
+    "product": "Bulldozers, excavators, cranes"
+  }
+]
