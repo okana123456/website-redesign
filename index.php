@@ -633,22 +633,7 @@
       <nav class="nav-links" aria-label="Main navigation">
         <a href="index.php">Home</a>
         <a href="about.php">About</a>
-        <div class="nav-dropdown">
-          <a href="services.php">Services
-            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-          </a>
-          <div class="dropdown-menu" role="menu">
-            <a href="services.php">Focus Group Discussions</a>
-            <a href="services.php">Point of Sale Systems</a>
-            <a href="services.php">Hospital Management Systems</a>
-            <a href="services.php">School Management Systems</a>
-            <a href="services.php">Loan Management Systems</a>
-            <a href="services.php">Research and Data Analytics</a>
-            <a href="services.php">Import and Export Data</a>
-          </div>
-        </div>
-        <a href="services.php">Industries</a>
-        <a href="services.php">Projects</a>
+        <a href="services.php">Services</a>
         <a href="blog.php">Blog</a>
         <a href="contact.php">Contact</a>
       </nav>
@@ -668,16 +653,8 @@
     <div class="container">
       <div class="mobile-nav-inner">
         <a href="index.php" onclick="closeNav()">Home</a>
-        <a href="about.php" onclick="closeNav()">About Us</a>
-        <a href="services.php" onclick="closeNav()">All Services</a>
-        <a href="services.php" class="mobile-sub" onclick="closeNav()">Focus Group Discussions</a>
-        <a href="services.php" class="mobile-sub" onclick="closeNav()">Point of Sale Systems</a>
-        <a href="services.php" class="mobile-sub" onclick="closeNav()">Hospital Management Systems</a>
-        <a href="services.php" class="mobile-sub" onclick="closeNav()">School Management Systems</a>
-        <a href="services.php" class="mobile-sub" onclick="closeNav()">Loan Management Systems</a>
-        <a href="services.php" class="mobile-sub" onclick="closeNav()">Research and Data Analytics</a>
-        <a href="services.php" onclick="closeNav()">Industries</a>
-        <a href="services.php" onclick="closeNav()">Projects</a>
+        <a href="about.php" onclick="closeNav()">About</a>
+        <a href="services.php" onclick="closeNav()">Services</a>
         <a href="blog.php" onclick="closeNav()">Blog</a>
         <a href="contact.php" onclick="closeNav()">Contact</a>
         <a href="contact.php" class="mobile-cta" onclick="closeNav()">Get a Free Quote</a>
