@@ -26,6 +26,25 @@
     .counter { font-size: 2.5rem; font-weight:700; }
     .extra-content { margin-top: 10px; transition: all 0.3s ease-in-out; }
     .extra-content.show { display: block !important; }
+    .seo-link-card {
+      display:block;
+      height:100%;
+      padding:24px;
+      border:1px solid #e3e8ef;
+      border-radius:8px;
+      background:#fff;
+      color:#0A2540;
+      text-decoration:none;
+      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .seo-link-card:hover {
+      transform:translateY(-6px);
+      box-shadow:0 14px 34px rgba(10,37,64,.1);
+      border-color:var(--primary);
+      color:#0A2540;
+    }
+    .seo-link-card i { color:var(--primary); font-size:1.8rem; }
+    .seo-link-card span { color:var(--primary); font-weight:700; }
   </style>
 </head>
 <body>
@@ -85,6 +104,73 @@
         <p class="text-muted">
           Rudder Research & Data Analytics is a full service research and technology firm. We specialise in <strong>Focus Group Discussions (FGDs)</strong>, <strong>custom system design and software development</strong> (Point of Sale, Hospital Management, School Management, Loan Management and more), <strong>market research</strong>, <strong>data collection</strong>, <strong>data entry</strong>, <strong>data cleaning</strong>, <strong>data analysis</strong> and <strong>data visualisation</strong>. Our work helps companies, NGOs, government agencies, SACCOs, schools, hospitals and SMEs collect the right information and run the right systems.
         </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Focused Service Pages -->
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <span class="lead-badge">SPECIALISED SOLUTIONS</span>
+      <h2 class="mt-2">Explore Our Focused Service Pages</h2>
+      <p class="text-muted mb-0">Detailed pages for the services people search for most in Kenya.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <a class="seo-link-card" href="focus-group-discussions-kenya.php">
+          <i class="bi bi-people-fill"></i>
+          <h5 class="mt-3">Focus Group Discussions</h5>
+          <p class="text-muted">FGD recruitment, moderation, transcription and reporting for research and programme teams.</p>
+          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
+        <a class="seo-link-card" href="market-research-company-kenya.php">
+          <i class="bi bi-search"></i>
+          <h5 class="mt-3">Market Research</h5>
+          <p class="text-muted">Consumer studies, competitor mapping, brand tracking and market entry research.</p>
+          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
+        <a class="seo-link-card" href="data-analytics-company-kenya.php">
+          <i class="bi bi-bar-chart-line-fill"></i>
+          <h5 class="mt-3">Data Analytics</h5>
+          <p class="text-muted">Data cleaning, analysis, dashboards and business intelligence reporting.</p>
+          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <a class="seo-link-card" href="pos-system-kenya.php">
+          <i class="bi bi-shop"></i>
+          <h5 class="mt-3">POS System</h5>
+          <p class="text-muted">Point of sale, inventory, receipt and sales reporting systems for retailers.</p>
+          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
+        <a class="seo-link-card" href="hospital-management-system-kenya.php">
+          <i class="bi bi-hospital"></i>
+          <h5 class="mt-3">Hospital Management System</h5>
+          <p class="text-muted">Patient records, billing, pharmacy, lab and clinic workflow software.</p>
+          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
+        <a class="seo-link-card" href="school-management-system-kenya.php">
+          <i class="bi bi-mortarboard-fill"></i>
+          <h5 class="mt-3">School Management System</h5>
+          <p class="text-muted">Student records, fees, exams, attendance and school reporting systems.</p>
+          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <a class="seo-link-card" href="loan-management-system-kenya.php">
+          <i class="bi bi-cash-coin"></i>
+          <h5 class="mt-3">Loan Management System</h5>
+          <p class="text-muted">Borrower records, repayments, arrears and portfolio reporting for lenders.</p>
+          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+        </a>
       </div>
     </div>
   </div>
