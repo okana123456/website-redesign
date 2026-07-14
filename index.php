@@ -9,15 +9,15 @@
   <meta name="description" content="Rudder Research and Data Analytics LTD builds Point of Sale Systems, Hospital Management Systems, School Management Systems, Loan Management Systems and runs Focus Group Discussions, market research, survey programming, data collection, dashboards and import export data analysis across Kenya and East Africa." />
   <meta name="keywords" content="focus group discussions Kenya, FGD moderation Nairobi, system design Kenya, point of sale system Kenya, POS eTIMS, hospital management system Kenya, HMS NHIF SHA, school management system Kenya, loan management system SACCO, inventory management, payroll system Kenya, ERP Kenya, market research Kenya, survey programming, data collection CAPI CATI, data analytics Kenya, Power BI Tableau dashboards, import export data Kenya, monitoring and evaluation, Rudder Research Data Analytics LTD" />
   <meta name="author" content="Rudder Research and Data Analytics LTD" />
-  <link rel="canonical" href="https://rudderresearch.co.ke/" />
+  <link rel="canonical" href="https://rudderdatanalytics.co.ke/" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Focus Group Discussions and System Design Experts | Rudder Research and Data Analytics LTD" />
   <meta property="og:description" content="Kenya's trusted partner for Focus Group Discussions, POS, Hospital, School and Loan Management Systems, market research, survey programming and data analytics." />
-  <meta property="og:url" content="https://rudderresearch.co.ke/" />
-  <meta property="og:image" content="https://rudderresearch.co.ke/img/og-home.jpg" />
+  <meta property="og:url" content="https://rudderdatanalytics.co.ke/" />
+  <meta property="og:image" content="https://rudderdatanalytics.co.ke/img/og-home.jpg" />
   <meta property="og:site_name" content="Rudder Research and Data Analytics LTD" />
 
   <!-- Twitter -->
@@ -31,8 +31,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Rudder Research and Data Analytics LTD",
-    "url": "https://rudderresearch.co.ke",
-    "logo": "https://rudderresearch.co.ke/img/logo.png",
+    "url": "https://rudderdatanalytics.co.ke",
+    "logo": "https://rudderdatanalytics.co.ke/img/logo.png",
     "email": "admin@rudderdatanalytics.co.ke",
     "telephone": "+254792719505",
     "description": "Focus Group Discussions, System Design (POS, HMS, School, Loan Management Systems), Market Research, Survey Programming, Data Collection, Dashboards and Import Export Data Analysis in Kenya and East Africa.",

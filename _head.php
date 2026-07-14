@@ -5,7 +5,7 @@
     <meta name="keywords" content="data analytics Kenya, market research Africa, import export analysis, predictive analytics, AI business dashboards, HS code trade data, supply chain analytics, trade data Kenya, business intelligence tools, Rudder Analytics">
     <meta name="description" content="Rudder Research & Data Analytics offers expert consulting services that transform raw data into actionable insights, enabling businesses to make informed, data-driven decisions and achieve sustainable growth.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.rudderdatanalytics.co.ke/">
+    <link rel="canonical" href="https://rudderdatanalytics.co.ke/">
     
     <!-- Open Graph (for social media preview) -->
     <meta property="og:title" content="Rudder Data Analytics | Strategic Insights Powered by Data">

@@ -9,7 +9,7 @@
   <meta property="og:title" content="Focus Group Discussions, System Design & Research Services | Rudder Research & Data Analytics" />
   <meta property="og:description" content="FGD moderation, custom POS, hospital, school and loan management systems, plus market research and data analytics services across Kenya and East Africa." />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://rudderresearch.co.ke/services.php" />
+  <link rel="canonical" href="https://rudderdatanalytics.co.ke/services.php" />
 
   <style>
     body { padding-top: 6rem; }
