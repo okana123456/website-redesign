@@ -1,10 +1,23 @@
 <?php
 include '_blog_posts.php';
 $posts = rrda_visible_blog_posts($blogPosts);
+$selectedCategory = $_GET['category'] ?? '';
+$selectedTopic = $_GET['topic'] ?? '';
+if ($selectedCategory !== '') {
+    $posts = array_values(array_filter($posts, function ($post) use ($selectedCategory) {
+        return $post['category'] === $selectedCategory;
+    }));
+}
+if ($selectedTopic !== '') {
+    $posts = array_values(array_filter($posts, function ($post) use ($selectedTopic) {
+        return in_array($selectedTopic, $post['tags'], true);
+    }));
+}
 $latest = $posts[0] ?? null;
-$categories = array_values(array_unique(array_map(function ($post) { return $post['category']; }, $posts)));
+$allVisiblePosts = rrda_visible_blog_posts($blogPosts);
+$categories = array_values(array_unique(array_map(function ($post) { return $post['category']; }, $allVisiblePosts)));
 $tags = [];
-foreach ($posts as $post) {
+foreach ($allVisiblePosts as $post) {
     foreach ($post['tags'] as $tag) {
         $tags[$tag] = true;
     }
@@ -53,7 +66,8 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
     .blog-kicker { color:#007d99; font-size:.78rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
     .blog-meta { color:#6B6A75; font-size:.92rem; }
     .sidebar-box { background:#fff; border:1px solid #e3e8ef; border-radius:8px; padding:24px; box-shadow:0 12px 32px rgba(10,37,64,.05); }
-    .tag-pill { display:inline-flex; margin:4px; padding:8px 12px; border-radius:999px; background:#eef5f9; color:#243b55; font-weight:700; font-size:.85rem; }
+    .tag-pill { display:inline-flex; margin:4px; padding:8px 12px; border-radius:999px; background:#eef5f9; color:#243b55; font-weight:700; font-size:.85rem; text-decoration:none; }
+    .tag-pill:hover { background:var(--primary); color:#fff; }
     @media (max-width: 991.98px) {
       .blog-hero { padding:42px 0 34px; }
       .featured-post { margin-top:22px; }
@@ -109,6 +123,15 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
         <div class="row g-5">
           <div class="col-lg-8">
             <div class="row g-4">
+              <?php if (empty($posts)): ?>
+                <div class="col-12">
+                  <div class="sidebar-box">
+                    <h3>No posts found</h3>
+                    <p class="text-muted mb-3">Try viewing all articles instead.</p>
+                    <a class="btn btn-primary" href="blog.php#latest-articles">View all articles</a>
+                  </div>
+                </div>
+              <?php endif; ?>
               <?php foreach ($posts as $post): ?>
                 <div class="col-md-6" data-aos="fade-up">
                   <a class="blog-card" href="blog-detail.php?post=<?= blog_e($post['slug']) ?>">
@@ -129,20 +152,20 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
           <div class="col-lg-4">
             <div class="sidebar-box mb-4" data-aos="fade-left">
               <h3 class="mb-3">Recent Posts</h3>
-              <?php foreach (array_slice($posts, 0, 5) as $post): ?>
+              <?php foreach (array_slice($allVisiblePosts, 0, 5) as $post): ?>
                 <a class="d-block border-bottom py-3 text-dark" href="blog-detail.php?post=<?= blog_e($post['slug']) ?>"><?= blog_e($post['title']) ?></a>
               <?php endforeach; ?>
             </div>
             <div class="sidebar-box mb-4" data-aos="fade-left">
               <h3 class="mb-3">Categories</h3>
               <?php foreach ($categories as $category): ?>
-                <span class="tag-pill"><?= blog_e($category) ?></span>
+                <a class="tag-pill" href="blog.php?category=<?= urlencode($category) ?>#latest-articles"><?= blog_e($category) ?></a>
               <?php endforeach; ?>
             </div>
             <div class="sidebar-box" data-aos="fade-left">
               <h3 class="mb-3">Topics</h3>
               <?php foreach (array_keys($tags) as $tag): ?>
-                <span class="tag-pill"><?= blog_e($tag) ?></span>
+                <a class="tag-pill" href="blog.php?topic=<?= urlencode($tag) ?>#latest-articles"><?= blog_e($tag) ?></a>
               <?php endforeach; ?>
             </div>
           </div>

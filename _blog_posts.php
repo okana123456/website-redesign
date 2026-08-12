@@ -4,6 +4,7 @@ $blogPosts = [
         'slug' => 'ngo-field-data-collection-kenya',
         'title' => 'How NGOs in Kenya Can Improve Field Data Collection',
         'category' => 'Field Research',
+        'status' => 'published',
         'publish_date' => '2026-08-12',
         'author' => 'Rudder Research and Data Analytics LTD',
         'image' => 'img/blog/ngo-field-data-collection-kenya.png',
@@ -49,6 +50,7 @@ $blogPosts = [
         'slug' => 'import-export-data-kenya-smes',
         'title' => 'How Import and Export Data Helps Kenyan SMEs Make Better Decisions',
         'category' => 'Trade Data',
+        'status' => 'published',
         'publish_date' => '2026-08-12',
         'author' => 'Rudder Research and Data Analytics LTD',
         'image' => 'img/blog/import-export-data-kenya-smes.png',
@@ -94,6 +96,7 @@ $blogPosts = [
         'slug' => 'retail-price-checks-kenya',
         'title' => 'Why Retail Price Checks Matter for Businesses in Kenya',
         'category' => 'Market Research',
+        'status' => 'published',
         'publish_date' => '2026-08-12',
         'author' => 'Rudder Research and Data Analytics LTD',
         'image' => 'img/blog/retail-price-checks-kenya.png',
@@ -141,8 +144,11 @@ if (!function_exists('rrda_visible_blog_posts')) {
     function rrda_visible_blog_posts($posts) {
         $today = new DateTime('today', new DateTimeZone('Africa/Nairobi'));
         return array_values(array_filter($posts, function ($post) use ($today) {
+            if (($post['status'] ?? '') === 'published') {
+                return true;
+            }
             $date = DateTime::createFromFormat('Y-m-d', $post['publish_date'], new DateTimeZone('Africa/Nairobi'));
-            return $date && $date <= $today;
+            return ($post['status'] ?? '') !== 'draft' && $date && $date <= $today;
         }));
     }
 }
