@@ -38,9 +38,14 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
   <style>
     body { background:#f7f9fc; color:#0A2540; }
-    .blog-hero { background:#0A2540; color:#fff; padding:90px 0 70px; }
-    .blog-hero h1 { color:#fff; font-size:clamp(2.2rem, 5vw, 4rem); line-height:1.05; max-width:840px; }
+    .blog-hero { background:#0A2540; color:#fff; padding:56px 0 44px; }
+    .blog-hero h1 { color:#fff; font-size:clamp(2rem, 4vw, 3.25rem); line-height:1.08; max-width:820px; }
     .blog-hero p { color:rgba(255,255,255,.82); max-width:720px; font-size:1.08rem; line-height:1.75; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    .featured-post { background:#fff; color:#0A2540; border-radius:8px; overflow:hidden; box-shadow:0 18px 46px rgba(0,0,0,.22); text-decoration:none; display:block; height:100%; }
+    .featured-post:hover { color:#0A2540; transform:translateY(-3px); transition:transform .25s ease; }
+    .featured-post img { width:100%; height:210px; object-fit:cover; display:block; }
+    .featured-post-body { padding:22px; }
     .blog-card { display:block; height:100%; background:#fff; border:1px solid #e3e8ef; border-radius:8px; overflow:hidden; color:#0A2540; text-decoration:none; box-shadow:0 12px 32px rgba(10,37,64,.06); transition:transform .25s ease, border-color .25s ease; }
     .blog-card:hover { transform:translateY(-5px); color:#0A2540; border-color:var(--primary); }
     .blog-card img { width:100%; height:230px; object-fit:cover; display:block; }
@@ -49,6 +54,10 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
     .blog-meta { color:#6B6A75; font-size:.92rem; }
     .sidebar-box { background:#fff; border:1px solid #e3e8ef; border-radius:8px; padding:24px; box-shadow:0 12px 32px rgba(10,37,64,.05); }
     .tag-pill { display:inline-flex; margin:4px; padding:8px 12px; border-radius:999px; background:#eef5f9; color:#243b55; font-weight:700; font-size:.85rem; }
+    @media (max-width: 991.98px) {
+      .blog-hero { padding:42px 0 34px; }
+      .featured-post { margin-top:22px; }
+    }
   </style>
 </head>
 <body>
@@ -62,14 +71,41 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
   <main>
     <section class="blog-hero">
       <div class="container" data-aos="fade-up">
-        <div class="blog-kicker text-info mb-3">RRDA Insights</div>
-        <h1>Practical research, data and business intelligence articles for Kenya.</h1>
-        <p class="mt-4">We publish useful notes for NGOs, SMEs, research teams and companies that need better fieldwork, cleaner data and stronger business decisions.</p>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="blog-kicker text-info mb-3">RRDA Insights</div>
+            <h1>Practical research, data and business intelligence articles for Kenya.</h1>
+            <p class="mt-4">We publish useful notes for NGOs, SMEs, research teams and companies that need better fieldwork, cleaner data and stronger business decisions.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary px-4 py-3" href="#latest-articles">View latest articles</a>
+              <a class="btn btn-light px-4 py-3" href="contact.php">Ask RRDA a question</a>
+            </div>
+          </div>
+          <?php if ($latest): ?>
+          <div class="col-lg-5">
+            <a class="featured-post" href="blog-detail.php?post=<?= blog_e($latest['slug']) ?>">
+              <img src="<?= blog_e($latest['image']) ?>" alt="<?= blog_e($latest['image_alt']) ?>">
+              <div class="featured-post-body">
+                <div class="blog-kicker"><?= blog_e($latest['category']) ?></div>
+                <h2 class="h4 mt-2"><?= blog_e($latest['title']) ?></h2>
+                <p class="text-muted mb-2"><?= blog_e($latest['excerpt']) ?></p>
+                <span class="fw-bold text-primary">Read featured article <i class="bi bi-arrow-right-short"></i></span>
+              </div>
+            </a>
+          </div>
+          <?php endif; ?>
+        </div>
       </div>
     </section>
 
-    <section class="py-6">
+    <section class="py-5" id="latest-articles">
       <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-8">
+            <div class="blog-kicker">Latest articles</div>
+            <h2 class="mt-2">Recent Posts</h2>
+          </div>
+        </div>
         <div class="row g-5">
           <div class="col-lg-8">
             <div class="row g-4">
