@@ -56,7 +56,16 @@ document.getElementById("subscribeForm").addEventListener("submit", function(e) 
                 <a class="text-secondary mb-2" href="services.php">
                     <i class="bi bi-arrow-right text-primary me-2"></i>Our Services
                 </a>
-                <a class="text-secondary mb-2" href="#blog.php">
+                <a class="text-secondary mb-2" href="field-research-agency-services-kenya.php">
+                    <i class="bi bi-arrow-right text-primary me-2"></i>Field Research Services
+                </a>
+                <a class="text-secondary mb-2" href="local-business-concierge-registry-errands-kenya.php">
+                    <i class="bi bi-arrow-right text-primary me-2"></i>Local Business Concierge
+                </a>
+                <a class="text-secondary mb-2" href="b2b-lead-generation-directory-building-kenya.php">
+                    <i class="bi bi-arrow-right text-primary me-2"></i>B2B Lead Generation
+                </a>
+                <a class="text-secondary mb-2" href="blog.php">
                     <i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post
                 </a>
                 <a class="text-secondary" href="contact.php">

@@ -117,6 +117,14 @@
     </div>
     <div class="row g-4">
       <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <a class="seo-link-card" href="field-research-agency-services-kenya.php">
+          <i class="bi bi-clipboard-data"></i>
+          <h5 class="mt-3">Field Research & Agency Services</h5>
+          <p class="text-muted">Mystery shopping, price checks, enumerators, transcription, mobilization and local agency support.</p>
+          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
         <a class="seo-link-card" href="focus-group-discussions-kenya.php">
           <i class="bi bi-people-fill"></i>
           <h5 class="mt-3">Focus Group Discussions</h5>
@@ -124,7 +132,7 @@
           <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
         </a>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
         <a class="seo-link-card" href="market-research-company-kenya.php">
           <i class="bi bi-search"></i>
           <h5 class="mt-3">Market Research</h5>
@@ -132,7 +140,7 @@
           <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
         </a>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
         <a class="seo-link-card" href="data-analytics-company-kenya.php">
           <i class="bi bi-bar-chart-line-fill"></i>
           <h5 class="mt-3">Data Analytics</h5>
@@ -140,7 +148,7 @@
           <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
         </a>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
         <a class="seo-link-card" href="pos-system-kenya.php">
           <i class="bi bi-shop"></i>
           <h5 class="mt-3">POS System</h5>
@@ -148,7 +156,7 @@
           <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
         </a>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
         <a class="seo-link-card" href="hospital-management-system-kenya.php">
           <i class="bi bi-hospital"></i>
           <h5 class="mt-3">Hospital Management System</h5>
@@ -156,7 +164,7 @@
           <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
         </a>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
         <a class="seo-link-card" href="school-management-system-kenya.php">
           <i class="bi bi-mortarboard-fill"></i>
           <h5 class="mt-3">School Management System</h5>
@@ -164,7 +172,7 @@
           <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
         </a>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
         <a class="seo-link-card" href="loan-management-system-kenya.php">
           <i class="bi bi-cash-coin"></i>
           <h5 class="mt-3">Loan Management System</h5>
