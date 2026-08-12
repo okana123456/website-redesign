@@ -140,24 +140,12 @@
 </head>
 <body>
   <?php include '_topbar.php'; ?>
+  <?php
+    $activePage = 'home';
+    $navFixed = true;
+    include '_navbar.php';
+  ?>
 
-  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0 fixed-top">
-    <a href="index.php" class="navbar-brand p-0">
-      <h1 class="text-uppercase text-primary">Rudder Research & Data Analytics</h1>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav ms-auto py-0 me-n3">
-        <a href="index.php" class="nav-item nav-link active">Home</a>
-        <a href="about.php" class="nav-item nav-link">About</a>
-        <a href="services.php" class="nav-item nav-link">Services</a>
-        <a href="blog.php" class="nav-item nav-link">Blog</a>
-        <a href="contact.php" class="nav-item nav-link">Contact</a>
-      </div>
-    </div>
-  </nav>
 
   <main>
     <section class="hero-home">
