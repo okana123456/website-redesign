@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://rudderdatanalytics.co.ke/sitemap.xml
+Sitemap: https://rudderdatanalytics.co.ke/blog-sitemap.php
