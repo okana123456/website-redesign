@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenya Data, Leads and Market Intelligence | RRDA</title>
-  <meta name="description" content="Explore Kenya data products for health, import and export, prices, county intelligence, hospitality, facilities and B2B leads from RRDA.">
+  <title>Kenya Data, Rankings, Leads and Market Intelligence | RRDA</title>
+  <meta name="description" content="Explore Kenya data products for health, best maternity hospitals in Nairobi, import and export, prices, county intelligence, hospitality, facilities and B2B leads from RRDA.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/data.php">
   <meta property="og:title" content="Kenya Data and Market Intelligence | RRDA">
-  <meta property="og:description" content="Field-collected datasets, charts and data products for Kenyan businesses, NGOs and researchers.">
+  <meta property="og:description" content="Field-collected datasets, rankings, charts and data products for Kenyan businesses, NGOs and researchers.">
   <meta property="og:url" content="https://rudderdatanalytics.co.ke/data.php">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +39,9 @@
     .table thead th { color:#0A2540; }
     .chart-box { min-height:310px; }
     .pill { display:inline-flex; padding:8px 12px; border-radius:999px; background:#eef5f9; color:#243b55; font-weight:700; font-size:.84rem; margin:4px 6px 4px 0; }
+    .rank-badge { width:42px; height:42px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; background:#0A2540; color:#fff; font-weight:800; }
+    .rating-chip { display:inline-flex; align-items:center; gap:6px; padding:7px 10px; border-radius:999px; background:#fff4d8; color:#7a4f00; font-weight:800; white-space:nowrap; }
+    .data-note { font-size:.88rem; color:#6B6A75; }
   </style>
 </head>
 <body>
@@ -166,17 +169,147 @@
             <div class="sample-panel">
               <div class="section-kicker">Rankings</div>
               <h3>Top-rated hospital and maternity rankings</h3>
-              <p class="text-muted">RRDA can rank hospitals, maternity facilities, clinics and service providers by county using Google review patterns, public comments, social media feedback, response activity, location signals, service availability and optional field verification.</p>
+              <p class="text-muted">RRDA maintains searchable rankings for hospitals, maternity facilities, clinics and service providers by county using public online reputation signals and service visibility.</p>
               <div class="table-responsive">
                 <table class="table table-sm">
                   <tbody>
-                    <tr><td>Online reputation</td><td>Ratings, review volume and review sentiment</td></tr>
-                    <tr><td>Service visibility</td><td>Maternity services, emergency readiness and contact availability</td></tr>
-                    <tr><td>Verification</td><td>Phone calls, social checks or field visits when requested</td></tr>
+                    <tr><td>Nairobi</td><td>Maternal care, hospitals and clinics</td></tr>
+                    <tr><td>Kisumu</td><td>Hospitals, clinics and pharmacies</td></tr>
+                    <tr><td>Eldoret</td><td>Hospitals, private clinics and specialists</td></tr>
                   </tbody>
                 </table>
               </div>
-              <a class="btn btn-primary" href="contact.php">Request ranked health list</a>
+              <a class="btn btn-primary" href="#maternity-rankings">View Nairobi ranking</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="maternity-rankings">
+      <div class="container">
+        <div class="row mb-4 align-items-end">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="section-kicker">Health data pool</div>
+            <h2 class="mt-2">Best maternity hospitals in Nairobi by online reputation</h2>
+            <p class="text-muted mb-2">A Nairobi maternity ranking built from visible online ratings, review volume, public feedback patterns and maternity service visibility.</p>
+            <p class="data-note mb-0">Last refreshed: August 2026. This is an online reputation dataset for market intelligence and shortlisting, not a substitute for medical consultation.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0" data-aos="fade-left">
+            <a class="btn btn-primary px-4 py-3" href="contact.php">Request full maternity dataset</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="sample-panel">
+              <div class="table-responsive">
+                <table class="table align-middle">
+                  <thead>
+                    <tr>
+                      <th>Rank</th>
+                      <th>Facility</th>
+                      <th>Area</th>
+                      <th>Online rating</th>
+                      <th>Review footprint</th>
+                      <th>Strongest visible signal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="rank-badge">1</span></td>
+                      <td><strong>M.P. Shah Hospital</strong></td>
+                      <td>Parklands</td>
+                      <td><span class="rating-chip">4.3/5</span></td>
+                      <td>1,700+ reviews</td>
+                      <td>Large review base, specialist services and maternity visibility.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rank-badge">2</span></td>
+                      <td><strong>Marie Stopes Eastleigh Maternity & Nursing Home</strong></td>
+                      <td>Eastleigh</td>
+                      <td><span class="rating-chip">4.2/5</span></td>
+                      <td>80+ reviews</td>
+                      <td>Maternity-specific facility with strong positive care comments.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rank-badge">3</span></td>
+                      <td><strong>Jacaranda Maternity Wallet Centre</strong></td>
+                      <td>Umoja/Kayole</td>
+                      <td><span class="rating-chip">3.9/5</span></td>
+                      <td>130+ reviews</td>
+                      <td>Dedicated maternity brand, visible packages and multi-branch presence.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rank-badge">4</span></td>
+                      <td><strong>Pumwani Maternity Hospital</strong></td>
+                      <td>Pumwani</td>
+                      <td><span class="rating-chip">3.8/5</span></td>
+                      <td>130+ reviews</td>
+                      <td>High maternity visibility and large public hospital footprint.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rank-badge">5</span></td>
+                      <td><strong>Patanisho Maternity and Nursing Home</strong></td>
+                      <td>Kayole</td>
+                      <td><span class="rating-chip">4.0/5</span></td>
+                      <td>20+ reviews</td>
+                      <td>Maternity-focused service comments and local care visibility.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rank-badge">6</span></td>
+                      <td><strong>Kasarani Maternity & Nursing Home</strong></td>
+                      <td>Kasarani</td>
+                      <td><span class="rating-chip">3.7/5</span></td>
+                      <td>60+ reviews</td>
+                      <td>Maternity-specific facility with visible delivery experience feedback.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rank-badge">7</span></td>
+                      <td><strong>Nairobi West Hospital</strong></td>
+                      <td>Nairobi West</td>
+                      <td><span class="rating-chip">3.9/5</span></td>
+                      <td>500+ reviews</td>
+                      <td>Large general hospital footprint with maternity service visibility.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rank-badge">8</span></td>
+                      <td><strong>The Mater Hospital Westlands</strong></td>
+                      <td>Westlands</td>
+                      <td><span class="rating-chip">4.1/5</span></td>
+                      <td>10+ reviews</td>
+                      <td>Ante-natal and obstetrics/gynaecology clinic visibility.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rank-badge">9</span></td>
+                      <td><strong>The Nairobi Hospital</strong></td>
+                      <td>Upper Hill</td>
+                      <td><span class="rating-chip">3.3/5</span></td>
+                      <td>500+ reviews</td>
+                      <td>Premium hospital visibility with mixed public feedback.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="rank-badge">10</span></td>
+                      <td><strong>Aga Khan University Hospital Nairobi</strong></td>
+                      <td>Parklands</td>
+                      <td><span class="rating-chip">2.7/5</span></td>
+                      <td>230+ reviews</td>
+                      <td>Strong specialist brand, but weaker overall public review sentiment.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-left">
+            <div class="sample-panel chart-box mb-4">
+              <canvas id="maternityChart"></canvas>
+            </div>
+            <div class="sample-panel">
+              <div class="section-kicker">Dataset fields</div>
+              <h3 class="mt-2">Full data available</h3>
+              <p class="text-muted">Facility name, location, service category, rating, review count, review themes, contact visibility, county, price notes, insurance notes and verification status.</p>
+              <a class="btn btn-outline-primary" href="contact.php">Request CSV or dashboard</a>
             </div>
           </div>
         </div>
@@ -233,16 +366,16 @@
         <div class="row g-4">
           <div class="col-lg-8" data-aos="fade-up">
             <div class="source-panel">
-              <div class="section-kicker">Methodology and verification</div>
-              <h2 class="mt-2">How RRDA builds reliable data products</h2>
-              <p class="text-muted">We design the data fields, collect records through field teams or desk research, clean duplicates, verify contacts, check online presence, review public feedback, analyse patterns and package the final data into tables, dashboards, reports or downloadable files.</p>
+              <div class="section-kicker">Available data pools</div>
+              <h2 class="mt-2">More datasets RRDA can publish and refresh</h2>
+              <p class="text-muted">The Data section can grow into a searchable library of county and sector datasets that visitors browse first, then request full access, custom dashboards or downloadable files.</p>
               <div class="row g-3 mt-2">
-                <div class="col-md-6"><span class="pill">Field collection</span></div>
-                <div class="col-md-6"><span class="pill">Phone verification</span></div>
-                <div class="col-md-6"><span class="pill">Online review checks</span></div>
-                <div class="col-md-6"><span class="pill">Social media listening</span></div>
-                <div class="col-md-6"><span class="pill">Data cleaning</span></div>
-                <div class="col-md-6"><span class="pill">Dashboard packaging</span></div>
+                <div class="col-md-6"><span class="pill">Nairobi maternity rankings</span></div>
+                <div class="col-md-6"><span class="pill">County hotel directories</span></div>
+                <div class="col-md-6"><span class="pill">Import/export product screens</span></div>
+                <div class="col-md-6"><span class="pill">B2B supplier leads</span></div>
+                <div class="col-md-6"><span class="pill">Retail price trackers</span></div>
+                <div class="col-md-6"><span class="pill">Clinics and pharmacy lists</span></div>
               </div>
             </div>
           </div>
@@ -274,6 +407,14 @@
       type: 'doughnut',
       data: { labels: ['Product demand', 'Supplier markets', 'Destination markets', 'Competitor checks'], datasets: [{ data: [30, 25, 25, 20], backgroundColor: ['#00b8d9', '#F3525A', '#0A2540', '#f6c85f'] }] },
       options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:'bottom' } } }
+    });
+    new Chart(document.getElementById('maternityChart'), {
+      type: 'bar',
+      data: {
+        labels: ['M.P. Shah', 'Marie Stopes', 'Jacaranda', 'Pumwani', 'Patanisho', 'Kasarani', 'Nairobi West', 'Mater', 'Nairobi Hosp.', 'Aga Khan'],
+        datasets: [{ label: 'Online rating', data: [4.3, 4.2, 3.9, 3.8, 4.0, 3.7, 3.9, 4.1, 3.3, 2.7], backgroundColor: '#F3525A' }]
+      },
+      options: { indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{ legend:{ display:false } }, scales:{ x:{ beginAtZero:true, max:5 } } }
     });
     AOS.init({ duration: 700, once: true, offset: 80 });
   </script>
