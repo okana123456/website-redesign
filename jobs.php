@@ -59,8 +59,24 @@
     <section class="py-5">
       <div class="container">
         <?php if (isset($_GET['status'])): ?>
-          <div class="alert alert-<?= $_GET['status'] === 'success' ? 'success' : 'danger' ?> alert-dismissible fade show" role="alert">
-            <?= $_GET['status'] === 'success' ? 'Application submitted successfully. We will review it and contact shortlisted candidates.' : 'Your application could not be submitted. Please check the form and try again.' ?>
+          <?php
+            $statusMessages = [
+                'success' => 'Application submitted successfully. We will review it and contact shortlisted candidates.',
+                'missing' => 'Please complete all required fields before submitting.',
+                'missing_cv' => 'Please attach your CV before submitting.',
+                'large' => 'Your CV is too large. Please upload a PDF, DOC or DOCX file that is not more than 2MB.',
+                'type' => 'Please upload your CV as a PDF, DOC or DOCX file.',
+                'email' => 'Please enter a valid email address.',
+                'mail_config' => 'The application form needs the website email settings to be checked before it can send applications.',
+                'mail' => 'The form was completed, but the email could not be sent. Please try again later or email us directly.',
+                'upload' => 'The CV upload did not complete. Please try again with a smaller file.',
+                'invalid' => 'Please use the application form below to submit your details.',
+            ];
+            $status = $_GET['status'];
+            $message = $statusMessages[$status] ?? 'Your application could not be submitted. Please check the form and try again.';
+          ?>
+          <div class="alert alert-<?= $status === 'success' ? 'success' : 'danger' ?> alert-dismissible fade show" role="alert">
+            <?= htmlspecialchars($message) ?>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         <?php endif; ?>
@@ -151,7 +167,8 @@
                     <input class="form-control" name="portfolio">
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label">Upload CV, PDF/DOC/DOCX, max 5MB</label>
+                    <label class="form-label">Upload CV, PDF/DOC/DOCX, max 2MB</label>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="2097152">
                     <input type="file" class="form-control" name="cv" accept=".pdf,.doc,.docx" required>
                   </div>
                   <div class="col-12">

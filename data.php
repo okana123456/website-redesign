@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kenya Data, Leads and Market Intelligence | RRDA</title>
-  <meta name="description" content="Explore sample Kenya datasets for health, import and export, prices, county intelligence, hospitality, facilities and B2B leads from RRDA.">
+  <meta name="description" content="Explore Kenya data products for health, import and export, prices, county intelligence, hospitality, facilities and B2B leads from RRDA.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/data.php">
   <meta property="og:title" content="Kenya Data and Market Intelligence | RRDA">
-  <meta property="og:description" content="Sample datasets, charts and data products for Kenyan businesses, NGOs and researchers.">
+  <meta property="og:description" content="Field-collected datasets, charts and data products for Kenyan businesses, NGOs and researchers.">
   <meta property="og:url" content="https://rudderdatanalytics.co.ke/data.php">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,8 +53,8 @@
     <section class="data-hero">
       <div class="container" data-aos="fade-up">
         <div class="section-kicker text-info mb-3">Kenya data products</div>
-        <h1>Sample data, market intelligence and directories for Kenyan decisions.</h1>
-        <p class="mt-4">Explore public-data previews, sample directories and research products. RRDA can clean, verify, analyse and package full datasets for businesses, NGOs and investors.</p>
+        <h1>Kenya data, market intelligence and directories for real decisions.</h1>
+        <p class="mt-4">RRDA collects, cleans, verifies, analyses and packages practical datasets for businesses, NGOs and investors that need county-level intelligence, leads, rankings and price signals.</p>
         <div class="mt-4">
           <a href="#categories" class="btn btn-primary px-4 py-3 me-2">Explore categories</a>
           <a href="contact.php" class="btn btn-light px-4 py-3">Request a dataset</a>
@@ -68,7 +68,7 @@
           <div class="col-lg-8">
             <div class="section-kicker">Data categories</div>
             <h2 class="mt-2">What people can explore or request</h2>
-            <p class="text-muted">These are starting categories. Full datasets can be prepared through public sources, client briefs, desk research and field verification.</p>
+            <p class="text-muted">Each category can be prepared through RRDA field data collection, desk research, phone verification, online review checks and client-specific research briefs.</p>
           </div>
         </div>
         <div class="row g-4">
@@ -87,9 +87,9 @@
         <div class="row g-4 align-items-center">
           <div class="col-lg-6" data-aos="fade-right">
             <div class="sample-panel">
-              <div class="section-kicker">Sample price data</div>
-              <h2 class="mt-2">KNBS CPI retail price snapshot, June 2026</h2>
-              <p class="text-muted">Sample selected commodities from the KNBS CPI Explorer. These values are shown as a preview of how RRDA can package price data for business users.</p>
+              <div class="section-kicker">Price intelligence</div>
+              <h2 class="mt-2">Retail price tracking snapshot</h2>
+              <p class="text-muted">RRDA can track retail prices by county, town, outlet type or commodity. We combine desk checks, store audits, phone checks and field enumerator visits depending on the client need.</p>
               <div class="table-responsive">
                 <table class="table table-sm">
                   <thead><tr><th>Commodity</th><th>Unit</th><th>Jun 2026 KES</th></tr></thead>
@@ -120,7 +120,7 @@
           </div>
           <div class="col-lg-6" data-aos="fade-left">
             <div class="sample-panel">
-              <div class="section-kicker">Sample trade product</div>
+              <div class="section-kicker">Trade product</div>
               <h2 class="mt-2">Import and export opportunity screen</h2>
               <p class="text-muted">A business can request a cleaned HS-code report for product demand, supplier countries, destination markets and competitor categories.</p>
               <div class="table-responsive">
@@ -146,12 +146,12 @@
         <div class="row g-4">
           <div class="col-lg-7" data-aos="fade-up">
             <div class="sample-panel">
-              <div class="section-kicker">Sample health directory</div>
+              <div class="section-kicker">Health directory</div>
               <h2 class="mt-2">Health facility and maternal care data products</h2>
-              <p class="text-muted">RRDA can compile public health facility lists, clean them, add county filters, and verify selected facilities by phone or field visit. Rankings should only be created after agreeing on criteria and verification.</p>
+              <p class="text-muted">RRDA builds health facility directories, maternal care lists, clinic leads and hospital ranking datasets using desk research, online review checks, social media signals, phone verification and field visits where required.</p>
               <div class="table-responsive">
                 <table class="table table-sm">
-                  <thead><tr><th>Data product</th><th>Sample fields</th><th>Use case</th></tr></thead>
+                  <thead><tr><th>Data product</th><th>Fields included</th><th>Use case</th></tr></thead>
                   <tbody>
                     <tr><td>County health facility directory</td><td>Name, county, sub-county, type, ownership</td><td>Supplier mapping, NGO planning</td></tr>
                     <tr><td>Maternity service shortlist</td><td>Facility level, services, location, contact status</td><td>Referral mapping, maternal health studies</td></tr>
@@ -164,10 +164,19 @@
           </div>
           <div class="col-lg-5" data-aos="fade-left">
             <div class="sample-panel">
-              <div class="section-kicker">Careful ranking policy</div>
-              <h3>About "best hospital" lists</h3>
-              <p class="text-muted">RRDA can create ranked lists only when the scoring method is clear. For example, maternity rankings may consider facility level, maternity services, emergency readiness, ownership, location, patient feedback and verification status. We should not call a hospital "best" without evidence.</p>
-              <a class="btn btn-primary" href="contact.php">Request verified health list</a>
+              <div class="section-kicker">Rankings</div>
+              <h3>Top-rated hospital and maternity rankings</h3>
+              <p class="text-muted">RRDA can rank hospitals, maternity facilities, clinics and service providers by county using Google review patterns, public comments, social media feedback, response activity, location signals, service availability and optional field verification.</p>
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <tbody>
+                    <tr><td>Online reputation</td><td>Ratings, review volume and review sentiment</td></tr>
+                    <tr><td>Service visibility</td><td>Maternity services, emergency readiness and contact availability</td></tr>
+                    <tr><td>Verification</td><td>Phone calls, social checks or field visits when requested</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <a class="btn btn-primary" href="contact.php">Request ranked health list</a>
             </div>
           </div>
         </div>
@@ -179,7 +188,7 @@
         <div class="row g-4">
           <div class="col-lg-6" data-aos="fade-up">
             <div class="sample-panel">
-              <div class="section-kicker">Sample B2B leads</div>
+              <div class="section-kicker">B2B leads</div>
               <h2 class="mt-2">Potential lead directories</h2>
               <p class="text-muted">These are examples of lead datasets RRDA can prepare and verify for businesses.</p>
               <div class="table-responsive">
@@ -199,8 +208,8 @@
           <div class="col-lg-6" id="county" data-aos="fade-up">
             <div class="sample-panel">
               <div class="section-kicker">County intelligence</div>
-              <h2 class="mt-2">Sample county market profile</h2>
-              <p class="text-muted">County profiles can combine KNBS county abstracts, desk research and field verification.</p>
+              <h2 class="mt-2">County market profile</h2>
+              <p class="text-muted">County profiles combine RRDA field checks, desk research, local business mapping, phone verification and online presence review.</p>
               <div class="table-responsive">
                 <table class="table table-sm">
                   <thead><tr><th>County</th><th>Possible dataset</th><th>Commercial use</th></tr></thead>
@@ -224,16 +233,17 @@
         <div class="row g-4">
           <div class="col-lg-8" data-aos="fade-up">
             <div class="source-panel">
-              <div class="section-kicker">Sources and verification</div>
-              <h2 class="mt-2">How RRDA should package data responsibly</h2>
-              <p class="text-muted">Public data can be a starting point, but commercial datasets need cleaning, deduplication, phone checks, field verification and clear source notes.</p>
-              <p class="mb-2"><strong>Public reference sources used for this sample:</strong></p>
-              <ul>
-                <li><a href="https://www.knbs.or.ke/reports_category/county-statistical-abstracts/" target="_blank" rel="noopener">KNBS County Statistical Abstracts</a></li>
-                <li><a href="https://cpiexplorer.knbs.or.ke/" target="_blank" rel="noopener">KNBS CPI Explorer and retail prices</a></li>
-                <li><a href="https://open.africa/dataset/health-facilities-in-kenya" target="_blank" rel="noopener">Health Facilities in Kenya, openAFRICA</a></li>
-                <li><a href="https://kenya.opendataforafrica.org/" target="_blank" rel="noopener">Kenya Data Portal</a></li>
-              </ul>
+              <div class="section-kicker">Methodology and verification</div>
+              <h2 class="mt-2">How RRDA builds reliable data products</h2>
+              <p class="text-muted">We design the data fields, collect records through field teams or desk research, clean duplicates, verify contacts, check online presence, review public feedback, analyse patterns and package the final data into tables, dashboards, reports or downloadable files.</p>
+              <div class="row g-3 mt-2">
+                <div class="col-md-6"><span class="pill">Field collection</span></div>
+                <div class="col-md-6"><span class="pill">Phone verification</span></div>
+                <div class="col-md-6"><span class="pill">Online review checks</span></div>
+                <div class="col-md-6"><span class="pill">Social media listening</span></div>
+                <div class="col-md-6"><span class="pill">Data cleaning</span></div>
+                <div class="col-md-6"><span class="pill">Dashboard packaging</span></div>
+              </div>
             </div>
           </div>
           <div class="col-lg-4" data-aos="fade-left">

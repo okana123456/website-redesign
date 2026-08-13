@@ -22,22 +22,29 @@ function clean_job_value($value) {
     return trim(strip_tags((string) $value));
 }
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: jobs.php?status=invalid');
+function redirect_job_status($status) {
+    header('Location: jobs.php?status=' . urlencode($status));
     exit();
+}
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    redirect_job_status('invalid');
 }
 
 $required = ['name', 'email', 'phone', 'county', 'role', 'availability', 'experience', 'consent'];
 foreach ($required as $field) {
     if (empty($_POST[$field])) {
-        header('Location: jobs.php?status=error');
-        exit();
+        redirect_job_status('missing');
     }
 }
 
-if (empty($_FILES['cv']) || $_FILES['cv']['error'] !== UPLOAD_ERR_OK) {
-    header('Location: jobs.php?status=error');
-    exit();
+if (empty($_FILES['cv'])) {
+    redirect_job_status('missing_cv');
+}
+
+if ($_FILES['cv']['error'] !== UPLOAD_ERR_OK) {
+    $uploadStatus = $_FILES['cv']['error'] === UPLOAD_ERR_INI_SIZE || $_FILES['cv']['error'] === UPLOAD_ERR_FORM_SIZE ? 'large' : 'upload';
+    redirect_job_status($uploadStatus);
 }
 
 $allowedExtensions = ['pdf', 'doc', 'docx'];
@@ -46,9 +53,12 @@ $fileSize = (int) $_FILES['cv']['size'];
 $fileTmp = $_FILES['cv']['tmp_name'];
 $extension = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
 
-if (!in_array($extension, $allowedExtensions, true) || $fileSize > 5 * 1024 * 1024) {
-    header('Location: jobs.php?status=error');
-    exit();
+if (!in_array($extension, $allowedExtensions, true)) {
+    redirect_job_status('type');
+}
+
+if ($fileSize > 2 * 1024 * 1024) {
+    redirect_job_status('large');
 }
 
 $name = clean_job_value($_POST['name']);
@@ -61,8 +71,11 @@ $experience = clean_job_value($_POST['experience']);
 $portfolio = clean_job_value($_POST['portfolio'] ?? '');
 
 if (!$email) {
-    header('Location: jobs.php?status=error');
-    exit();
+    redirect_job_status('email');
+}
+
+if (empty($mailConfig['host']) || empty($mailConfig['username']) || empty($mailConfig['password']) || empty($mailConfig['to_email'])) {
+    redirect_job_status('mail_config');
 }
 
 $mail = new PHPMailer(true);
@@ -104,10 +117,8 @@ try {
     $mail->AltBody = "New Job Application\nName: $name\nEmail: $email\nPhone: $phone\nCounty: $county\nRole: $role\nAvailability: $availability\nPortfolio: $portfolio\nExperience:\n$experience\nCV attached.";
 
     $mail->send();
-    header('Location: jobs.php?status=success');
-    exit();
+    redirect_job_status('success');
 } catch (Exception $e) {
-    header('Location: jobs.php?status=error');
-    exit();
+    redirect_job_status('mail');
 }
 ?>
