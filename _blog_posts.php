@@ -1071,7 +1071,7 @@ foreach ($scheduledBlogIdeas as $idea) {
 
 if (!function_exists('rrda_visible_blog_posts')) {
     function rrda_visible_blog_posts($posts) {
-        $today = new DateTime('today', new DateTimeZone('Africa/Nairobi'));
+        $today = (new DateTime('now', new DateTimeZone('Africa/Nairobi')))->format('Y-m-d');
         $visiblePosts = array_values(array_filter($posts, function ($post) use ($today) {
             if (($post['status'] ?? '') === 'draft') {
                 return false;
@@ -1079,8 +1079,8 @@ if (!function_exists('rrda_visible_blog_posts')) {
             if (($post['status'] ?? '') === 'published') {
                 return true;
             }
-            $date = DateTime::createFromFormat('Y-m-d', $post['publish_date'], new DateTimeZone('Africa/Nairobi'));
-            return $date && $date <= $today;
+            $publishDate = $post['publish_date'] ?? '';
+            return preg_match('/^\d{4}-\d{2}-\d{2}$/', $publishDate) && $publishDate <= $today;
         }));
         usort($visiblePosts, function ($a, $b) {
             return strcmp($b['publish_date'], $a['publish_date']);
