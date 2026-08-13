@@ -36,6 +36,7 @@
     .application-card { padding:30px; }
     .process-card { padding:22px; height:100%; border-left:4px solid #00b8d9; }
     .pill { display:inline-flex; padding:8px 12px; border-radius:999px; background:#eef5f9; color:#243b55; font-weight:700; font-size:.84rem; margin:4px 6px 4px 0; }
+    .rrda-hidden-field { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
   </style>
 </head>
 <body>
@@ -70,6 +71,9 @@
                 'mail_config' => 'The application form needs the website email settings to be checked before it can send applications.',
                 'mail' => 'The form was completed, but the email could not be sent. Please try again later or email us directly.',
                 'upload' => 'The CV upload did not complete. Please try again with a smaller file.',
+                'spam' => 'Your application could not be submitted. Please refresh the page and try again.',
+                'too_fast' => 'Please take a moment to complete the form before submitting.',
+                'rate' => 'You have already submitted recently. Please wait a few minutes before trying again.',
                 'invalid' => 'Please use the application form below to submit your details.',
             ];
             $status = $_GET['status'];
@@ -117,6 +121,11 @@
               <div class="section-kicker">Application form</div>
               <h2 class="mt-2 mb-4">Submit your application</h2>
               <form action="sendjob.php" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="form_loaded_at" value="<?= time() ?>">
+                <div class="rrda-hidden-field" aria-hidden="true">
+                  <label>Website</label>
+                  <input type="text" name="website" tabindex="-1" autocomplete="off">
+                </div>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label">Full name</label>

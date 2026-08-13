@@ -27,7 +27,41 @@ function redirect_job_status($status) {
     exit();
 }
 
+function get_job_rate_file($email) {
+    $ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+    $safeKey = sha1(strtolower($email) . '|' . $ip);
+    return rtrim(sys_get_temp_dir(), DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR . 'rrda_job_' . $safeKey . '.lock';
+}
+
+function check_job_rate_limit($email) {
+    $rateFile = get_job_rate_file($email);
+    $cooldownSeconds = 600;
+
+    if (file_exists($rateFile) && (time() - filemtime($rateFile)) < $cooldownSeconds) {
+        redirect_job_status('rate');
+    }
+}
+
+function mark_job_rate_limit($email) {
+    $rateFile = get_job_rate_file($email);
+    @file_put_contents($rateFile, (string) time(), LOCK_EX);
+}
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    redirect_job_status('invalid');
+}
+
+if (!empty($_POST['website'])) {
+    redirect_job_status('spam');
+}
+
+$loadedAt = filter_input(INPUT_POST, 'form_loaded_at', FILTER_VALIDATE_INT);
+$now = time();
+if (!$loadedAt || $loadedAt > $now || ($now - $loadedAt) < 4) {
+    redirect_job_status('too_fast');
+}
+
+if (($now - $loadedAt) > 86400) {
     redirect_job_status('invalid');
 }
 
@@ -74,6 +108,8 @@ if (!$email) {
     redirect_job_status('email');
 }
 
+check_job_rate_limit($email);
+
 if (empty($mailConfig['host']) || empty($mailConfig['username']) || empty($mailConfig['password']) || empty($mailConfig['to_email'])) {
     redirect_job_status('mail_config');
 }
@@ -117,6 +153,7 @@ try {
     $mail->AltBody = "New Job Application\nName: $name\nEmail: $email\nPhone: $phone\nCounty: $county\nRole: $role\nAvailability: $availability\nPortfolio: $portfolio\nExperience:\n$experience\nCV attached.";
 
     $mail->send();
+    mark_job_rate_limit($email);
     redirect_job_status('success');
 } catch (Exception $e) {
     redirect_job_status('mail');
