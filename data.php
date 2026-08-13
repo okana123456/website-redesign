@@ -85,6 +85,30 @@
       </div>
     </section>
 
+    <section class="py-5 bg-white" id="data-pools">
+      <div class="container">
+        <div class="row mb-4 align-items-end">
+          <div class="col-lg-8">
+            <div class="section-kicker">Published data pools</div>
+            <h2 class="mt-2">Browse ranking datasets</h2>
+            <p class="text-muted">These pages give visitors useful ranked data first, then let organisations request the full cleaned dataset, lead file or dashboard.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-hotels-in-nairobi.php"><img src="img/services/field-concierge.png" alt="Best hotels in Nairobi"><div class="data-card-body"><span class="pill">Hospitality</span><h3>Best Hotels in Nairobi</h3><p class="text-muted">Top hotels ranked by online reputation, review footprint and business visibility.</p></div></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-maternity-hospitals-nairobi.php"><img src="img/services/field-location-verification.png" alt="Best maternity hospitals in Nairobi"><div class="data-card-body"><span class="pill">Health</span><h3>Best Maternity Hospitals in Nairobi</h3><p class="text-muted">Maternity providers ranked by online reputation and service visibility.</p></div></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-private-hospitals-nairobi.php"><img src="img/services/field-location-verification.png" alt="Best private hospitals in Nairobi"><div class="data-card-body"><span class="pill">Health</span><h3>Best Private Hospitals in Nairobi</h3><p class="text-muted">Private hospitals ranked for market intelligence and supplier targeting.</p></div></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-restaurants-in-nairobi.php"><img src="img/services/field-mystery-shopping.png" alt="Best restaurants in Nairobi"><div class="data-card-body"><span class="pill">Hospitality</span><h3>Best Restaurants in Nairobi</h3><p class="text-muted">Restaurant ranking for food brands, platforms and hospitality suppliers.</p></div></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-schools-in-nairobi.php"><img src="img/services/field-enumerators.png" alt="Best schools in Nairobi"><div class="data-card-body"><span class="pill">Education</span><h3>Best Schools in Nairobi</h3><p class="text-muted">School visibility ranking for EdTech, suppliers and parent research.</p></div></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-saccos-in-kenya.php"><img src="img/services/field-b2b-leads.png" alt="Best SACCOs in Kenya"><div class="data-card-body"><span class="pill">Finance</span><h3>Best SACCOs in Kenya</h3><p class="text-muted">SACCO visibility ranking for fintechs, lenders and training firms.</p></div></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-real-estate-companies-nairobi.php"><img src="img/services/field-location-verification.png" alt="Best real estate companies in Nairobi"><div class="data-card-body"><span class="pill">Real Estate</span><h3>Best Real Estate Companies</h3><p class="text-muted">Nairobi real estate firms ranked for property and supplier intelligence.</p></div></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-cleaning-companies-nairobi.php"><img src="img/services/field-mystery-shopping.png" alt="Best cleaning companies in Nairobi"><div class="data-card-body"><span class="pill">Facilities</span><h3>Best Cleaning Companies</h3><p class="text-muted">Cleaning companies ranked for offices, landlords and procurement teams.</p></div></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-logistics-companies-kenya.php"><img src="img/blog/import-export-data-kenya-smes.png" alt="Best logistics companies in Kenya"><div class="data-card-body"><span class="pill">Logistics</span><h3>Best Logistics Companies</h3><p class="text-muted">Import, export and logistics firms ranked for trade decision-making.</p></div></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-digital-marketing-agencies-kenya.php"><img src="img/services/field-brand-ambassadors.png" alt="Best digital marketing agencies in Kenya"><div class="data-card-body"><span class="pill">Marketing</span><h3>Best Digital Agencies</h3><p class="text-muted">Agency ranking for SMEs, brands, NGOs and procurement teams.</p></div></a></div>
+        </div>
+      </div>
+    </section>
+
     <section class="py-5 bg-white" id="prices">
       <div class="container">
         <div class="row g-4 align-items-center">
