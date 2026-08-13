@@ -37,6 +37,8 @@ $servicesActive = in_array($activePage, ['services', 'field-services'], true);
                     <a href="loan-management-system-kenya.php" class="dropdown-item">Loan Management System</a>
                 </div>
             </div>
+            <a href="data.php" class="nav-item nav-link<?= rrda_nav_active('data', $activePage) ?>">Data</a>
+            <a href="jobs.php" class="nav-item nav-link<?= rrda_nav_active('jobs', $activePage) ?>">Jobs</a>
             <a href="blog.php" class="nav-item nav-link<?= rrda_nav_active('blog', $activePage) ?>">Blog</a>
             <a href="contact.php" class="nav-item nav-link<?= rrda_nav_active('contact', $activePage) ?>">Contact</a>
         </div>

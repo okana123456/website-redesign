@@ -65,6 +65,12 @@ document.getElementById("subscribeForm").addEventListener("submit", function(e) 
                 <a class="text-secondary mb-2" href="b2b-lead-generation-directory-building-kenya.php">
                     <i class="bi bi-arrow-right text-primary me-2"></i>B2B Lead Generation
                 </a>
+                <a class="text-secondary mb-2" href="data.php">
+                    <i class="bi bi-arrow-right text-primary me-2"></i>Data Products
+                </a>
+                <a class="text-secondary mb-2" href="jobs.php">
+                    <i class="bi bi-arrow-right text-primary me-2"></i>Jobs
+                </a>
                 <a class="text-secondary mb-2" href="blog.php">
                     <i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post
                 </a>
