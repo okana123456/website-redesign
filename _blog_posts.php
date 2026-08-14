@@ -1069,6 +1069,147 @@ foreach ($scheduledBlogIdeas as $idea) {
     ];
 }
 
+if (!function_exists('rrda_slugify')) {
+    function rrda_slugify($value) {
+        $value = strtolower(trim($value));
+        $value = preg_replace('/[^a-z0-9]+/', '-', $value);
+        return trim($value, '-');
+    }
+}
+
+if (!function_exists('rrda_build_staffing_content')) {
+    function rrda_build_staffing_content($idea) {
+        return [
+            ['h2' => 'Why organisations need reliable temporary research staff', 'p' => [
+                $idea['context'] . ' When the team is weak, the project can lose time through missed interviews, poor records, repeated call-backs and reports that cannot be trusted.',
+                'Many NGOs, research firms and companies do not need permanent staff for every assignment. They need trained people who can be mobilised quickly, briefed properly and supervised against clear deliverables.'
+            ]],
+            ['h2' => 'What to look for before hiring', 'p' => [
+                $idea['planning'] . ' The hiring process should check availability, county coverage, language ability, tool experience, communication discipline and whether the person can follow a field protocol.',
+                'For data entry and back-office work, accuracy matters more than speed alone. A good clerk should understand clean naming, validation rules, missing values, duplicate checks and basic confidentiality.'
+            ]],
+            ['h2' => 'How RRDA supports staffing assignments', 'p' => [
+                $idea['approach'] . ' We help clients define the role, prepare the work brief, shortlist suitable people and align the team to the assignment requirements.',
+                'Depending on the project, RRDA can support enumerators, research assistants, data entry clerks, transcription support, field supervisors, phone verification agents and quality-control reviewers.'
+            ]],
+            ['h2' => 'How quality is controlled', 'p' => [
+                $idea['quality'] . ' Quality control may include supervisor review, daily progress checks, sample back-checks, attendance monitoring, field notes and review of submitted forms or files.',
+                'For digital data collection, it is useful to check timestamps, GPS points, interview duration, missing values and repeated answer patterns while the fieldwork is still active.'
+            ]],
+            ['h2' => 'When to contact RRDA', 'p' => [
+                $idea['cta'] . ' A short brief is enough to begin: location, number of people required, dates, role description, expected output and any tools the team will use.',
+                'Rudder Research and Data Analytics helps organisations in Kenya access practical field and data support without building a permanent team for every short assignment.'
+            ]]
+        ];
+    }
+}
+
+$staffingSchedules = [
+    ['date' => '2026-08-14', 'location' => 'Nairobi', 'sector' => 'NGO baseline surveys'],
+    ['date' => '2026-08-15', 'location' => 'Kisumu', 'sector' => 'health research projects'],
+    ['date' => '2026-08-16', 'location' => 'Mombasa', 'sector' => 'market research studies'],
+    ['date' => '2026-08-17', 'location' => 'Nakuru', 'sector' => 'retail audits'],
+    ['date' => '2026-08-18', 'location' => 'Eldoret', 'sector' => 'agriculture and SME surveys'],
+    ['date' => '2026-08-19', 'location' => 'Kiambu', 'sector' => 'customer experience checks'],
+    ['date' => '2026-08-20', 'location' => 'Machakos', 'sector' => 'county programme monitoring'],
+    ['date' => '2026-08-21', 'location' => 'Nyeri', 'sector' => 'data cleaning assignments'],
+    ['date' => '2026-08-22', 'location' => 'Meru', 'sector' => 'community interviews'],
+    ['date' => '2026-08-23', 'location' => 'Kakamega', 'sector' => 'education and school surveys'],
+    ['date' => '2026-08-24', 'location' => 'Kajiado', 'sector' => 'household listing'],
+    ['date' => '2026-08-25', 'location' => 'Kisii', 'sector' => 'phone verification projects'],
+    ['date' => '2026-08-26', 'location' => 'Thika', 'sector' => 'B2B lead verification'],
+    ['date' => '2026-08-27', 'location' => 'Naivasha', 'sector' => 'hospitality market checks'],
+    ['date' => '2026-08-28', 'location' => 'Garissa', 'sector' => 'humanitarian fieldwork'],
+    ['date' => '2026-08-29', 'location' => 'Kitale', 'sector' => 'farmer and cooperative surveys'],
+    ['date' => '2026-08-30', 'location' => 'Malindi', 'sector' => 'tourism and service audits'],
+    ['date' => '2026-08-31', 'location' => 'Nanyuki', 'sector' => 'facility mapping'],
+    ['date' => '2026-09-01', 'location' => 'Kenya', 'sector' => 'multi-county research projects'],
+];
+
+$staffingTracks = [
+    [
+        'role' => 'field enumerators',
+        'title_prefix' => 'Where to Hire Trained Field Enumerators',
+        'category' => 'Field Staffing',
+        'image' => 'img/services/field-enumerators.png',
+        'tags' => ['Field enumerators', 'Research staffing', 'CAPI', 'Kenya'],
+        'context' => 'Field enumerators are often the public face of a research or monitoring assignment.',
+        'planning' => 'Before hiring enumerators, confirm the questionnaire length, target respondents, languages, field routes and daily completion targets.',
+        'approach' => 'RRDA can mobilise trained enumerators for CAPI, ODK, KoboToolbox, paper surveys, listing work and verification tasks.',
+        'quality' => 'Enumerator quality should be checked through training attendance, mock interviews, supervisor feedback and review of submitted records.',
+        'cta' => 'Contact RRDA when you need enumerators for short-term surveys, donor projects, market research or county-level assignments.'
+    ],
+    [
+        'role' => 'field research assistants',
+        'title_prefix' => 'How to Get Reliable Field Research Assistants',
+        'category' => 'Research Assistants',
+        'image' => 'img/services/field-focus-group-mobilization.png',
+        'tags' => ['Research assistants', 'Field research', 'NGO research', 'Kenya'],
+        'context' => 'Research assistants help with mobilisation, interviews, note-taking, respondent follow-up and practical field coordination.',
+        'planning' => 'Before assigning research assistants, define the respondent type, interview guide, consent process, venue needs and reporting format.',
+        'approach' => 'RRDA can support projects that need research assistants for qualitative interviews, FGDs, key informant interviews and field coordination.',
+        'quality' => 'Good assistants should keep clear notes, respect respondent privacy, escalate field issues quickly and follow the agreed research protocol.',
+        'cta' => 'Contact RRDA when you need research assistants for qualitative studies, NGO evaluations, customer interviews or field coordination.'
+    ],
+    [
+        'role' => 'data entry clerks',
+        'title_prefix' => 'Hiring Data Entry Clerks for Clean Research Data',
+        'category' => 'Data Entry',
+        'image' => 'img/services/field-transcription.png',
+        'tags' => ['Data entry clerks', 'Data cleaning', 'Research data', 'Kenya'],
+        'context' => 'Data entry clerks can protect or damage a research dataset depending on how well the work is structured.',
+        'planning' => 'Before data entry starts, define the fields, validation rules, file naming system, confidentiality expectations and review process.',
+        'approach' => 'RRDA can provide data entry and data cleaning support for surveys, paper forms, registers, call logs and administrative records.',
+        'quality' => 'A reliable data entry workflow should include double-checks, duplicate review, missing-value checks and a clean final file.',
+        'cta' => 'Contact RRDA when you need clerks to convert forms, registers or raw files into clean report-ready data.'
+    ],
+    [
+        'role' => 'field supervisors',
+        'title_prefix' => 'Why Field Supervisors Matter in Research Projects',
+        'category' => 'Field Supervision',
+        'image' => 'img/services/field-cx-call-audits.png',
+        'tags' => ['Field supervisors', 'Quality control', 'Back-checks', 'Kenya research'],
+        'context' => 'Field supervisors keep the assignment organised when teams are moving across locations, respondents and deadlines.',
+        'planning' => 'Before supervision starts, agree on daily targets, reporting time, quality checks, escalation rules and evidence requirements.',
+        'approach' => 'RRDA can provide supervisors for survey teams, store audits, field verification, phone checks and multi-county assignments.',
+        'quality' => 'A good supervisor reviews submissions daily, flags suspicious records, supports enumerators and reports progress clearly.',
+        'cta' => 'Contact RRDA when you need a supervised field team rather than loose individual hires.'
+    ],
+];
+
+foreach ($staffingSchedules as $schedule) {
+    foreach ($staffingTracks as $index => $track) {
+        $title = $track['title_prefix'] . ' in ' . $schedule['location'] . ' for ' . ucwords($schedule['sector']);
+        $slug = rrda_slugify($title);
+        $blogPosts[] = [
+            'slug' => $slug,
+            'title' => $title,
+            'category' => $track['category'],
+            'status' => 'scheduled',
+            'publish_date' => $schedule['date'],
+            'author' => 'Rudder Research and Data Analytics LTD',
+            'image' => $track['image'],
+            'image_alt' => ucwords($track['role']) . ' supporting ' . $schedule['sector'] . ' in ' . $schedule['location'],
+            'excerpt' => 'RRDA helps NGOs, research firms and companies access ' . $track['role'] . ' for ' . $schedule['sector'] . ' in ' . $schedule['location'] . '.',
+            'meta_title' => ucwords($track['role']) . ' in ' . $schedule['location'] . ' | RRDA Kenya',
+            'meta_description' => 'Hire reliable ' . $track['role'] . ' in ' . $schedule['location'] . ' for ' . $schedule['sector'] . '. RRDA supports NGOs, companies and research teams with field staffing in Kenya.',
+            'tags' => array_values(array_unique(array_merge($track['tags'], [$schedule['location'], $schedule['sector']]))),
+            'content' => rrda_build_staffing_content([
+                'context' => $track['context'] . ' This is especially important for ' . $schedule['sector'] . ' in ' . $schedule['location'] . '.',
+                'planning' => $track['planning'],
+                'approach' => $track['approach'],
+                'quality' => $track['quality'],
+                'cta' => $track['cta'],
+            ]),
+            'related' => [
+                ['title' => 'On-Demand Field Enumerators', 'url' => 'on-demand-field-enumerators-capi-odk-kenya.php'],
+                ['title' => 'Field Research & Agency Services', 'url' => 'field-research-agency-services-kenya.php'],
+                ['title' => 'Request a Field Team', 'url' => 'contact.php']
+            ]
+        ];
+    }
+}
+
 if (!function_exists('rrda_visible_blog_posts')) {
     function rrda_visible_blog_posts($posts) {
         $today = (new DateTime('now', new DateTimeZone('Africa/Nairobi')))->format('Y-m-d');
