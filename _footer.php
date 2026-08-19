@@ -1,4 +1,4 @@
-<div class="container-fluid p-5" style="background:#f3525a;">
+<div class="container-fluid p-5 rrda-subscribe-band">
     <div class="row g-4 align-items-center justify-content-center">
         <div class="col-lg-5 text-center text-lg-start">
             <h2 class="text-white mb-2" style="font-size:1.35rem;">Get Rudder Research and Data Analytics LTD insights in your inbox</h2>

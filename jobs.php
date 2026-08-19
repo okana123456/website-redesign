@@ -38,7 +38,7 @@
     .pill { display:inline-flex; padding:8px 12px; border-radius:999px; background:#eef5f9; color:#243b55; font-weight:700; font-size:.84rem; margin:4px 6px 4px 0; }
     .rrda-hidden-field { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
   </style>
-  <link href="css/rrda-decision.css?v=20260819f" rel="stylesheet">
+    <link href="css/rrda-decision.css?v=20260819g" rel="stylesheet">
 </head>
 <body>
   <?php include '_topbar.php'; ?>

@@ -23,7 +23,7 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/rrda-decision.css?v=20260819f" rel="stylesheet">
+    <link href="css/rrda-decision.css?v=20260819g" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
 
@@ -224,7 +224,7 @@
       type: 'bar',
       data: {
         labels: ['GDP', 'Inflation', 'Construction', 'ICT', 'Hospitality'],
-        datasets: [{ label: 'Indicator signal', data: [5.3, 6.5, 6.8, 4.8, 15.6], backgroundColor: ['#0b6f88', '#f3525a', '#1f9d67', '#607083', '#f2b84b'] }]
+        datasets: [{ label: 'Indicator signal', data: [5.3, 6.5, 6.8, 4.8, 15.6], backgroundColor: ['#0b6f88', '#f26a00', '#1f9d67', '#607083', '#f2b84b'] }]
       },
       options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { callback: value => value + '%' } } } }
     });

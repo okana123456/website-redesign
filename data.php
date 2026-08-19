@@ -23,7 +23,7 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/rrda-decision.css?v=20260819f" rel="stylesheet">
+    <link href="css/rrda-decision.css?v=20260819g" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
 
@@ -309,7 +309,7 @@
       type: 'doughnut',
       data: {
         labels: ['Food & non-alcoholic beverages', 'Transport', 'Housing & utilities', 'Other CPI basket'],
-        datasets: [{ data: [8.6, 16.1, 3.4, 6.4], backgroundColor: ['#f3525a', '#f2b84b', '#00a9c7', '#d7e2eb'], borderWidth: 0 }]
+        datasets: [{ data: [8.6, 16.1, 3.4, 6.4], backgroundColor: ['#f26a00', '#f2b84b', '#00a9c7', '#d7e2eb'], borderWidth: 0 }]
       },
       options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { font: chartFont, boxWidth: 12 } } } }
     });
@@ -318,7 +318,7 @@
       type: 'line',
       data: {
         labels: ['2024 annual', '2025 annual', 'Q1 2025', 'Q1 2026'],
-        datasets: [{ label: 'Real GDP growth', data: [4.7, 4.6, 4.9, 5.3], borderColor: '#00a9c7', backgroundColor: 'rgba(0,169,199,.12)', tension: .35, fill: true, pointRadius: 5, pointBackgroundColor: '#f3525a' }]
+        datasets: [{ label: 'Real GDP growth', data: [4.7, 4.6, 4.9, 5.3], borderColor: '#00a9c7', backgroundColor: 'rgba(0,169,199,.12)', tension: .35, fill: true, pointRadius: 5, pointBackgroundColor: '#f26a00' }]
       },
       options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { callback: value => value + '%', font: chartFont } }, x: { ticks: { font: chartFont } } } }
     });

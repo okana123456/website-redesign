@@ -30,7 +30,7 @@ $rrdaRankingPages = [
         'category' => 'Health',
         'location' => 'Nairobi',
         'image' => 'img/services/field-location-verification.png',
-        'chart_color' => '#F3525A',
+        'chart_color' => '#f26a00',
         'cta' => 'Request hospital leads',
         'rows' => [
             ['name' => 'M.P. Shah Hospital', 'area' => 'Parklands', 'rating' => 4.3, 'reviews' => '1,700+ reviews', 'signal' => 'Large review base, specialist services and strong service visibility.'],
@@ -118,7 +118,7 @@ $rrdaRankingPages = [
         'category' => 'Real Estate',
         'location' => 'Nairobi',
         'image' => 'img/services/field-location-verification.png',
-        'chart_color' => '#F3525A',
+        'chart_color' => '#f26a00',
         'cta' => 'Request real estate leads',
         'rows' => [
             ['name' => 'HassConsult', 'area' => 'Nairobi', 'rating' => 4.5, 'reviews' => 'Strong visibility', 'signal' => 'Premium property brand, market reports and brokerage visibility.'],
@@ -162,7 +162,7 @@ $rrdaRankingPages = [
         'category' => 'Logistics',
         'location' => 'Kenya',
         'image' => 'img/blog/import-export-data-kenya-smes.png',
-        'chart_color' => '#F3525A',
+        'chart_color' => '#f26a00',
         'cta' => 'Request logistics leads',
         'rows' => [
             ['name' => 'DHL Express Kenya', 'area' => 'National', 'rating' => 4.5, 'reviews' => 'Very high visibility', 'signal' => 'Global logistics brand and strong courier visibility.'],
@@ -206,7 +206,7 @@ $rrdaRankingPages = [
         'category' => 'Health',
         'location' => 'Nairobi',
         'image' => 'img/services/field-location-verification.png',
-        'chart_color' => '#F3525A',
+        'chart_color' => '#f26a00',
         'cta' => 'Request maternity dataset',
         'rows' => [
             ['name' => 'M.P. Shah Hospital', 'area' => 'Parklands', 'rating' => 4.3, 'reviews' => '1,700+ reviews', 'signal' => 'Large review base, specialist services and maternity visibility.'],

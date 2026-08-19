@@ -12,7 +12,7 @@ if (!$ranking) {
         'category' => 'Data',
         'location' => 'Kenya',
         'image' => 'img/blog/import-export-data-kenya-smes.png',
-        'chart_color' => '#F3525A',
+        'chart_color' => '#f26a00',
         'cta' => 'Request data',
         'rows' => [],
     ];
