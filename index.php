@@ -23,7 +23,7 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/rrda-decision.css?v=20260819b" rel="stylesheet">
+  <link href="css/rrda-decision.css?v=20260819c" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
@@ -97,7 +97,7 @@
             <h2 class="rrda-title mt-2">Research, data products and systems under one roof</h2>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
-            <p class="rrda-lead mb-0">The site now works like a clear institutional homepage: cards first, each with a real image, short copy and a direct path to the right page.</p>
+            <p class="rrda-lead mb-0">Choose the support you need: field evidence, decision-ready datasets or operational systems designed around your workflow.</p>
           </div>
         </div>
         <div class="row g-4">
