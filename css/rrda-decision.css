@@ -383,6 +383,34 @@ h6,
     font-size: .88rem;
 }
 
+.rrda-home-page #home-services {
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+.rrda-home-page #home-services .rrda-title {
+    max-width: 760px;
+    font-size: clamp(1.55rem, 2.6vw, 2.45rem);
+}
+
+.rrda-home-page #home-services .rrda-image-card img {
+    height: 145px;
+}
+
+.rrda-home-page #home-services .rrda-image-card-body {
+    padding: 17px 18px 19px;
+}
+
+.rrda-home-page #home-services .rrda-image-card h3 {
+    font-size: 1.04rem;
+    margin-top: 10px;
+}
+
+.rrda-home-page #home-services .rrda-image-card p {
+    font-size: .84rem;
+    line-height: 1.55;
+}
+
 .rrda-step {
     display: flex;
     gap: 14px;
@@ -480,5 +508,9 @@ h6,
 
     .rrda-photo img {
         min-height: 280px;
+    }
+
+    .rrda-home-page #home-services .rrda-image-card img {
+        height: 165px;
     }
 }
