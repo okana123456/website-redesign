@@ -193,7 +193,7 @@
   </div>
 
   <!-- LEAD SERVICE 2: System Design -->
-  <div class="container-fluid bg-light py-5">
+  <div class="container-fluid bg-light py-5" id="ruddertrack">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6 order-lg-2" data-aos="fade-left">
@@ -253,7 +253,7 @@
   </div>
 
   <!-- Other Services Grid -->
-  <div class="container py-5">
+  <div class="container py-5" id="industries">
     <div class="text-center mb-5">
       <h2 data-aos="fade-up">Research and Data Services</h2>
       <p class="text-muted">Reliable field work, clean data and clear reports.</p>

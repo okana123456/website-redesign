@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Rudder Research and Data Analytics LTD | Research, Data and Software Company in Kenya</title>
-  <meta name="description" content="Learn about Rudder Research and Data Analytics LTD, a Kenya-based research, data analytics and software development company serving NGOs, businesses, hospitals, schools and SACCOs.">
-  <meta name="keywords" content="about Rudder Research, research company Kenya, data analytics company Kenya, software development company Kenya, market research Nairobi, system design Kenya">
+  <title>About Rudder | Decision Intelligence, Research and Business Technology Firm in Kenya</title>
+  <meta name="description" content="Rudder Research and Data Analytics is an independent decision-intelligence and business-technology firm in Kenya, combining field research, official statistics, analytics and RudderTrack systems.">
+  <meta name="keywords" content="about Rudder Research, decision intelligence firm Kenya, market research company Kenya, economic intelligence Kenya, data analytics company Kenya, RudderTrack systems">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/about.php">
   <meta property="og:type" content="website">
   <meta property="og:title" content="About Rudder Research and Data Analytics LTD">
-  <meta property="og:description" content="A Kenya-based team providing market research, data analytics and practical software systems.">
+  <meta property="og:description" content="From market evidence to operational action: research, economic intelligence, analytics and RudderTrack business systems.">
   <meta property="og:url" content="https://rudderdatanalytics.co.ke/about.php">
-  <meta property="og:image" content="https://rudderdatanalytics.co.ke/img/about.jpg">
+  <meta property="og:image" content="https://rudderdatanalytics.co.ke/img/redesign/field-enumerator-training.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/rrda-decision.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
@@ -42,252 +43,138 @@
     }
   }
   </script>
-
-  <style>
-    body { padding-top: 6rem; background: #f7f9fc; color: #0A2540; }
-    .navbar-brand h1 { font-size: clamp(1.35rem, 3vw, 2.1rem); }
-    .about-hero {
-      position: relative;
-      min-height: 520px;
-      display: flex;
-      align-items: center;
-      background: #0A2540;
-      overflow: hidden;
-    }
-    .about-hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, rgba(10,37,64,.94), rgba(10,37,64,.72), rgba(10,37,64,.25)),
-        url('img/about.jpg') center/cover no-repeat;
-    }
-    .about-hero .container { position: relative; z-index: 1; }
-    .hero-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #b8efff;
-      border: 1px solid rgba(255,255,255,.25);
-      background: rgba(255,255,255,.08);
-      border-radius: 999px;
-      padding: 8px 13px;
-      font-size: .8rem;
-      font-weight: 700;
-      letter-spacing: .05em;
-      text-transform: uppercase;
-    }
-    .about-hero h1 { max-width: 830px; color: #fff; font-size: clamp(2.2rem, 5vw, 4.3rem); line-height: 1.04; margin: 22px 0; }
-    .about-hero p { max-width: 700px; color: rgba(255,255,255,.86); font-size: 1.12rem; line-height: 1.8; }
-    .section-kicker { color: #007d99; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
-    .section-title { color: #0A2540; font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.12; }
-    .photo-panel { border-radius: 8px; overflow: hidden; box-shadow: 0 18px 46px rgba(10,37,64,.16); background: #dfe8f0; }
-    .photo-panel img { width: 100%; min-height: 420px; object-fit: cover; display: block; }
-    .value-card, .service-card-clean, .process-card {
-      background: #fff;
-      border: 1px solid #e3e8ef;
-      border-radius: 8px;
-      padding: 26px;
-      height: 100%;
-      box-shadow: 0 12px 32px rgba(10,37,64,.06);
-    }
-    .service-card-clean { display: block; color: #0A2540; text-decoration: none; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
-    .service-card-clean:hover { transform: translateY(-6px); box-shadow: 0 14px 34px rgba(10,37,64,.1); border-color: var(--primary); color: #0A2540; }
-    .value-card i, .service-card-clean i, .process-card i { color: var(--primary); font-size: 2rem; }
-    .check-list { list-style: none; padding: 0; margin: 0; }
-    .check-list li { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #edf2f7; }
-    .check-list li:last-child { border-bottom: 0; }
-    .check-list i { color: var(--primary); margin-top: 4px; }
-    .timeline-number {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: var(--primary);
-      color: #fff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      margin-bottom: 14px;
-    }
-    .cta-panel { background: #0A2540; color: #fff; border-radius: 8px; }
-    .cta-panel p { color: rgba(255,255,255,.78); }
-    @media (max-width: 991.98px) {
-      body { padding-top: 4.75rem; }
-      .about-hero { min-height: 520px; }
-      .about-hero::before { background: linear-gradient(180deg, rgba(10,37,64,.94), rgba(10,37,64,.82)), url('img/about.jpg') center/cover no-repeat; }
-      .photo-panel img { min-height: 300px; }
-    }
-  </style>
 </head>
-<body>
+<body class="rrda-page">
   <?php include '_topbar.php'; ?>
   <?php
     $activePage = 'about';
-    $navFixed = true;
+    $navFixed = false;
     include '_navbar.php';
   ?>
 
-
   <main>
-    <section class="about-hero">
+    <section class="rrda-shell rrda-slim-hero" style="--hero-image: url('/img/redesign/field-enumerator-training.png');">
       <div class="container" data-aos="fade-up">
-        <div class="hero-kicker"><i class="bi bi-building-check"></i>About Rudder</div>
-        <h1>A practical research, data and software partner for Kenyan organisations.</h1>
-        <p>We support organisations that need reliable fieldwork, clean analysis, useful dashboards and business systems that match how their teams actually work.</p>
+        <div class="rrda-kicker">About Rudder</div>
+        <h1>Independent decision intelligence for organisations that need evidence they can act on.</h1>
+        <p>Rudder Research and Data Analytics helps organisations understand their market and run their operations better through research, economic intelligence, dashboards and practical business systems.</p>
       </div>
     </section>
 
-    <section class="py-6">
+    <section class="rrda-section">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6" data-aos="fade-right">
-            <div class="section-kicker">Our story</div>
-            <h2 class="section-title mt-2 mb-4">Built around one simple belief: better decisions need better information.</h2>
-            <p class="lead text-muted">Rudder Research and Data Analytics LTD works at the point where research, data and systems meet. We help clients collect the right information, make sense of it and turn it into tools or reports that improve daily work.</p>
-            <p class="text-muted">Our clients come to us when they need focus group discussions, market research, data cleaning, dashboards, system design or custom software such as POS, hospital, school and loan management systems.</p>
-            <ul class="check-list mt-4">
-              <li><i class="bi bi-check-circle-fill"></i><span>Kenya-based team with East Africa project experience.</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span>Research and software support under one roof.</span></li>
-              <li><i class="bi bi-check-circle-fill"></i><span>Clear reports, usable dashboards and practical systems.</span></li>
-            </ul>
+            <div class="rrda-kicker">Who we are</div>
+            <h2 class="rrda-title mt-2 mb-4">A research and technology firm built around practical decisions.</h2>
+            <p class="rrda-lead">We sit between the world of field evidence, official statistics and day-to-day business operations. That is where most decisions fail: the data exists, but it has not been cleaned, interpreted or turned into a useful workflow.</p>
+            <p class="text-muted">Our work is to make evidence usable. We design studies, collect data, clean records, build dashboards, interpret trends and configure systems that help teams act with confidence.</p>
+            <div class="d-flex flex-wrap mt-3">
+              <span class="rrda-chip">Market research</span>
+              <span class="rrda-chip">Field data collection</span>
+              <span class="rrda-chip">Economic intelligence</span>
+              <span class="rrda-chip">Dashboards</span>
+              <span class="rrda-chip">RudderTrack systems</span>
+            </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left">
-            <div class="photo-panel">
-              <img src="img/services-banner.jpg" alt="Research and data analysis planning session">
-            </div>
+            <div class="rrda-photo"><img src="img/redesign/survey-data-cleaning-team.png" alt="Rudder analysts cleaning and reviewing research data"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-6 bg-white">
+    <section class="rrda-section bg-white">
       <div class="container">
-        <div class="text-center mb-5" data-aos="fade-up">
-          <div class="section-kicker">What guides us</div>
-          <h2 class="section-title mt-2">Professional work that stays grounded</h2>
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="rrda-kicker">Brand architecture</div>
+            <h2 class="rrda-title mt-2">One firm, two connected divisions</h2>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
+            <p class="rrda-lead mb-0">The unifying idea is simple: understand the external market, then manage the internal operation better.</p>
+          </div>
         </div>
         <div class="row g-4">
-          <div class="col-lg-4" data-aos="fade-up">
-            <div class="value-card">
-              <i class="bi bi-clipboard-check"></i>
-              <h5 class="mt-3">Accuracy</h5>
-              <p class="text-muted mb-0">We care about clean data, clear records and reports that can stand up to review.</p>
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="rrda-card">
+              <span class="rrda-badge">Division 1</span>
+              <h3 class="mt-3">Rudder Research & Data Analytics</h3>
+              <p class="text-muted">Research, fieldwork, economic intelligence, data cleaning, statistical analysis, dashboards, county profiles, sector reports and decision briefs.</p>
+              <div>
+                <span class="rrda-chip">FGDs</span>
+                <span class="rrda-chip">KIIs</span>
+                <span class="rrda-chip">Surveys</span>
+                <span class="rrda-chip">Economic briefs</span>
+                <span class="rrda-chip">Data-as-a-service</span>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="80">
-            <div class="value-card">
-              <i class="bi bi-person-workspace"></i>
-              <h5 class="mt-3">Usability</h5>
-              <p class="text-muted mb-0">We design outputs for the people who will actually use them, from field teams to managers.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="160">
-            <div class="value-card">
-              <i class="bi bi-shield-check"></i>
-              <h5 class="mt-3">Accountability</h5>
-              <p class="text-muted mb-0">We keep the process visible, document decisions and support clients beyond delivery.</p>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
+            <div class="rrda-card">
+              <span class="rrda-badge">Division 2</span>
+              <h3 class="mt-3">RudderTrack Systems</h3>
+              <p class="text-muted">Operational software and automation for organisations that need to capture, track and report what happens every day.</p>
+              <div>
+                <span class="rrda-chip">POS</span>
+                <span class="rrda-chip">Loans</span>
+                <span class="rrda-chip">Schools</span>
+                <span class="rrda-chip">Hospitals</span>
+                <span class="rrda-chip">HR & payroll</span>
+                <span class="rrda-chip">Booking</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-6">
+    <section class="rrda-section">
       <div class="container">
-        <div class="row align-items-center g-5">
+        <div class="row g-5 align-items-center">
           <div class="col-lg-5" data-aos="fade-right">
-            <div class="photo-panel">
-              <img src="img/analysis31.jpg" alt="Analytics and reporting workspace">
-            </div>
+            <div class="rrda-photo"><img src="img/redesign/monitoring-evaluation-field-review.png" alt="Monitoring and evaluation team reviewing field evidence"></div>
           </div>
           <div class="col-lg-7" data-aos="fade-left">
-            <div class="section-kicker">Our capability</div>
-            <h2 class="section-title mt-2 mb-4">One partner for field research, analytics and business systems.</h2>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <a class="service-card-clean" href="focus-group-discussions-kenya.php">
-                  <i class="bi bi-people-fill"></i>
-                  <h5 class="mt-3">Qualitative Research</h5>
-                  <p class="text-muted mb-0">FGDs, KIIs, interviews, transcription and thematic reporting.</p>
-                </a>
-              </div>
-              <div class="col-md-6">
-                <a class="service-card-clean" href="market-research-company-kenya.php">
-                  <i class="bi bi-search"></i>
-                  <h5 class="mt-3">Market Research</h5>
-                  <p class="text-muted mb-0">Consumer studies, brand tracking, competitor checks and market entry support.</p>
-                </a>
-              </div>
-              <div class="col-md-6">
-                <a class="service-card-clean" href="data-analytics-company-kenya.php">
-                  <i class="bi bi-bar-chart-line-fill"></i>
-                  <h5 class="mt-3">Data Analytics</h5>
-                  <p class="text-muted mb-0">Cleaning, analysis, dashboards and management reports.</p>
-                </a>
-              </div>
-              <div class="col-md-6">
-                <a class="service-card-clean" href="services.php">
-                  <i class="bi bi-window-stack"></i>
-                  <h5 class="mt-3">Custom Systems</h5>
-                  <p class="text-muted mb-0">POS, HMS, school, loan, inventory, HR and payroll systems.</p>
-                </a>
-              </div>
+            <div class="rrda-kicker">Quality approach</div>
+            <h2 class="rrda-title mt-2 mb-4">A clear path from question to decision.</h2>
+            <div class="rrda-card">
+              <div class="rrda-step"><span class="rrda-step-number">1</span><div><h5>Define the decision</h5><p class="text-muted mb-0">We start with the business, programme or operational decision the client needs to make.</p></div></div>
+              <div class="rrda-step"><span class="rrda-step-number">2</span><div><h5>Collect and combine evidence</h5><p class="text-muted mb-0">We bring together field data, public statistics, desk research, client records and verification checks.</p></div></div>
+              <div class="rrda-step"><span class="rrda-step-number">3</span><div><h5>Clean, model and interpret</h5><p class="text-muted mb-0">We standardise data, build indicators, prepare charts and explain what changed and why it matters.</p></div></div>
+              <div class="rrda-step"><span class="rrda-step-number">4</span><div><h5>Deliver action</h5><p class="text-muted mb-0">The final output can be a decision brief, dashboard, dataset, model, report or RudderTrack system.</p></div></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-6 bg-white">
+    <section class="rrda-section bg-white">
       <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
-          <div class="section-kicker">How engagements run</div>
-          <h2 class="section-title mt-2">A clear path from brief to delivery</h2>
+          <div class="rrda-kicker">Client fit</div>
+          <h2 class="rrda-title mt-2">Who Rudder supports</h2>
         </div>
         <div class="row g-4">
-          <div class="col-lg-3 col-md-6" data-aos="fade-up">
-            <div class="process-card">
-              <div class="timeline-number">1</div>
-              <h5>Scope</h5>
-              <p class="text-muted mb-0">We define the problem, audience, workflow and expected output.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="80">
-            <div class="process-card">
-              <div class="timeline-number">2</div>
-              <h5>Collect or build</h5>
-              <p class="text-muted mb-0">We run fieldwork, clean data or configure the required software modules.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="160">
-            <div class="process-card">
-              <div class="timeline-number">3</div>
-              <h5>Review</h5>
-              <p class="text-muted mb-0">We test outputs, check accuracy and refine the final report or system.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="240">
-            <div class="process-card">
-              <div class="timeline-number">4</div>
-              <h5>Support</h5>
-              <p class="text-muted mb-0">We train users, answer questions and help the work settle into practice.</p>
-            </div>
-          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up"><div class="rrda-card"><h5>SACCOs & lenders</h5><p class="text-muted mb-0">Loan portfolio dashboards, demand forecasts, branch opportunity and borrower reporting.</p></div></div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="70"><div class="rrda-card"><h5>NGOs & programmes</h5><p class="text-muted mb-0">Fieldwork, enumerators, M&E datasets, beneficiary tracking and research reports.</p></div></div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="140"><div class="rrda-card"><h5>SMEs & distributors</h5><p class="text-muted mb-0">Market entry briefs, price checks, leads, POS systems and sales dashboards.</p></div></div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="210"><div class="rrda-card"><h5>Institutions</h5><p class="text-muted mb-0">School, clinic, hospital, HR, payroll and booking workflows supported by analytics.</p></div></div>
         </div>
       </div>
     </section>
 
-    <section class="py-6">
+    <section class="rrda-section">
       <div class="container">
-        <div class="cta-panel p-5" data-aos="fade-up">
+        <div class="rrda-cta p-5" data-aos="fade-up">
           <div class="row align-items-center g-4">
             <div class="col-lg-8">
-              <h2 class="text-white mb-3">Looking for a grounded partner for research, analytics or system design?</h2>
-              <p class="mb-0">Tell us what you are trying to solve. We will help you choose the right approach.</p>
+              <div class="rrda-kicker">Work with Rudder</div>
+              <h2 class="text-white mt-2 mb-2">Bring us the question. We will help structure the evidence.</h2>
+              <p class="mb-0">A good engagement starts with a clear decision, not a pile of raw files.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
-              <a class="btn btn-primary px-5 py-3" href="contact.php">Contact Us</a>
+              <a href="contact.php" class="btn btn-primary px-5 py-3">Talk to Rudder</a>
             </div>
           </div>
         </div>
@@ -298,6 +185,6 @@
   <?php include '_footer.php'; ?>
   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
   <?php include '_scripts.php'; ?>
-  <script>AOS.init({ duration: 700, once: true, offset: 80 });</script>
+  <script>AOS.init({ duration: 650, once: true, offset: 80 });</script>
 </body>
 </html>

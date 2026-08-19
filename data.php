@@ -3,48 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenya Data, Rankings, Leads and Market Intelligence | RRDA</title>
-  <meta name="description" content="Explore Kenya data products for health, best maternity hospitals in Nairobi, import and export, prices, county intelligence, hospitality, facilities and B2B leads from RRDA.">
+  <title>Kenya Economic Insights, Data Dashboards and Market Intelligence | RRDA</title>
+  <meta name="description" content="Explore Rudder's Kenya economic intelligence dashboard, KNBS-sourced market snapshots, county profiles, sector briefs, import and export intelligence, price monitoring and data products.">
+  <meta name="keywords" content="Kenya economic intelligence, KNBS data analysis, Kenya data dashboard, county market profiles Kenya, import export intelligence Kenya, market data Kenya, price intelligence Kenya">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/data.php">
-  <meta property="og:title" content="Kenya Data and Market Intelligence | RRDA">
-  <meta property="og:description" content="Field-collected datasets, rankings, charts and data products for Kenyan businesses, NGOs and researchers.">
+  <meta property="og:title" content="Kenya Economic Insights and Data Dashboards | RRDA">
+  <meta property="og:description" content="Decision-ready economic intelligence, data dashboards, county profiles, sector briefs and market data products for Kenya.">
   <meta property="og:url" content="https://rudderdatanalytics.co.ke/data.php">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://rudderdatanalytics.co.ke/img/redesign/import-export-intelligence.png">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/rrda-decision.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-  <style>
-    body { background:#f7f9fc; color:#0A2540; }
-    .data-hero { background:#0A2540; color:#fff; padding:74px 0; position:relative; overflow:hidden; }
-    .data-hero::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(10,37,64,.94), rgba(10,37,64,.78), rgba(10,37,64,.22)), url('img/blog/import-export-data-kenya-smes.png') center/cover no-repeat; }
-    .data-hero .container { position:relative; z-index:1; }
-    .data-hero h1 { color:#fff; font-size:clamp(2.2rem, 5vw, 4rem); line-height:1.05; max-width:920px; }
-    .data-hero p { color:rgba(255,255,255,.84); max-width:760px; font-size:1.08rem; line-height:1.75; }
-    .section-kicker { color:#007d99; font-size:.78rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
-    .data-card, .sample-panel, .source-panel { background:#fff; border:1px solid #e3e8ef; border-radius:8px; box-shadow:0 12px 32px rgba(10,37,64,.06); }
-    .data-card { height:100%; overflow:hidden; text-decoration:none; color:#0A2540; display:block; transition:transform .25s ease, border-color .25s ease; }
-    .data-card:hover { transform:translateY(-5px); border-color:var(--primary); color:#0A2540; }
-    .data-card img { width:100%; height:170px; object-fit:cover; display:block; }
-    .data-card-body { padding:22px; }
-    .sample-panel { padding:28px; }
-    .source-panel { padding:22px; }
-    .table thead th { color:#0A2540; }
-    .chart-box { min-height:310px; }
-    .pill { display:inline-flex; padding:8px 12px; border-radius:999px; background:#eef5f9; color:#243b55; font-weight:700; font-size:.84rem; margin:4px 6px 4px 0; }
-    .rank-badge { width:42px; height:42px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; background:#0A2540; color:#fff; font-weight:800; }
-    .rating-chip { display:inline-flex; align-items:center; gap:6px; padding:7px 10px; border-radius:999px; background:#fff4d8; color:#7a4f00; font-weight:800; white-space:nowrap; }
-    .data-note { font-size:.88rem; color:#6B6A75; }
-  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Kenya Economic Insights and Data Dashboards",
+    "url": "https://rudderdatanalytics.co.ke/data.php",
+    "publisher": {"@type": "Organization", "name": "Rudder Research and Data Analytics LTD"},
+    "description": "Kenya economic intelligence, data dashboards, county profiles, rankings and market data products."
+  }
+  </script>
 </head>
-<body>
+<body class="rrda-page">
   <?php include '_topbar.php'; ?>
   <?php
     $activePage = 'data';
@@ -53,361 +47,236 @@
   ?>
 
   <main>
-    <section class="data-hero">
+    <section class="rrda-shell rrda-slim-hero" style="--hero-image: url('/img/redesign/import-export-intelligence.png');">
       <div class="container" data-aos="fade-up">
-        <div class="section-kicker text-info mb-3">Kenya data products</div>
-        <h1>Kenya data, market intelligence and directories for real decisions.</h1>
-        <p class="mt-4">RRDA collects, cleans, verifies, analyses and packages practical datasets for businesses, NGOs and investors that need county-level intelligence, leads, rankings and price signals.</p>
-        <div class="mt-4">
-          <a href="#categories" class="btn btn-primary px-4 py-3 me-2">Explore categories</a>
-          <a href="contact.php" class="btn btn-light px-4 py-3">Request a dataset</a>
+        <div class="rrda-kicker">Economic Insights</div>
+        <h1>Kenya data transformed into decision-ready intelligence.</h1>
+        <p>Rudder turns official statistics, field evidence, online reputation signals and operational records into county profiles, sector briefs, dashboards, rankings, data products and custom decision models.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#economic-dashboard" class="btn btn-primary px-4 py-3">View Dashboard</a>
+          <a href="contact.php" class="btn btn-light px-4 py-3">Request Custom Data</a>
         </div>
       </div>
     </section>
 
-    <section class="py-5" id="categories">
+    <section class="rrda-section-tight bg-white border-bottom">
       <div class="container">
-        <div class="row mb-4">
-          <div class="col-lg-8">
-            <div class="section-kicker">Data categories</div>
-            <h2 class="mt-2">What people can explore or request</h2>
-            <p class="text-muted">Each category can be prepared through RRDA field data collection, desk research, phone verification, online review checks and client-specific research briefs.</p>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="#health"><img src="img/services/field-location-verification.png" alt="Kenya health data"><div class="data-card-body"><span class="pill">Health</span><h3>Health Facilities and Maternal Care</h3><p class="text-muted">Facility lists, service categories, ownership, county profiles and verified maternal care directories.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="#trade"><img src="img/blog/import-export-data-kenya-smes.png" alt="Kenya import export data"><div class="data-card-body"><span class="pill">Trade</span><h3>Import and Export Data</h3><p class="text-muted">HS code trends, product demand, source markets, destination markets and opportunity screening.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="#prices"><img src="img/blog/retail-price-checks-kenya.png" alt="Kenya price data"><div class="data-card-body"><span class="pill">Prices</span><h3>Retail and Commodity Prices</h3><p class="text-muted">CPI-linked price snapshots, retail checks, store audits and competitor price monitoring.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="#leads"><img src="img/services/field-b2b-leads.png" alt="B2B leads Kenya"><div class="data-card-body"><span class="pill">Leads</span><h3>B2B Leads and Directories</h3><p class="text-muted">Potential customers, suppliers, schools, hospitals, hotels, clinics, pharmacies, SACCOs and SMEs.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="#county"><img src="img/services/field-enumerators.png" alt="County data Kenya"><div class="data-card-body"><span class="pill">Counties</span><h3>County and Local Market Profiles</h3><p class="text-muted">County indicators, towns, business clusters, facilities and local market mapping.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="#hospitality"><img src="img/services/field-concierge.png" alt="Hotels and local directories Kenya"><div class="data-card-body"><span class="pill">Hospitality</span><h3>Hotels, Venues and Local Listings</h3><p class="text-muted">County hotel directories, venues, chambers, local offices and verified contacts.</p></div></a></div>
+        <div class="row g-3">
+          <div class="col-lg-3 col-6" data-aos="fade-up"><div class="rrda-metric"><strong>5.3%</strong><span>Kenya real GDP growth, Q1 2026</span></div></div>
+          <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-delay="60"><div class="rrda-metric"><strong>6.4%</strong><span>Annual inflation, Jun 2026</span></div></div>
+          <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-delay="120"><div class="rrda-metric"><strong>154.91</strong><span>CPI index, Jun 2026</span></div></div>
+          <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-delay="180"><div class="rrda-metric"><strong>47</strong><span>County profiles and local markets</span></div></div>
         </div>
       </div>
     </section>
 
-    <section class="py-5 bg-white" id="data-pools">
+    <section class="rrda-section" id="economic-dashboard">
       <div class="container">
         <div class="row mb-4 align-items-end">
-          <div class="col-lg-8">
-            <div class="section-kicker">Published data pools</div>
-            <h2 class="mt-2">Browse ranking datasets</h2>
-            <p class="text-muted">These pages give visitors useful ranked data first, then let organisations request the full cleaned dataset, lead file or dashboard.</p>
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="rrda-kicker">Dashboard preview</div>
+            <h2 class="rrda-title mt-2">Kenya economic intelligence snapshot</h2>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
+            <p class="rrda-lead mb-0">These are small public-data snapshots. Rudder's commercial value is the cleaning, interpretation, modelling, visualisation and client-specific application.</p>
           </div>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-hotels-in-nairobi.php"><img src="img/services/field-concierge.png" alt="Best hotels in Nairobi"><div class="data-card-body"><span class="pill">Hospitality</span><h3>Best Hotels in Nairobi</h3><p class="text-muted">Top hotels ranked by online reputation, review footprint and business visibility.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-maternity-hospitals-nairobi.php"><img src="img/services/field-location-verification.png" alt="Best maternity hospitals in Nairobi"><div class="data-card-body"><span class="pill">Health</span><h3>Best Maternity Hospitals in Nairobi</h3><p class="text-muted">Maternity providers ranked by online reputation and service visibility.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-private-hospitals-nairobi.php"><img src="img/services/field-location-verification.png" alt="Best private hospitals in Nairobi"><div class="data-card-body"><span class="pill">Health</span><h3>Best Private Hospitals in Nairobi</h3><p class="text-muted">Private hospitals ranked for market intelligence and supplier targeting.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-restaurants-in-nairobi.php"><img src="img/services/field-mystery-shopping.png" alt="Best restaurants in Nairobi"><div class="data-card-body"><span class="pill">Hospitality</span><h3>Best Restaurants in Nairobi</h3><p class="text-muted">Restaurant ranking for food brands, platforms and hospitality suppliers.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-schools-in-nairobi.php"><img src="img/services/field-enumerators.png" alt="Best schools in Nairobi"><div class="data-card-body"><span class="pill">Education</span><h3>Best Schools in Nairobi</h3><p class="text-muted">School visibility ranking for EdTech, suppliers and parent research.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-saccos-in-kenya.php"><img src="img/services/field-b2b-leads.png" alt="Best SACCOs in Kenya"><div class="data-card-body"><span class="pill">Finance</span><h3>Best SACCOs in Kenya</h3><p class="text-muted">SACCO visibility ranking for fintechs, lenders and training firms.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-real-estate-companies-nairobi.php"><img src="img/services/field-location-verification.png" alt="Best real estate companies in Nairobi"><div class="data-card-body"><span class="pill">Real Estate</span><h3>Best Real Estate Companies</h3><p class="text-muted">Nairobi real estate firms ranked for property and supplier intelligence.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-cleaning-companies-nairobi.php"><img src="img/services/field-mystery-shopping.png" alt="Best cleaning companies in Nairobi"><div class="data-card-body"><span class="pill">Facilities</span><h3>Best Cleaning Companies</h3><p class="text-muted">Cleaning companies ranked for offices, landlords and procurement teams.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-logistics-companies-kenya.php"><img src="img/blog/import-export-data-kenya-smes.png" alt="Best logistics companies in Kenya"><div class="data-card-body"><span class="pill">Logistics</span><h3>Best Logistics Companies</h3><p class="text-muted">Import, export and logistics firms ranked for trade decision-making.</p></div></a></div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="data-card" href="best-digital-marketing-agencies-kenya.php"><img src="img/services/field-brand-ambassadors.png" alt="Best digital marketing agencies in Kenya"><div class="data-card-body"><span class="pill">Marketing</span><h3>Best Digital Agencies</h3><p class="text-muted">Agency ranking for SMEs, brands, NGOs and procurement teams.</p></div></a></div>
-        </div>
-      </div>
-    </section>
 
-    <section class="py-5 bg-white" id="prices">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="sample-panel">
-              <div class="section-kicker">Price intelligence</div>
-              <h2 class="mt-2">Retail price tracking snapshot</h2>
-              <p class="text-muted">RRDA can track retail prices by county, town, outlet type or commodity. We combine desk checks, store audits, phone checks and field enumerator visits depending on the client need.</p>
-              <div class="table-responsive">
-                <table class="table table-sm">
-                  <thead><tr><th>Commodity</th><th>Unit</th><th>Jun 2026 KES</th></tr></thead>
-                  <tbody>
-                    <tr><td>Maize flour, loose</td><td>1 Kg</td><td>83.43</td></tr>
-                    <tr><td>Fortified maize flour</td><td>2 Kg</td><td>178.27</td></tr>
-                    <tr><td>Beef with bones</td><td>1 Kg</td><td>760.75</td></tr>
-                    <tr><td>Fresh unpacketed cow milk</td><td>1 Litre</td><td>73.19</td></tr>
-                    <tr><td>Cooking oil</td><td>1 Litre</td><td>358.63</td></tr>
-                    <tr><td>Tomatoes</td><td>1 Kg</td><td>117.87</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="sample-panel chart-box"><canvas id="priceChart"></canvas></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5" id="trade">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="sample-panel chart-box"><canvas id="tradeChart"></canvas></div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="sample-panel">
-              <div class="section-kicker">Trade product</div>
-              <h2 class="mt-2">Import and export opportunity screen</h2>
-              <p class="text-muted">A business can request a cleaned HS-code report for product demand, supplier countries, destination markets and competitor categories.</p>
-              <div class="table-responsive">
-                <table class="table table-sm">
-                  <thead><tr><th>Product theme</th><th>Question answered</th><th>Useful for</th></tr></thead>
-                  <tbody>
-                    <tr><td>Food commodities</td><td>Which products show stable movement?</td><td>Importers, wholesalers</td></tr>
-                    <tr><td>Medical supplies</td><td>Which categories need facility or distributor validation?</td><td>Health suppliers</td></tr>
-                    <tr><td>Construction items</td><td>Which counties or towns need field checks?</td><td>Hardware distributors</td></tr>
-                    <tr><td>Export products</td><td>Which destination markets deserve follow-up?</td><td>SMEs, cooperatives</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              <a class="btn btn-primary mt-3" href="contact.php">Request trade dataset</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 bg-white" id="health">
-      <div class="container">
         <div class="row g-4">
           <div class="col-lg-7" data-aos="fade-up">
-            <div class="sample-panel">
-              <div class="section-kicker">Health directory</div>
-              <h2 class="mt-2">Health facility and maternal care data products</h2>
-              <p class="text-muted">RRDA builds health facility directories, maternal care lists, clinic leads and hospital ranking datasets using desk research, online review checks, social media signals, phone verification and field visits where required.</p>
-              <div class="table-responsive">
-                <table class="table table-sm">
-                  <thead><tr><th>Data product</th><th>Fields included</th><th>Use case</th></tr></thead>
-                  <tbody>
-                    <tr><td>County health facility directory</td><td>Name, county, sub-county, type, ownership</td><td>Supplier mapping, NGO planning</td></tr>
-                    <tr><td>Maternity service shortlist</td><td>Facility level, services, location, contact status</td><td>Referral mapping, maternal health studies</td></tr>
-                    <tr><td>Facility verification list</td><td>Phone check, visit status, notes, evidence</td><td>Due diligence, programme planning</td></tr>
-                    <tr><td>Clinic and pharmacy leads</td><td>County, category, contact, verified status</td><td>Sales and outreach</td></tr>
-                  </tbody>
-                </table>
+            <div class="rrda-dashboard">
+              <div class="rrda-dashboard-header">
+                <div>
+                  <div class="rrda-kicker">Sector momentum</div>
+                  <h3 class="rrda-dashboard-title">Selected 2025 sector growth rates</h3>
+                </div>
+                <span class="rrda-badge">KNBS 2026</span>
               </div>
+              <div class="rrda-chart"><canvas id="sectorChart"></canvas></div>
+              <p class="rrda-source mt-3 mb-0">Source: <a href="https://www.knbs.or.ke/reports/2026-economic-survey/" target="_blank" rel="noopener">KNBS 2026 Economic Survey</a>.</p>
             </div>
           </div>
-          <div class="col-lg-5" data-aos="fade-left">
-            <div class="sample-panel">
-              <div class="section-kicker">Rankings</div>
-              <h3>Top-rated hospital and maternity rankings</h3>
-              <p class="text-muted">RRDA maintains searchable rankings for hospitals, maternity facilities, clinics and service providers by county using public online reputation signals and service visibility.</p>
-              <div class="table-responsive">
-                <table class="table table-sm">
-                  <tbody>
-                    <tr><td>Nairobi</td><td>Maternal care, hospitals and clinics</td></tr>
-                    <tr><td>Kisumu</td><td>Hospitals, clinics and pharmacies</td></tr>
-                    <tr><td>Eldoret</td><td>Hospitals, private clinics and specialists</td></tr>
-                  </tbody>
-                </table>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
+            <div class="rrda-dashboard mb-4">
+              <div class="rrda-dashboard-header">
+                <div>
+                  <div class="rrda-kicker">Inflation</div>
+                  <h3 class="rrda-dashboard-title">Consumer price signals</h3>
+                </div>
+                <span class="rrda-badge">June 2026</span>
               </div>
-              <a class="btn btn-primary" href="#maternity-rankings">View Nairobi ranking</a>
+              <div class="rrda-chart-small"><canvas id="inflationChart"></canvas></div>
+              <p class="rrda-source mt-3 mb-0">Source: <a href="https://www.knbs.or.ke/reports/consumer-price-indices-and-inflation-rates-june-2026/" target="_blank" rel="noopener">KNBS June 2026 CPI release</a> and <a href="https://cpiexplorer.knbs.or.ke/" target="_blank" rel="noopener">KNBS CPI Explorer</a>.</p>
+            </div>
+            <div class="rrda-card">
+              <div class="rrda-kicker">Decision note</div>
+              <h4 class="mt-2">Why this matters</h4>
+              <p class="text-muted mb-0">A distributor, SACCO, NGO or school cannot act on GDP alone. Rudder converts these signals into county opportunity, price pressure, demand forecasts and operational dashboards.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5" id="maternity-rankings">
+    <section class="rrda-section bg-white" id="products">
       <div class="container">
-        <div class="row mb-4 align-items-end">
-          <div class="col-lg-8" data-aos="fade-up">
-            <div class="section-kicker">Health data pool</div>
-            <h2 class="mt-2">Best maternity hospitals in Nairobi by online reputation</h2>
-            <p class="text-muted mb-2">A Nairobi maternity ranking built from visible online ratings, review volume, public feedback patterns and maternity service visibility.</p>
-            <p class="data-note mb-0">Last refreshed: August 2026. This is an online reputation dataset for market intelligence and shortlisting, not a substitute for medical consultation.</p>
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="rrda-kicker">Data products</div>
+            <h2 class="rrda-title mt-2">What organisations can buy from Rudder</h2>
           </div>
-          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0" data-aos="fade-left">
-            <a class="btn btn-primary px-4 py-3" href="contact.php">Request full maternity dataset</a>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
+            <p class="rrda-lead mb-0">Each product can be delivered as a PDF brief, dashboard, cleaned spreadsheet, lead list, private portal or consulting engagement.</p>
           </div>
         </div>
-
         <div class="row g-4">
-          <div class="col-lg-8" data-aos="fade-up">
-            <div class="sample-panel">
-              <div class="table-responsive">
-                <table class="table align-middle">
-                  <thead>
-                    <tr>
-                      <th>Rank</th>
-                      <th>Facility</th>
-                      <th>Area</th>
-                      <th>Online rating</th>
-                      <th>Review footprint</th>
-                      <th>Strongest visible signal</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><span class="rank-badge">1</span></td>
-                      <td><strong>M.P. Shah Hospital</strong></td>
-                      <td>Parklands</td>
-                      <td><span class="rating-chip">4.3/5</span></td>
-                      <td>1,700+ reviews</td>
-                      <td>Large review base, specialist services and maternity visibility.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-badge">2</span></td>
-                      <td><strong>Marie Stopes Eastleigh Maternity & Nursing Home</strong></td>
-                      <td>Eastleigh</td>
-                      <td><span class="rating-chip">4.2/5</span></td>
-                      <td>80+ reviews</td>
-                      <td>Maternity-specific facility with strong positive care comments.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-badge">3</span></td>
-                      <td><strong>Jacaranda Maternity Wallet Centre</strong></td>
-                      <td>Umoja/Kayole</td>
-                      <td><span class="rating-chip">3.9/5</span></td>
-                      <td>130+ reviews</td>
-                      <td>Dedicated maternity brand, visible packages and multi-branch presence.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-badge">4</span></td>
-                      <td><strong>Pumwani Maternity Hospital</strong></td>
-                      <td>Pumwani</td>
-                      <td><span class="rating-chip">3.8/5</span></td>
-                      <td>130+ reviews</td>
-                      <td>High maternity visibility and large public hospital footprint.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-badge">5</span></td>
-                      <td><strong>Patanisho Maternity and Nursing Home</strong></td>
-                      <td>Kayole</td>
-                      <td><span class="rating-chip">4.0/5</span></td>
-                      <td>20+ reviews</td>
-                      <td>Maternity-focused service comments and local care visibility.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-badge">6</span></td>
-                      <td><strong>Kasarani Maternity & Nursing Home</strong></td>
-                      <td>Kasarani</td>
-                      <td><span class="rating-chip">3.7/5</span></td>
-                      <td>60+ reviews</td>
-                      <td>Maternity-specific facility with visible delivery experience feedback.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-badge">7</span></td>
-                      <td><strong>Nairobi West Hospital</strong></td>
-                      <td>Nairobi West</td>
-                      <td><span class="rating-chip">3.9/5</span></td>
-                      <td>500+ reviews</td>
-                      <td>Large general hospital footprint with maternity service visibility.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-badge">8</span></td>
-                      <td><strong>The Mater Hospital Westlands</strong></td>
-                      <td>Westlands</td>
-                      <td><span class="rating-chip">4.1/5</span></td>
-                      <td>10+ reviews</td>
-                      <td>Ante-natal and obstetrics/gynaecology clinic visibility.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-badge">9</span></td>
-                      <td><strong>The Nairobi Hospital</strong></td>
-                      <td>Upper Hill</td>
-                      <td><span class="rating-chip">3.3/5</span></td>
-                      <td>500+ reviews</td>
-                      <td>Premium hospital visibility with mixed public feedback.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="rank-badge">10</span></td>
-                      <td><strong>Aga Khan University Hospital Nairobi</strong></td>
-                      <td>Parklands</td>
-                      <td><span class="rating-chip">2.7/5</span></td>
-                      <td>230+ reviews</td>
-                      <td>Strong specialist brand, but weaker overall public review sentiment.</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="rrda-card rrda-link-card" href="#county"><span class="rrda-badge">County</span><h4 class="mt-3">County Market Opportunity Brief</h4><p class="text-muted">Population profile, household indicators, competitors, facilities, access points and Rudder Opportunity Score.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="70"><a class="rrda-card rrda-link-card" href="#sector-dashboard"><span class="rrda-badge">Sector</span><h4 class="mt-3">Sector Intelligence Report</h4><p class="text-muted">Education, healthcare, SACCO, agriculture, import trade, construction, retail and hospitality outlooks.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140"><a class="rrda-card rrda-link-card" href="#data-pools"><span class="rrda-badge">Rankings</span><h4 class="mt-3">Ranked Data Pools</h4><p class="text-muted">Hospitals, hotels, schools, restaurants, SACCOs, agencies, suppliers and county business directories.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="rrda-card rrda-link-card" href="#trade"><span class="rrda-badge">Trade</span><h4 class="mt-3">Import and Export Intelligence</h4><p class="text-muted">HS-code opportunity screens, importer targeting, supplier market checks and product demand watchlists.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="70"><a class="rrda-card rrda-link-card" href="#prices"><span class="rrda-badge">Prices</span><h4 class="mt-3">Retail Price Monitor</h4><p class="text-muted">Field price checks, competitor pricing, CPI-linked baskets and store audit dashboards.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140"><a class="rrda-card rrda-link-card" href="contact.php"><span class="rrda-badge">Custom</span><h4 class="mt-3">Decision Model or Dashboard</h4><p class="text-muted">Branch-location model, programme-site prioritisation, credit demand forecast or private client dashboard.</p></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rrda-section" id="sector-dashboard">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="rrda-kicker">Sector intelligence</div>
+            <h2 class="rrda-title mt-2 mb-3">Growth signals need interpretation before they become decisions.</h2>
+            <p class="rrda-lead">Rudder packages official statistics with field intelligence, online checks and client data to answer practical questions such as where to open, what to stock, which customers to target and what risk to monitor.</p>
+            <div>
+              <span class="rrda-chip">Healthcare demand index</span>
+              <span class="rrda-chip">Retail outlook</span>
+              <span class="rrda-chip">SACCO credit monitor</span>
+              <span class="rrda-chip">Import market brief</span>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-left">
-            <div class="sample-panel chart-box mb-4">
-              <canvas id="maternityChart"></canvas>
-            </div>
-            <div class="sample-panel">
-              <div class="section-kicker">Dataset fields</div>
-              <h3 class="mt-2">Full data available</h3>
-              <p class="text-muted">Facility name, location, service category, rating, review count, review themes, contact visibility, county, price notes, insurance notes and verification status.</p>
-              <a class="btn btn-outline-primary" href="contact.php">Request CSV or dashboard</a>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="rrda-dashboard">
+              <div class="rrda-dashboard-header">
+                <div>
+                  <div class="rrda-kicker">GDP comparison</div>
+                  <h3 class="rrda-dashboard-title">Annual and quarterly growth</h3>
+                </div>
+                <span class="rrda-badge">Indicator view</span>
+              </div>
+              <div class="rrda-chart-small"><canvas id="gdpChart"></canvas></div>
+              <p class="rrda-source mt-3 mb-0">Sources: <a href="https://www.knbs.or.ke/reports/2026-economic-survey/" target="_blank" rel="noopener">KNBS 2026 Economic Survey</a> and <a href="https://www.knbs.or.ke/reports/quarterly-gross-domestic-product-first-quarter-2026/" target="_blank" rel="noopener">KNBS Q1 2026 GDP release</a>.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5" id="leads">
+    <section class="rrda-section bg-white" id="prices">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-6" data-aos="fade-up">
-            <div class="sample-panel">
-              <div class="section-kicker">B2B leads</div>
-              <h2 class="mt-2">Potential lead directories</h2>
-              <p class="text-muted">These are examples of lead datasets RRDA can prepare and verify for businesses.</p>
+            <div class="rrda-dashboard">
+              <div class="rrda-dashboard-header">
+                <div>
+                  <div class="rrda-kicker">Retail price monitor</div>
+                  <h3 class="rrda-dashboard-title">Selected national average retail prices, Jun 2026</h3>
+                </div>
+              </div>
               <div class="table-responsive">
-                <table class="table table-sm">
-                  <thead><tr><th>Lead category</th><th>Example counties</th><th>Best buyer</th></tr></thead>
+                <table class="table rrda-table align-middle">
+                  <thead><tr><th>Commodity</th><th>Unit</th><th>Jun 2026</th><th>Annual change</th></tr></thead>
                   <tbody>
-                    <tr><td>Hotels and venues</td><td>Nairobi, Kisumu, Mombasa, Nakuru</td><td>Suppliers, booking platforms, event services</td></tr>
-                    <tr><td>Hospitals and clinics</td><td>Nairobi, Kiambu, Uasin Gishu, Kisumu</td><td>Health suppliers, software firms, NGOs</td></tr>
-                    <tr><td>Schools and colleges</td><td>National or county-specific</td><td>EdTech, suppliers, training providers</td></tr>
-                    <tr><td>SACCOs and lenders</td><td>Nairobi, Meru, Nyeri, Kisii, Nakuru</td><td>Fintech, loan software, training firms</td></tr>
-                    <tr><td>Chambers and associations</td><td>Nairobi, Eldoret, Kisumu, Mombasa</td><td>B2B outreach, partnerships</td></tr>
+                    <tr><td>Maize flour, loose</td><td>1 Kg</td><td>KES 83.43</td><td>11.72%</td></tr>
+                    <tr><td>Fortified maize flour</td><td>2 Kg</td><td>KES 178.27</td><td>-0.77%</td></tr>
+                    <tr><td>Wheat flour, white</td><td>2 Kg</td><td>KES 172.44</td><td>2.04%</td></tr>
+                    <tr><td>White bread</td><td>400 g</td><td>KES 66.91</td><td>0.59%</td></tr>
+                    <tr><td>Beef with bones</td><td>1 Kg</td><td>KES 760.75</td><td>10.23%</td></tr>
                   </tbody>
                 </table>
               </div>
+              <p class="rrda-source mb-0">Source: <a href="https://cpiexplorer.knbs.or.ke/" target="_blank" rel="noopener">KNBS CPI Explorer</a>.</p>
             </div>
           </div>
-          <div class="col-lg-6" id="county" data-aos="fade-up">
-            <div class="sample-panel">
-              <div class="section-kicker">County intelligence</div>
-              <h2 class="mt-2">County market profile</h2>
-              <p class="text-muted">County profiles combine RRDA field checks, desk research, local business mapping, phone verification and online presence review.</p>
-              <div class="table-responsive">
-                <table class="table table-sm">
-                  <thead><tr><th>County</th><th>Possible dataset</th><th>Commercial use</th></tr></thead>
-                  <tbody>
-                    <tr><td>Nairobi</td><td>Hotels, clinics, pharmacies, private schools, chambers</td><td>Lead generation and local research</td></tr>
-                    <tr><td>Kisumu</td><td>Hotels, health facilities, NGOs, SMEs</td><td>Regional expansion</td></tr>
-                    <tr><td>Uasin Gishu</td><td>Eldoret businesses, hospitals, schools, SACCOs</td><td>Western Kenya outreach</td></tr>
-                    <tr><td>Mombasa</td><td>Tourism, logistics, trade and hospitality contacts</td><td>Coastal market entry</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              <a class="btn btn-primary mt-3" href="contact.php">Request county profile</a>
-            </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
+            <div class="rrda-photo"><img src="img/redesign/retail-price-intelligence.png" alt="Retail price intelligence field check in Kenya"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5 bg-white" id="hospitality">
+    <section class="rrda-section" id="trade">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-8" data-aos="fade-up">
-            <div class="source-panel">
-              <div class="section-kicker">Available data pools</div>
-              <h2 class="mt-2">More datasets RRDA can publish and refresh</h2>
-              <p class="text-muted">The Data section can grow into a searchable library of county and sector datasets that visitors browse first, then request full access, custom dashboards or downloadable files.</p>
-              <div class="row g-3 mt-2">
-                <div class="col-md-6"><span class="pill">Nairobi maternity rankings</span></div>
-                <div class="col-md-6"><span class="pill">County hotel directories</span></div>
-                <div class="col-md-6"><span class="pill">Import/export product screens</span></div>
-                <div class="col-md-6"><span class="pill">B2B supplier leads</span></div>
-                <div class="col-md-6"><span class="pill">Retail price trackers</span></div>
-                <div class="col-md-6"><span class="pill">Clinics and pharmacy lists</span></div>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="rrda-photo"><img src="img/redesign/import-export-intelligence.png" alt="Import export intelligence review in Kenya"></div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="rrda-kicker">Trade and import intelligence</div>
+            <h2 class="rrda-title mt-2 mb-3">For importers, exporters, distributors and SMEs.</h2>
+            <p class="rrda-lead">Rudder can prepare product screens using HS codes, source markets, destination markets, competitor checks, local demand indicators and field validation.</p>
+            <div class="rrda-card mt-3">
+              <div class="row g-3">
+                <div class="col-sm-6"><h5>Inputs</h5><p class="text-muted mb-0">Trade releases, product lists, supplier markets, store checks and business directories.</p></div>
+                <div class="col-sm-6"><h5>Outputs</h5><p class="text-muted mb-0">Opportunity shortlist, price bands, competitor map, leads and recommended next action.</p></div>
               </div>
             </div>
+            <a class="btn btn-primary mt-4 px-4 py-3" href="contact.php">Request Trade Dataset</a>
           </div>
-          <div class="col-lg-4" data-aos="fade-left">
-            <div class="source-panel">
-              <h3>Need full data?</h3>
-              <p class="text-muted">Ask for a custom dataset, dashboard, directory or verified lead list for your sector and county.</p>
-              <a class="btn btn-primary w-100 py-3" href="contact.php">Request data quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="rrda-section bg-white" id="county">
+      <div class="container">
+        <div class="row mb-4 align-items-end">
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="rrda-kicker">County profiles</div>
+            <h2 class="rrda-title mt-2">County and local-market intelligence</h2>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
+            <p class="rrda-lead mb-0">County briefs can combine KNBS county abstracts, Gross County Product reports, business directories, site checks and sector-specific field research.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up"><div class="rrda-card"><h5>Nairobi</h5><p class="text-muted mb-0">Hotels, clinics, pharmacies, private schools, SACCOs, chambers, SMEs and suppliers.</p></div></div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="70"><div class="rrda-card"><h5>Kisumu</h5><p class="text-muted mb-0">Hospitality, lake-basin trade, NGOs, health facilities, education and regional SMEs.</p></div></div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="140"><div class="rrda-card"><h5>Uasin Gishu</h5><p class="text-muted mb-0">Eldoret business clusters, hospitals, schools, agriculture, logistics and SACCOs.</p></div></div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="210"><div class="rrda-card"><h5>Mombasa</h5><p class="text-muted mb-0">Port-linked trade, logistics, hospitality, suppliers, coastal SMEs and tourism services.</p></div></div>
+        </div>
+        <p class="rrda-source mt-4 mb-0">Useful official references: <a href="https://www.knbs.or.ke/county-statistical-abstracts/" target="_blank" rel="noopener">KNBS County Statistical Abstracts</a> and <a href="https://www.knbs.or.ke/gross-county-product/" target="_blank" rel="noopener">KNBS Gross County Product reports</a>.</p>
+      </div>
+    </section>
+
+    <section class="rrda-section" id="data-pools">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="rrda-kicker">Published data pools</div>
+            <h2 class="rrda-title mt-2">Rankings and directories visitors can explore</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="rrda-card rrda-link-card" href="best-hotels-in-nairobi.php"><span class="rrda-badge">Hospitality</span><h4 class="mt-3">Best Hotels in Nairobi</h4><p class="text-muted">Online reputation ranking for hospitality suppliers, platforms and business travellers.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="70"><a class="rrda-card rrda-link-card" href="best-maternity-hospitals-nairobi.php"><span class="rrda-badge">Health</span><h4 class="mt-3">Best Maternity Hospitals in Nairobi</h4><p class="text-muted">Maternity facility reputation ranking for market intelligence and shortlisting.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140"><a class="rrda-card rrda-link-card" href="best-private-hospitals-nairobi.php"><span class="rrda-badge">Health</span><h4 class="mt-3">Best Private Hospitals in Nairobi</h4><p class="text-muted">Private hospital ranking for suppliers, researchers and health-sector teams.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="rrda-card rrda-link-card" href="best-restaurants-in-nairobi.php"><span class="rrda-badge">Food service</span><h4 class="mt-3">Best Restaurants in Nairobi</h4><p class="text-muted">Restaurant visibility ranking for brands, suppliers and platforms.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="70"><a class="rrda-card rrda-link-card" href="best-schools-in-nairobi.php"><span class="rrda-badge">Education</span><h4 class="mt-3">Best Schools in Nairobi</h4><p class="text-muted">School visibility ranking for EdTech, parents, suppliers and training firms.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140"><a class="rrda-card rrda-link-card" href="best-saccos-in-kenya.php"><span class="rrda-badge">Finance</span><h4 class="mt-3">Best SACCOs in Kenya</h4><p class="text-muted">SACCO ranking for fintech, credit providers, trainers and software teams.</p></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rrda-section bg-white">
+      <div class="container">
+        <div class="rrda-cta p-5" data-aos="fade-up">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <div class="rrda-kicker">Need a custom dataset?</div>
+              <h2 class="text-white mt-2 mb-2">Ask Rudder to build the exact data product your decision needs.</h2>
+              <p class="mb-0">We can prepare a county brief, price monitor, ranked directory, dashboard, lead list, import/export screen or private data portal.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a class="btn btn-primary px-5 py-3" href="contact.php">Request Data Quote</a>
             </div>
           </div>
         </div>
@@ -420,27 +289,41 @@
   <?php include '_scripts.php'; ?>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
-    const priceLabels = ['Maize flour', 'Fortified maize', 'Beef', 'Milk', 'Cooking oil', 'Tomatoes'];
-    const priceData = [83.43, 178.27, 760.75, 73.19, 358.63, 117.87];
-    new Chart(document.getElementById('priceChart'), {
-      type: 'bar',
-      data: { labels: priceLabels, datasets: [{ label: 'KES, June 2026', data: priceData, backgroundColor: '#00b8d9' }] },
-      options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ display:false } }, scales:{ y:{ beginAtZero:true } } }
-    });
-    new Chart(document.getElementById('tradeChart'), {
-      type: 'doughnut',
-      data: { labels: ['Product demand', 'Supplier markets', 'Destination markets', 'Competitor checks'], datasets: [{ data: [30, 25, 25, 20], backgroundColor: ['#00b8d9', '#F3525A', '#0A2540', '#f6c85f'] }] },
-      options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:'bottom' } } }
-    });
-    new Chart(document.getElementById('maternityChart'), {
+    const chartFont = { family: 'Inter' };
+
+    new Chart(document.getElementById('sectorChart'), {
       type: 'bar',
       data: {
-        labels: ['M.P. Shah', 'Marie Stopes', 'Jacaranda', 'Pumwani', 'Patanisho', 'Kasarani', 'Nairobi West', 'Mater', 'Nairobi Hosp.', 'Aga Khan'],
-        datasets: [{ label: 'Online rating', data: [4.3, 4.2, 3.9, 3.8, 4.0, 3.7, 3.9, 4.1, 3.3, 2.7], backgroundColor: '#F3525A' }]
+        labels: ['Accommodation', 'Mining', 'Public admin', 'Construction', 'Financial', 'ICT', 'Transport', 'Wholesale', 'Agriculture'],
+        datasets: [{ label: '2025 growth rate', data: [15.6, 14.9, 8.3, 6.8, 6.5, 4.8, 3.7, 3.6, 3.1], backgroundColor: ['#f2b84b', '#1f9d67', '#00a9c7', '#00a9c7', '#00a9c7', '#00a9c7', '#607083', '#607083', '#607083'] }]
       },
-      options: { indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{ legend:{ display:false } }, scales:{ x:{ beginAtZero:true, max:5 } } }
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ctx.raw + '%' } } },
+        scales: { y: { beginAtZero: true, ticks: { callback: value => value + '%', font: chartFont } }, x: { ticks: { font: chartFont } } }
+      }
     });
-    AOS.init({ duration: 700, once: true, offset: 80 });
+
+    new Chart(document.getElementById('inflationChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Food & non-alcoholic beverages', 'Transport', 'Housing & utilities', 'Other CPI basket'],
+        datasets: [{ data: [8.6, 16.1, 3.4, 6.4], backgroundColor: ['#f3525a', '#f2b84b', '#00a9c7', '#d7e2eb'], borderWidth: 0 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { font: chartFont, boxWidth: 12 } } } }
+    });
+
+    new Chart(document.getElementById('gdpChart'), {
+      type: 'line',
+      data: {
+        labels: ['2024 annual', '2025 annual', 'Q1 2025', 'Q1 2026'],
+        datasets: [{ label: 'Real GDP growth', data: [4.7, 4.6, 4.9, 5.3], borderColor: '#00a9c7', backgroundColor: 'rgba(0,169,199,.12)', tension: .35, fill: true, pointRadius: 5, pointBackgroundColor: '#f3525a' }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { callback: value => value + '%', font: chartFont } }, x: { ticks: { font: chartFont } } } }
+    });
+
+    AOS.init({ duration: 650, once: true, offset: 80 });
   </script>
 </body>
 </html>
