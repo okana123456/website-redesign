@@ -29,12 +29,12 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research, Data and Business Insights Blog | RRDA Kenya</title>
-  <meta name="description" content="Practical RRDA articles on market research, data analytics, field research, import and export data, and business systems in Kenya.">
+  <title>Research, Data and Business Insights Blog | Rudder Research and Data Analytics LTD</title>
+  <meta name="description" content="Practical articles from Rudder Research and Data Analytics LTD on market research, data analytics, field research, import and export data, and business systems in Kenya.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/blog.php">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="RRDA Research, Data and Business Insights Blog">
+  <meta property="og:title" content="Rudder Research and Data Analytics LTD Research, Data and Business Insights Blog">
   <meta property="og:description" content="Practical articles for NGOs, SMEs and companies using research, data and field intelligence in Kenya.">
   <meta property="og:url" content="https://rudderdatanalytics.co.ke/blog.php">
   <?php if ($latest): ?><meta property="og:image" content="https://rudderdatanalytics.co.ke/<?= blog_e($latest['image']) ?>"><?php endif; ?>
@@ -88,12 +88,12 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
       <div class="container" data-aos="fade-up">
         <div class="row align-items-center g-5">
           <div class="col-lg-7">
-            <div class="blog-kicker text-info mb-3">RRDA Insights</div>
+            <div class="blog-kicker text-info mb-3">Rudder Research and Data Analytics LTD Insights</div>
             <h1>Practical research, data and business intelligence articles for Kenya.</h1>
             <p class="mt-4">We publish useful notes for NGOs, SMEs, research teams and companies that need better fieldwork, cleaner data and stronger business decisions.</p>
             <div class="hero-actions">
               <a class="btn btn-primary px-4 py-3" href="#latest-articles">View latest articles</a>
-              <a class="btn btn-light px-4 py-3" href="contact.php">Ask RRDA a question</a>
+              <a class="btn btn-light px-4 py-3" href="contact.php">Ask Rudder Research and Data Analytics LTD a question</a>
             </div>
           </div>
           <?php if ($latest): ?>
@@ -140,7 +140,7 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
                     <div class="blog-card-body">
                       <div class="blog-kicker"><?= blog_e($post['category']) ?></div>
                       <h3 class="h4 mt-2"><?= blog_e($post['title']) ?></h3>
-                      <p class="blog-meta mb-3"><?= date('F j, Y', strtotime($post['publish_date'])) ?> by RRDA</p>
+                      <p class="blog-meta mb-3"><?= date('F j, Y', strtotime($post['publish_date'])) ?> by Rudder Research and Data Analytics LTD</p>
                       <p class="text-muted"><?= blog_e($post['excerpt']) ?></p>
                       <span class="fw-bold text-primary">Read article <i class="bi bi-arrow-right-short"></i></span>
                     </div>

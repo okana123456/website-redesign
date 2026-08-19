@@ -1210,6 +1210,131 @@ foreach ($staffingSchedules as $schedule) {
     }
 }
 
+if (!function_exists('rrda_prepare_blog_posts')) {
+    function rrda_prepare_blog_posts(&$posts) {
+        $companyName = 'Rudder Research and Data Analytics LTD';
+        $imageGroups = [
+            'health' => [
+                ['img/redesign/clinic-management-consulting.png', 'Healthcare data and clinic management consultation in Kenya'],
+                ['img/redesign/monitoring-evaluation-field-review.png', 'Research professionals reviewing monitoring and evaluation findings'],
+                ['img/redesign/household-field-interview.png', 'Field researcher conducting a structured household interview in Kenya'],
+            ],
+            'education' => [
+                ['img/redesign/school-administration-system.png', 'School administrators reviewing student and operational records'],
+                ['img/redesign/survey-data-cleaning-team.png', 'Data specialists cleaning and reviewing survey records'],
+                ['img/redesign/field-enumerator-training.png', 'Research team participating in practical enumerator training'],
+            ],
+            'hospitality' => [
+                ['img/redesign/hospitality-field-audit.png', 'Hospitality field audit and service quality review in Kenya'],
+                ['img/redesign/location-verification-fieldwork.png', 'Researcher completing a location verification field visit'],
+                ['img/redesign/county-market-opportunity.png', 'Business team reviewing county market opportunities in Kenya'],
+            ],
+            'trade' => [
+                ['img/redesign/import-export-intelligence.png', 'Business professionals reviewing import and export intelligence'],
+                ['img/redesign/county-market-opportunity.png', 'Business team reviewing county market opportunities in Kenya'],
+                ['img/redesign/retail-price-intelligence.png', 'Researcher collecting retail price intelligence in Kenya'],
+            ],
+            'retail' => [
+                ['img/redesign/retail-price-intelligence.png', 'Researcher collecting retail price intelligence in Kenya'],
+                ['img/redesign/hospitality-field-audit.png', 'Field professional conducting a customer experience audit'],
+                ['img/redesign/location-verification-fieldwork.png', 'Researcher completing a business location verification visit'],
+            ],
+            'systems' => [
+                ['img/redesign/business-systems-dashboard.png', 'Professionals reviewing a business systems dashboard'],
+                ['img/redesign/sacco-decision-intelligence.png', 'SACCO team reviewing financial and operational intelligence'],
+                ['img/redesign/school-administration-system.png', 'Administrators working with a digital management system'],
+                ['img/redesign/clinic-management-consulting.png', 'Consultants reviewing a healthcare management system'],
+            ],
+            'data' => [
+                ['img/redesign/decision-intelligence-boardroom.png', 'Leadership team using decision intelligence in a boardroom'],
+                ['img/redesign/executive-dashboard-review.png', 'Executives reviewing a performance dashboard'],
+                ['img/redesign/survey-data-cleaning-team.png', 'Data specialists cleaning and reviewing survey records'],
+                ['img/redesign/decision-brief-handover.png', 'Consultant presenting a concise decision brief to a client'],
+            ],
+            'staffing' => [
+                ['img/redesign/field-enumerator-training.png', 'Field enumerators receiving practical research training'],
+                ['img/redesign/data-entry-clerks.png', 'Data entry clerks processing research records'],
+                ['img/redesign/phone-verification-team.png', 'Phone verification team supporting a research assignment'],
+                ['img/redesign/household-field-interview.png', 'Field research assistant conducting a household interview'],
+                ['img/redesign/monitoring-evaluation-field-review.png', 'Field supervisor reviewing monitoring and evaluation work'],
+            ],
+            'qualitative' => [
+                ['img/redesign/focus-group-discussion.png', 'Facilitator leading a professional focus group discussion'],
+                ['img/redesign/decision-brief-handover.png', 'Research consultant presenting qualitative findings'],
+                ['img/redesign/household-field-interview.png', 'Research assistant conducting an in-depth field interview'],
+            ],
+            'fieldwork' => [
+                ['img/redesign/agricultural-value-chain-research.png', 'Field researcher conducting agricultural value chain research'],
+                ['img/redesign/field-enumerator-training.png', 'Field enumerators preparing for a research assignment'],
+                ['img/redesign/household-field-interview.png', 'Field researcher conducting a structured household interview'],
+                ['img/redesign/location-verification-fieldwork.png', 'Researcher completing a location verification visit'],
+                ['img/redesign/monitoring-evaluation-field-review.png', 'Research professionals reviewing field monitoring findings'],
+            ],
+            'general' => [
+                ['img/redesign/decision-intelligence-boardroom.png', 'Leadership team reviewing evidence for a business decision'],
+                ['img/redesign/executive-dashboard-review.png', 'Executives reviewing research and performance findings'],
+                ['img/redesign/decision-brief-handover.png', 'Research consultant presenting a decision brief'],
+                ['img/redesign/county-market-opportunity.png', 'Business team discussing a Kenyan market opportunity'],
+            ],
+        ];
+        $groupCounters = array_fill_keys(array_keys($imageGroups), 0);
+
+        $replaceCompanyName = function (&$value) use (&$replaceCompanyName, $companyName) {
+            if (is_array($value)) {
+                foreach ($value as &$item) {
+                    $replaceCompanyName($item);
+                }
+                unset($item);
+            } elseif (is_string($value)) {
+                $value = str_replace('RRDA', $companyName, $value);
+            }
+        };
+
+        foreach ($posts as &$post) {
+            $searchText = strtolower(implode(' ', [
+                $post['slug'] ?? '',
+                $post['title'] ?? '',
+                $post['category'] ?? '',
+                implode(' ', $post['tags'] ?? []),
+            ]));
+
+            if (preg_match('/hospital|clinic|health|maternity|medical|patient/', $searchText)) {
+                $group = 'health';
+            } elseif (preg_match('/school|education|student|teacher/', $searchText)) {
+                $group = 'education';
+            } elseif (preg_match('/hotel|hospitality|tourism|restaurant/', $searchText)) {
+                $group = 'hospitality';
+            } elseif (preg_match('/import|export|trade|hs-code|buyer-market/', $searchText)) {
+                $group = 'trade';
+            } elseif (preg_match('/retail|price|store|mystery-shopping|customer-experience|brand-ambassador/', $searchText)) {
+                $group = 'retail';
+            } elseif (preg_match('/enumerator|research-assistant|data-entry|field-supervisor|temporary-research-staff|field-staff/', $searchText)) {
+                $group = 'staffing';
+            } elseif (preg_match('/focus-group|qualitative|transcription|interview-coding/', $searchText)) {
+                $group = 'qualitative';
+            } elseif (preg_match('/pos|loan|sacco|management-system|business-system|billing/', $searchText)) {
+                $group = 'systems';
+            } elseif (preg_match('/data|dashboard|analytics|excel|visualization|monitoring-and-evaluation/', $searchText)) {
+                $group = 'data';
+            } elseif (preg_match('/field|survey|ngo|location|agri|baseline|market-entry/', $searchText)) {
+                $group = 'fieldwork';
+            } else {
+                $group = 'general';
+            }
+
+            $images = $imageGroups[$group];
+            $image = $images[$groupCounters[$group] % count($images)];
+            $groupCounters[$group]++;
+            $post['image'] = $image[0];
+            $post['image_alt'] = $image[1];
+            $replaceCompanyName($post);
+        }
+        unset($post);
+    }
+}
+
+rrda_prepare_blog_posts($blogPosts);
+
 if (!function_exists('rrda_visible_blog_posts')) {
     function rrda_visible_blog_posts($posts) {
         $today = (new DateTime('now', new DateTimeZone('Africa/Nairobi')))->format('Y-m-d');

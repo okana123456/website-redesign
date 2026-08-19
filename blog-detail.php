@@ -13,8 +13,8 @@ $domain = 'https://rudderdatanalytics.co.ke';
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= $post ? detail_e($post['meta_title']) : 'Blog Post Not Found | RRDA' ?></title>
-  <meta name="description" content="<?= $post ? detail_e($post['meta_description']) : 'The requested RRDA blog post could not be found.' ?>">
+  <title><?= $post ? detail_e($post['meta_title']) : 'Blog Post Not Found | Rudder Research and Data Analytics LTD' ?></title>
+  <meta name="description" content="<?= $post ? detail_e($post['meta_description']) : 'The requested Rudder Research and Data Analytics LTD blog post could not be found.' ?>">
   <meta name="robots" content="<?= $post ? 'index, follow' : 'noindex, follow' ?>">
   <link rel="canonical" href="<?= $post ? detail_e($domain . '/blog-detail.php?post=' . $post['slug']) : detail_e($domain . '/blog.php') ?>">
   <?php if ($post): ?>
@@ -99,8 +99,8 @@ $domain = 'https://rudderdatanalytics.co.ke';
               </div>
               <div class="article-body" data-aos="fade-left">
                 <h3>Need help with this?</h3>
-                <p>Talk to RRDA about fieldwork, research, data analysis or business intelligence support in Kenya.</p>
-                <a class="btn btn-primary" href="contact.php">Contact RRDA</a>
+                <p>Talk to Rudder Research and Data Analytics LTD about fieldwork, research, data analysis or business intelligence support in Kenya.</p>
+                <a class="btn btn-primary" href="contact.php">Contact Rudder Research and Data Analytics LTD</a>
               </div>
             </div>
           </div>
