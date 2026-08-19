@@ -18,7 +18,7 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid bg-dark p-5">
+    <div class="container-fluid bg-dark p-5 contact-hero">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="display-4 text-white">Contact Us</h1>
@@ -32,7 +32,7 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid bg-secondary px-0">
+    <div class="container-fluid bg-secondary px-0 contact-section">
         <div class="row g-0">
             <div class="col-lg-6 py-6 px-5">
                 <h1 class="display-5 mb-4">Contact For Any Queries</h1>

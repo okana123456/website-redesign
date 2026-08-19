@@ -46,6 +46,7 @@
     .seo-link-card i { color:var(--primary); font-size:1.8rem; }
     .seo-link-card span { color:var(--primary); font-weight:700; }
   </style>
+  <link href="css/rrda-decision.css?v=20260819d" rel="stylesheet">
 </head>
 <body>
   <?php include '_topbar.php'?>

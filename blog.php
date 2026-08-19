@@ -73,6 +73,7 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
       .featured-post { margin-top:22px; }
     }
   </style>
+  <link href="css/rrda-decision.css?v=20260819d" rel="stylesheet">
 </head>
 <body>
   <?php include '_topbar.php'; ?>
