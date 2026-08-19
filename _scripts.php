@@ -56,7 +56,7 @@ document.querySelector(".back-to-top").addEventListener("click", function (e) {
         "ctaText":"Chat with us",
         "borderRadius":"25",
         "autoShow":false,
-        "phoneNumber":"254792719505"
+        "phoneNumber":"254708095461"
     }
     };
     s.onload = function() {

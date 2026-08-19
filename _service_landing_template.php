@@ -38,7 +38,7 @@ function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
       "@type": "Organization",
       "name": "Rudder Research and Data Analytics LTD",
       "url": "https://rudderdatanalytics.co.ke",
-      "telephone": "+254792719505",
+      "telephone": "+254708095461",
       "email": "admin@rudderdatanalytics.co.ke"
     },
     "areaServed": ["Kenya", "Uganda", "Tanzania", "Rwanda", "East Africa"],

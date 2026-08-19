@@ -10,7 +10,7 @@
                     <a class="text-body py-2 px-3 border-end" href="privacy.php"><small>Privacy</small></a>
                     <a class="text-body py-2 px-3 border-end" href="policy.php"><small>Policy</small></a>
                     <!-- Updated to match the subdomain used in your main navbar -->
-                    <a class="text-body py-2 ps-3" href="https://www.courses.rudderdatanalytics.co.ke/" target="_blank"><small>Courses/Training</small></a>
+                    <a class="text-body py-2 ps-3" href="courses-training.php"><small>Courses/Training</small></a>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
@@ -26,7 +26,7 @@
                         <p class="m-0">
                             <i class="fa fa-phone-alt me-2"></i>
                             <!-- Made the phone number clickable -->
-                            <a href="tel:+254792719505" class="text-white">+254792719505</a>
+                            <a href="tel:+254708095461" class="text-white">+254708095461</a>
                         </p>
                     </div>
                     <!-- Date/Time Section -->

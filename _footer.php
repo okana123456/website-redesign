@@ -75,7 +75,7 @@ document.getElementById("subscribeForm").addEventListener("submit", function(e) 
             <h3 class="text-white mb-4" style="font-size:1.15rem;">Get In Touch</h3>
             <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Kenyatta Ave, Nairobi</p>
             <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>admin@rudderdatanalytics.co.ke</p>
-            <p class="mb-4"><i class="bi bi-telephone text-primary me-2"></i>+254792719505</p>
+            <p class="mb-4"><i class="bi bi-telephone text-primary me-2"></i>+254708095461</p>
             <div class="d-flex">
                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#" aria-label="Rudder Research and Data Analytics LTD on X"><i class="fab fa-twitter fw-normal"></i></a>
                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#" aria-label="Rudder Research and Data Analytics LTD on Facebook"><i class="fab fa-facebook-f fw-normal"></i></a>

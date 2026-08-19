@@ -38,7 +38,7 @@
       "name": "Rudder Research and Data Analytics LTD",
       "url": "https://rudderdatanalytics.co.ke",
       "email": "admin@rudderdatanalytics.co.ke",
-      "telephone": "+254792719505",
+      "telephone": "+254708095461",
       "address": {"@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE"}
     }
   }

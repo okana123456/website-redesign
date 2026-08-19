@@ -35,7 +35,7 @@
     "url": "https://rudderdatanalytics.co.ke",
     "logo": "https://rudderdatanalytics.co.ke/img/rudderlogo.png",
     "email": "admin@rudderdatanalytics.co.ke",
-    "telephone": "+254792719505",
+    "telephone": "+254708095461",
     "address": {"@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE"},
     "areaServed": ["Kenya", "East Africa"],
     "description": "Research, analytics, dashboards and business systems company in Kenya."
