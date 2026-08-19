@@ -16,8 +16,8 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/rrda-decision.css?v=20260819e" rel="stylesheet">
-  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link href="css/rrda-decision.css?v=20260819f" rel="stylesheet">
+  <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
 </head>
 <body class="rrda-page">
   <?php include '_topbar.php'; ?>

@@ -65,6 +65,25 @@ h6,
     background: #f6f8fb;
 }
 
+.rrda-top-contact {
+    background: linear-gradient(100deg, var(--rrda-indigo) 0%, var(--rrda-cyan) 58%, var(--rrda-green) 100%) !important;
+    box-shadow: 0 8px 22px rgba(16, 36, 58, .10);
+}
+
+.rrda-top-contact.top-shape::before {
+    background: var(--rrda-yellow) !important;
+}
+
+.rrda-top-contact a,
+.rrda-top-contact p,
+.rrda-top-contact i {
+    color: #fff !important;
+}
+
+.rrda-top-contact .border-end {
+    border-color: rgba(255, 255, 255, .32) !important;
+}
+
 .rrda-shell {
     position: relative;
     overflow: hidden;

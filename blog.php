@@ -48,7 +48,7 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
   <style>
     body { background:#f7f9fc; color:#0A2540; }
     .blog-hero { background:#0A2540; color:#fff; padding:56px 0 44px; }
@@ -73,7 +73,7 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
       .featured-post { margin-top:22px; }
     }
   </style>
-  <link href="css/rrda-decision.css?v=20260819d" rel="stylesheet">
+  <link href="css/rrda-decision.css?v=20260819f" rel="stylesheet">
 </head>
 <body>
   <?php include '_topbar.php'; ?>

@@ -44,7 +44,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/rrda-decision.css?v=20260819d" rel="stylesheet">
+    <link href="css/rrda-decision.css?v=20260819f" rel="stylesheet">
     
     <!-- CSS Libraries -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
@@ -65,12 +65,13 @@
     }
     </script>
 <!-- Standard ICO Favicon -->
-<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
+<link rel="shortcut icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
 
 <!-- PNG Icons for Browsers -->
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
 
 <!-- Apple Touch Icon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
