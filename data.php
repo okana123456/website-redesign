@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kenya Economic Insights, Data Dashboards and Market Intelligence | RRDA</title>
-  <meta name="description" content="Explore Rudder's Kenya economic intelligence dashboard, market snapshots, county profiles, sector briefs, import and export intelligence, price monitoring and data products.">
+  <meta name="description" content="Explore Rudder Research and Data Analytics LTD's Kenya economic intelligence dashboard, market snapshots, county profiles, sector briefs, import and export intelligence, price monitoring and data products.">
   <meta name="keywords" content="Kenya economic intelligence, Kenya data dashboard, county market profiles Kenya, import export intelligence Kenya, market data Kenya, price intelligence Kenya">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/data.php">
@@ -51,7 +51,7 @@
       <div class="container" data-aos="fade-up">
         <div class="rrda-kicker">Economic Insights</div>
         <h1>Kenya data transformed into decision-ready intelligence.</h1>
-        <p>Rudder turns field evidence, public datasets, online reputation signals and operational records into county profiles, sector briefs, dashboards, rankings, data products and custom decision models.</p>
+        <p>Rudder Research and Data Analytics LTD turns field evidence, public datasets, online reputation signals and operational records into county profiles, sector briefs, dashboards, rankings, data products and custom decision models.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
           <a href="#economic-dashboard" class="btn btn-primary px-4 py-3">View Dashboard</a>
           <a href="contact.php" class="btn btn-light px-4 py-3">Request Custom Data</a>
@@ -78,7 +78,7 @@
             <h2 class="rrda-title mt-2">Kenya economic intelligence snapshot</h2>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
-            <p class="rrda-lead mb-0">These are small public-data snapshots. Rudder's commercial value is the cleaning, interpretation, modelling, visualisation and client-specific application.</p>
+            <p class="rrda-lead mb-0">These are small public-data snapshots. Rudder Research and Data Analytics LTD's commercial value is the cleaning, interpretation, modelling, visualisation and client-specific application.</p>
           </div>
         </div>
 
@@ -93,7 +93,7 @@
                 <span class="rrda-badge">2026 view</span>
               </div>
               <div class="rrda-chart"><canvas id="sectorChart"></canvas></div>
-              <p class="rrda-source mt-3 mb-0">Rudder analysis view. Full client dashboards can include county, sector and client-specific overlays.</p>
+              <p class="rrda-source mt-3 mb-0">Rudder Research and Data Analytics LTD analysis view. Full client dashboards can include county, sector and client-specific overlays.</p>
             </div>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
@@ -106,12 +106,12 @@
                 <span class="rrda-badge">June 2026</span>
               </div>
               <div class="rrda-chart-small"><canvas id="inflationChart"></canvas></div>
-              <p class="rrda-source mt-3 mb-0">Rudder analysis view. Custom dashboards can track baskets, outlets, counties and competitor prices.</p>
+              <p class="rrda-source mt-3 mb-0">Rudder Research and Data Analytics LTD analysis view. Custom dashboards can track baskets, outlets, counties and competitor prices.</p>
             </div>
             <div class="rrda-card">
               <div class="rrda-kicker">Decision note</div>
               <h4 class="mt-2">Why this matters</h4>
-              <p class="text-muted mb-0">A distributor, SACCO, NGO or school cannot act on GDP alone. Rudder converts these signals into county opportunity, price pressure, demand forecasts and operational dashboards.</p>
+              <p class="text-muted mb-0">A distributor, SACCO, NGO or school cannot act on GDP alone. Rudder Research and Data Analytics LTD converts these signals into county opportunity, price pressure, demand forecasts and operational dashboards.</p>
             </div>
           </div>
         </div>
@@ -123,14 +123,14 @@
         <div class="row align-items-end mb-4">
           <div class="col-lg-7" data-aos="fade-up">
             <div class="rrda-kicker">Data products</div>
-            <h2 class="rrda-title mt-2">What organisations can buy from Rudder</h2>
+            <h2 class="rrda-title mt-2">What organisations can buy from Rudder Research and Data Analytics LTD</h2>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
             <p class="rrda-lead mb-0">Each product can be delivered as a PDF brief, dashboard, cleaned spreadsheet, lead list, private portal or consulting engagement.</p>
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="rrda-card rrda-link-card" href="#county"><span class="rrda-badge">County</span><h4 class="mt-3">County Market Opportunity Brief</h4><p class="text-muted">Population profile, household indicators, competitors, facilities, access points and Rudder Opportunity Score.</p></a></div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="rrda-card rrda-link-card" href="#county"><span class="rrda-badge">County</span><h4 class="mt-3">County Market Opportunity Brief</h4><p class="text-muted">Population profile, household indicators, competitors, facilities, access points and company opportunity score.</p></a></div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="70"><a class="rrda-card rrda-link-card" href="#sector-dashboard"><span class="rrda-badge">Sector</span><h4 class="mt-3">Sector Intelligence Report</h4><p class="text-muted">Education, healthcare, SACCO, agriculture, import trade, construction, retail and hospitality outlooks.</p></a></div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140"><a class="rrda-card rrda-link-card" href="#data-pools"><span class="rrda-badge">Rankings</span><h4 class="mt-3">Ranked Data Pools</h4><p class="text-muted">Hospitals, hotels, schools, restaurants, SACCOs, agencies, suppliers and county business directories.</p></a></div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up"><a class="rrda-card rrda-link-card" href="#trade"><span class="rrda-badge">Trade</span><h4 class="mt-3">Import and Export Intelligence</h4><p class="text-muted">HS-code opportunity screens, importer targeting, supplier market checks and product demand watchlists.</p></a></div>
@@ -146,7 +146,7 @@
           <div class="col-lg-5" data-aos="fade-right">
             <div class="rrda-kicker">Sector intelligence</div>
             <h2 class="rrda-title mt-2 mb-3">Growth signals need interpretation before they become decisions.</h2>
-            <p class="rrda-lead">Rudder packages public data, field intelligence, online checks and client data to answer practical questions such as where to open, what to stock, which customers to target and what risk to monitor.</p>
+            <p class="rrda-lead">Rudder Research and Data Analytics LTD packages public data, field intelligence, online checks and client data to answer practical questions such as where to open, what to stock, which customers to target and what risk to monitor.</p>
             <div>
               <span class="rrda-chip">Healthcare demand index</span>
               <span class="rrda-chip">Retail outlook</span>
@@ -164,7 +164,7 @@
                 <span class="rrda-badge">Indicator view</span>
               </div>
               <div class="rrda-chart-small"><canvas id="gdpChart"></canvas></div>
-              <p class="rrda-source mt-3 mb-0">Rudder analysis view. The same layout can be customised for sectors, counties and client records.</p>
+              <p class="rrda-source mt-3 mb-0">Rudder Research and Data Analytics LTD analysis view. The same layout can be customised for sectors, counties and client records.</p>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@
                   </tbody>
                 </table>
               </div>
-              <p class="rrda-source mb-0">Rudder price intelligence view. Client versions can include outlet, county and competitor-level tracking.</p>
+              <p class="rrda-source mb-0">Rudder Research and Data Analytics LTD price intelligence view. Client versions can include outlet, county and competitor-level tracking.</p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
@@ -213,7 +213,7 @@
           <div class="col-lg-6" data-aos="fade-left">
             <div class="rrda-kicker">Trade and import intelligence</div>
             <h2 class="rrda-title mt-2 mb-3">For importers, exporters, distributors and SMEs.</h2>
-            <p class="rrda-lead">Rudder can prepare product screens using HS codes, source markets, destination markets, competitor checks, local demand indicators and field validation.</p>
+            <p class="rrda-lead">Rudder Research and Data Analytics LTD can prepare product screens using HS codes, source markets, destination markets, competitor checks, local demand indicators and field validation.</p>
             <div class="rrda-card mt-3">
               <div class="row g-3">
                 <div class="col-sm-6"><h5>Inputs</h5><p class="text-muted mb-0">Trade releases, product lists, supplier markets, store checks and business directories.</p></div>
@@ -272,7 +272,7 @@
           <div class="row align-items-center g-4">
             <div class="col-lg-8">
               <div class="rrda-kicker">Need a custom dataset?</div>
-              <h2 class="text-white mt-2 mb-2">Ask Rudder to build the exact data product your decision needs.</h2>
+              <h2 class="text-white mt-2 mb-2">Ask Rudder Research and Data Analytics LTD to build the exact data product your decision needs.</h2>
               <p class="mb-0">We can prepare a county brief, price monitor, ranked directory, dashboard, lead list, import/export screen or private data portal.</p>
             </div>
             <div class="col-lg-4 text-lg-end">

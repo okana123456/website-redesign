@@ -15,7 +15,7 @@ $systemsActive = in_array($activePage, ['systems'], true);
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-3 px-lg-4 py-3 py-lg-0<?= $navFixed ? ' fixed-top' : '' ?>">
     <a href="index.php" class="navbar-brand p-0">
-        <h1 class="text-uppercase text-primary">Rudder Research & Data Analytics</h1>
+        <h1 class="text-uppercase text-primary">Rudder Research and Data Analytics LTD</h1>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

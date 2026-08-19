@@ -1,7 +1,7 @@
 <div class="container-fluid p-5" style="background:#f3525a;">
     <div class="row g-4 align-items-center justify-content-center">
         <div class="col-lg-5 text-center text-lg-start">
-            <h2 class="text-white mb-2" style="font-size:1.35rem;">Get Rudder insights in your inbox</h2>
+            <h2 class="text-white mb-2" style="font-size:1.35rem;">Get Rudder Research and Data Analytics LTD insights in your inbox</h2>
             <p class="mb-0 text-white-50">Research notes, data product updates and practical market intelligence for Kenya.</p>
         </div>
         <div class="col-lg-5">
@@ -62,7 +62,7 @@ document.getElementById("subscribeForm").addEventListener("submit", function(e) 
             </div>
         </div>
         <div class="col-lg-3 col-md-6">
-            <h3 class="text-white mb-4" style="font-size:1.15rem;">RudderTrack Systems</h3>
+            <h3 class="text-white mb-4" style="font-size:1.15rem;">Business Systems</h3>
             <div class="d-flex flex-column">
                 <a class="text-secondary mb-2" href="pos-system-kenya.php"><i class="bi bi-arrow-right text-primary me-2"></i>POS & Inventory</a>
                 <a class="text-secondary mb-2" href="loan-management-system-kenya.php"><i class="bi bi-arrow-right text-primary me-2"></i>Loan Management</a>
@@ -77,10 +77,10 @@ document.getElementById("subscribeForm").addEventListener("submit", function(e) 
             <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>admin@rudderdatanalytics.co.ke</p>
             <p class="mb-4"><i class="bi bi-telephone text-primary me-2"></i>+254792719505</p>
             <div class="d-flex">
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#" aria-label="Rudder on X"><i class="fab fa-twitter fw-normal"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#" aria-label="Rudder on Facebook"><i class="fab fa-facebook-f fw-normal"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#" aria-label="Rudder on LinkedIn"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#" aria-label="Rudder on Instagram"><i class="fab fa-instagram fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#" aria-label="Rudder Research and Data Analytics LTD on X"><i class="fab fa-twitter fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#" aria-label="Rudder Research and Data Analytics LTD on Facebook"><i class="fab fa-facebook-f fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#" aria-label="Rudder Research and Data Analytics LTD on LinkedIn"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#" aria-label="Rudder Research and Data Analytics LTD on Instagram"><i class="fab fa-instagram fw-normal"></i></a>
             </div>
         </div>
     </div>

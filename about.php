@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Rudder | Decision Intelligence, Research and Business Technology Firm in Kenya</title>
-  <meta name="description" content="Rudder Research and Data Analytics is an independent decision-intelligence and business-technology firm in Kenya, combining field research, market data, analytics and RudderTrack systems.">
-  <meta name="keywords" content="about Rudder Research, decision intelligence firm Kenya, market research company Kenya, economic intelligence Kenya, data analytics company Kenya, RudderTrack systems">
+  <title>About Rudder Research and Data Analytics LTD | Decision Intelligence, Research and Business Technology Firm in Kenya</title>
+  <meta name="description" content="Rudder Research and Data Analytics LTD is an independent decision-intelligence and business-technology firm in Kenya, combining field research, market data, analytics and business systems.">
+  <meta name="keywords" content="about Rudder Research and Data Analytics LTD, decision intelligence firm Kenya, market research company Kenya, economic intelligence Kenya, data analytics company Kenya, business systems">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/about.php">
   <meta property="og:type" content="website">
   <meta property="og:title" content="About Rudder Research and Data Analytics LTD">
-  <meta property="og:description" content="From market evidence to operational action: research, economic intelligence, analytics and RudderTrack business systems.">
+  <meta property="og:description" content="From market evidence to operational action: research, economic intelligence, analytics and business systems.">
   <meta property="og:url" content="https://rudderdatanalytics.co.ke/about.php">
   <meta property="og:image" content="https://rudderdatanalytics.co.ke/img/redesign/field-enumerator-training.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -55,9 +55,9 @@
   <main>
     <section class="rrda-shell rrda-slim-hero" style="--hero-image: url('/img/redesign/field-enumerator-training.png');">
       <div class="container" data-aos="fade-up">
-        <div class="rrda-kicker">About Rudder</div>
+        <div class="rrda-kicker">About Rudder Research and Data Analytics LTD</div>
         <h1>Independent decision intelligence for organisations that need evidence they can act on.</h1>
-        <p>Rudder Research and Data Analytics helps organisations understand their market and run their operations better through research, economic intelligence, dashboards and practical business systems.</p>
+        <p>Rudder Research and Data Analytics LTD helps organisations understand their market and run their operations better through research, economic intelligence, dashboards and practical business systems.</p>
       </div>
     </section>
 
@@ -74,11 +74,11 @@
               <span class="rrda-chip">Field data collection</span>
               <span class="rrda-chip">Economic intelligence</span>
               <span class="rrda-chip">Dashboards</span>
-              <span class="rrda-chip">RudderTrack systems</span>
+              <span class="rrda-chip">Business systems</span>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left">
-            <div class="rrda-photo"><img src="img/redesign/survey-data-cleaning-team.png" alt="Rudder analysts cleaning and reviewing research data"></div>
+            <div class="rrda-photo"><img src="img/redesign/survey-data-cleaning-team.png" alt="Rudder Research and Data Analytics LTD analysts cleaning and reviewing research data"></div>
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@
           <div class="col-lg-6" data-aos="fade-up">
             <div class="rrda-card">
               <span class="rrda-badge">Division 1</span>
-              <h3 class="mt-3">Rudder Research & Data Analytics</h3>
+              <h3 class="mt-3">Rudder Research and Data Analytics LTD</h3>
               <p class="text-muted">Research, fieldwork, economic intelligence, data cleaning, statistical analysis, dashboards, county profiles, sector reports and decision briefs.</p>
               <div>
                 <span class="rrda-chip">FGDs</span>
@@ -113,7 +113,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
             <div class="rrda-card">
               <span class="rrda-badge">Division 2</span>
-              <h3 class="mt-3">RudderTrack Systems</h3>
+              <h3 class="mt-3">Business Systems</h3>
               <p class="text-muted">Operational software and automation for organisations that need to capture, track and report what happens every day.</p>
               <div>
                 <span class="rrda-chip">POS</span>
@@ -142,7 +142,7 @@
               <div class="rrda-step"><span class="rrda-step-number">1</span><div><h5>Define the decision</h5><p class="text-muted mb-0">We start with the business, programme or operational decision the client needs to make.</p></div></div>
               <div class="rrda-step"><span class="rrda-step-number">2</span><div><h5>Collect and combine evidence</h5><p class="text-muted mb-0">We bring together field data, public statistics, desk research, client records and verification checks.</p></div></div>
               <div class="rrda-step"><span class="rrda-step-number">3</span><div><h5>Clean, model and interpret</h5><p class="text-muted mb-0">We standardise data, build indicators, prepare charts and explain what changed and why it matters.</p></div></div>
-              <div class="rrda-step"><span class="rrda-step-number">4</span><div><h5>Deliver action</h5><p class="text-muted mb-0">The final output can be a decision brief, dashboard, dataset, model, report or RudderTrack system.</p></div></div>
+              <div class="rrda-step"><span class="rrda-step-number">4</span><div><h5>Deliver action</h5><p class="text-muted mb-0">The final output can be a decision brief, dashboard, dataset, model, report or business system.</p></div></div>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@
       <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
           <div class="rrda-kicker">Client fit</div>
-          <h2 class="rrda-title mt-2">Who Rudder supports</h2>
+          <h2 class="rrda-title mt-2">Who Rudder Research and Data Analytics LTD supports</h2>
         </div>
         <div class="row g-4">
           <div class="col-lg-3 col-md-6" data-aos="fade-up"><div class="rrda-card"><h5>SACCOs & lenders</h5><p class="text-muted mb-0">Loan portfolio dashboards, demand forecasts, branch opportunity and borrower reporting.</p></div></div>
@@ -169,12 +169,12 @@
         <div class="rrda-cta p-5" data-aos="fade-up">
           <div class="row align-items-center g-4">
             <div class="col-lg-8">
-              <div class="rrda-kicker">Work with Rudder</div>
+              <div class="rrda-kicker">Work with Rudder Research and Data Analytics LTD</div>
               <h2 class="text-white mt-2 mb-2">Bring us the question. We will help structure the evidence.</h2>
               <p class="mb-0">A good engagement starts with a clear decision, not a pile of raw files.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
-              <a href="contact.php" class="btn btn-primary px-5 py-3">Talk to Rudder</a>
+              <a href="contact.php" class="btn btn-primary px-5 py-3">Talk to Rudder Research and Data Analytics LTD</a>
             </div>
           </div>
         </div>

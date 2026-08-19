@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rudder Research and Data Analytics LTD | Research, Data and Business Systems in Kenya</title>
-  <meta name="description" content="Rudder Research and Data Analytics helps organisations in Kenya collect field evidence, analyse market data, build dashboards and deploy practical business systems.">
+  <meta name="description" content="Rudder Research and Data Analytics LTD helps organisations in Kenya collect field evidence, analyse market data, build dashboards and deploy practical business systems.">
   <meta name="keywords" content="market research Kenya, data analytics Kenya, data dashboard Kenya, field data collection Kenya, business systems Kenya, POS system Kenya, loan management system Kenya">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/">
@@ -57,7 +57,7 @@
           <div class="col-lg-8">
             <div class="rrda-kicker">Research - Data - Systems</div>
             <h1>Evidence-led decisions for organisations working in Kenya.</h1>
-            <p>Rudder helps companies, NGOs, SACCOs, schools, hospitals and SMEs collect better evidence, understand market signals and run stronger operational systems.</p>
+            <p>Rudder Research and Data Analytics LTD helps companies, NGOs, SACCOs, schools, hospitals and SMEs collect better evidence, understand market signals and run stronger operational systems.</p>
             <div class="d-flex flex-wrap gap-3 mt-4">
               <a href="contact.php" class="btn btn-primary px-4 py-3">Request a Decision Brief</a>
               <a href="data.php" class="btn btn-light px-4 py-3">Explore Data Products</a>
@@ -65,11 +65,11 @@
           </div>
           <div class="col-lg-4">
             <div class="rrda-hero-panel">
-              <div class="rrda-kicker">Rudder focus</div>
+              <div class="rrda-kicker">Company focus</div>
               <ul class="list-unstyled mb-0 mt-3">
                 <li><i class="bi bi-check2-circle"></i> Market research and fieldwork</li>
                 <li><i class="bi bi-check2-circle"></i> Data dashboards and intelligence</li>
-                <li><i class="bi bi-check2-circle"></i> RudderTrack business systems</li>
+                <li><i class="bi bi-check2-circle"></i> Business systems and dashboards</li>
                 <li><i class="bi bi-check2-circle"></i> County and sector data products</li>
               </ul>
             </div>
@@ -123,10 +123,10 @@
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140">
             <a class="rrda-image-card" href="services.php#ruddertrack">
-              <img src="img/redesign/business-systems-dashboard.png" alt="RudderTrack business systems dashboard">
+              <img src="img/redesign/business-systems-dashboard.png" alt="Business systems dashboard by Rudder Research and Data Analytics LTD">
               <div class="rrda-image-card-body">
                 <span class="rrda-badge">Systems</span>
-                <h3>RudderTrack Systems</h3>
+                <h3>Business Systems</h3>
                 <p>POS, loan, school, hospital, clinic, payroll, booking and custom business systems.</p>
               </div>
             </a>
@@ -146,7 +146,7 @@
               <div class="rrda-dashboard-header">
                 <div>
                   <div class="rrda-kicker">Dashboard preview</div>
-                  <h2 class="rrda-dashboard-title">Market signals Rudder can track for clients</h2>
+                  <h2 class="rrda-dashboard-title">Market signals Rudder Research and Data Analytics LTD can track for clients</h2>
                 </div>
                 <a href="data.php" class="btn btn-sm btn-outline-primary">Open Data</a>
               </div>
