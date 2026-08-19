@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kenya Economic Insights, Data Dashboards and Market Intelligence | RRDA</title>
-  <meta name="description" content="Explore Rudder's Kenya economic intelligence dashboard, KNBS-sourced market snapshots, county profiles, sector briefs, import and export intelligence, price monitoring and data products.">
-  <meta name="keywords" content="Kenya economic intelligence, KNBS data analysis, Kenya data dashboard, county market profiles Kenya, import export intelligence Kenya, market data Kenya, price intelligence Kenya">
+  <meta name="description" content="Explore Rudder's Kenya economic intelligence dashboard, market snapshots, county profiles, sector briefs, import and export intelligence, price monitoring and data products.">
+  <meta name="keywords" content="Kenya economic intelligence, Kenya data dashboard, county market profiles Kenya, import export intelligence Kenya, market data Kenya, price intelligence Kenya">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/data.php">
   <meta property="og:title" content="Kenya Economic Insights and Data Dashboards | RRDA">
@@ -51,7 +51,7 @@
       <div class="container" data-aos="fade-up">
         <div class="rrda-kicker">Economic Insights</div>
         <h1>Kenya data transformed into decision-ready intelligence.</h1>
-        <p>Rudder turns official statistics, field evidence, online reputation signals and operational records into county profiles, sector briefs, dashboards, rankings, data products and custom decision models.</p>
+        <p>Rudder turns field evidence, public datasets, online reputation signals and operational records into county profiles, sector briefs, dashboards, rankings, data products and custom decision models.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
           <a href="#economic-dashboard" class="btn btn-primary px-4 py-3">View Dashboard</a>
           <a href="contact.php" class="btn btn-light px-4 py-3">Request Custom Data</a>
@@ -90,10 +90,10 @@
                   <div class="rrda-kicker">Sector momentum</div>
                   <h3 class="rrda-dashboard-title">Selected 2025 sector growth rates</h3>
                 </div>
-                <span class="rrda-badge">KNBS 2026</span>
+                <span class="rrda-badge">2026 view</span>
               </div>
               <div class="rrda-chart"><canvas id="sectorChart"></canvas></div>
-              <p class="rrda-source mt-3 mb-0">Source: <a href="https://www.knbs.or.ke/reports/2026-economic-survey/" target="_blank" rel="noopener">KNBS 2026 Economic Survey</a>.</p>
+              <p class="rrda-source mt-3 mb-0">Rudder analysis view. Full client dashboards can include county, sector and client-specific overlays.</p>
             </div>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
@@ -106,7 +106,7 @@
                 <span class="rrda-badge">June 2026</span>
               </div>
               <div class="rrda-chart-small"><canvas id="inflationChart"></canvas></div>
-              <p class="rrda-source mt-3 mb-0">Source: <a href="https://www.knbs.or.ke/reports/consumer-price-indices-and-inflation-rates-june-2026/" target="_blank" rel="noopener">KNBS June 2026 CPI release</a> and <a href="https://cpiexplorer.knbs.or.ke/" target="_blank" rel="noopener">KNBS CPI Explorer</a>.</p>
+              <p class="rrda-source mt-3 mb-0">Rudder analysis view. Custom dashboards can track baskets, outlets, counties and competitor prices.</p>
             </div>
             <div class="rrda-card">
               <div class="rrda-kicker">Decision note</div>
@@ -146,7 +146,7 @@
           <div class="col-lg-5" data-aos="fade-right">
             <div class="rrda-kicker">Sector intelligence</div>
             <h2 class="rrda-title mt-2 mb-3">Growth signals need interpretation before they become decisions.</h2>
-            <p class="rrda-lead">Rudder packages official statistics with field intelligence, online checks and client data to answer practical questions such as where to open, what to stock, which customers to target and what risk to monitor.</p>
+            <p class="rrda-lead">Rudder packages public data, field intelligence, online checks and client data to answer practical questions such as where to open, what to stock, which customers to target and what risk to monitor.</p>
             <div>
               <span class="rrda-chip">Healthcare demand index</span>
               <span class="rrda-chip">Retail outlook</span>
@@ -164,7 +164,7 @@
                 <span class="rrda-badge">Indicator view</span>
               </div>
               <div class="rrda-chart-small"><canvas id="gdpChart"></canvas></div>
-              <p class="rrda-source mt-3 mb-0">Sources: <a href="https://www.knbs.or.ke/reports/2026-economic-survey/" target="_blank" rel="noopener">KNBS 2026 Economic Survey</a> and <a href="https://www.knbs.or.ke/reports/quarterly-gross-domestic-product-first-quarter-2026/" target="_blank" rel="noopener">KNBS Q1 2026 GDP release</a>.</p>
+              <p class="rrda-source mt-3 mb-0">Rudder analysis view. The same layout can be customised for sectors, counties and client records.</p>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@
                   </tbody>
                 </table>
               </div>
-              <p class="rrda-source mb-0">Source: <a href="https://cpiexplorer.knbs.or.ke/" target="_blank" rel="noopener">KNBS CPI Explorer</a>.</p>
+              <p class="rrda-source mb-0">Rudder price intelligence view. Client versions can include outlet, county and competitor-level tracking.</p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="80">
@@ -234,7 +234,7 @@
             <h2 class="rrda-title mt-2">County and local-market intelligence</h2>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
-            <p class="rrda-lead mb-0">County briefs can combine KNBS county abstracts, Gross County Product reports, business directories, site checks and sector-specific field research.</p>
+            <p class="rrda-lead mb-0">County briefs can combine public datasets, local business directories, site checks, online visibility reviews and sector-specific field research.</p>
           </div>
         </div>
         <div class="row g-4">
@@ -243,7 +243,7 @@
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="140"><div class="rrda-card"><h5>Uasin Gishu</h5><p class="text-muted mb-0">Eldoret business clusters, hospitals, schools, agriculture, logistics and SACCOs.</p></div></div>
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="210"><div class="rrda-card"><h5>Mombasa</h5><p class="text-muted mb-0">Port-linked trade, logistics, hospitality, suppliers, coastal SMEs and tourism services.</p></div></div>
         </div>
-        <p class="rrda-source mt-4 mb-0">Useful official references: <a href="https://www.knbs.or.ke/county-statistical-abstracts/" target="_blank" rel="noopener">KNBS County Statistical Abstracts</a> and <a href="https://www.knbs.or.ke/gross-county-product/" target="_blank" rel="noopener">KNBS Gross County Product reports</a>.</p>
+        <p class="rrda-source mt-4 mb-0">Client briefs can be delivered as PDF reports, spreadsheets, dashboards or verified lead directories.</p>
       </div>
     </section>
 

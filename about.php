@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Rudder | Decision Intelligence, Research and Business Technology Firm in Kenya</title>
-  <meta name="description" content="Rudder Research and Data Analytics is an independent decision-intelligence and business-technology firm in Kenya, combining field research, official statistics, analytics and RudderTrack systems.">
+  <meta name="description" content="Rudder Research and Data Analytics is an independent decision-intelligence and business-technology firm in Kenya, combining field research, market data, analytics and RudderTrack systems.">
   <meta name="keywords" content="about Rudder Research, decision intelligence firm Kenya, market research company Kenya, economic intelligence Kenya, data analytics company Kenya, RudderTrack systems">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/about.php">
@@ -67,7 +67,7 @@
           <div class="col-lg-6" data-aos="fade-right">
             <div class="rrda-kicker">Who we are</div>
             <h2 class="rrda-title mt-2 mb-4">A research and technology firm built around practical decisions.</h2>
-            <p class="rrda-lead">We sit between the world of field evidence, official statistics and day-to-day business operations. That is where most decisions fail: the data exists, but it has not been cleaned, interpreted or turned into a useful workflow.</p>
+            <p class="rrda-lead">We sit between the world of field evidence, market data and day-to-day business operations. That is where most decisions fail: the data exists, but it has not been cleaned, interpreted or turned into a useful workflow.</p>
             <p class="text-muted">Our work is to make evidence usable. We design studies, collect data, clean records, build dashboards, interpret trends and configure systems that help teams act with confidence.</p>
             <div class="d-flex flex-wrap mt-3">
               <span class="rrda-chip">Market research</span>
