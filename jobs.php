@@ -61,7 +61,7 @@ $careerSessionVerified = $careerAttempt
       .assessment-fact:nth-child(-n+2) { border-bottom:1px solid #dce5ec; }
     }
   </style>
-    <link href="css/rrda-decision.css?v=20260819g" rel="stylesheet">
+    <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
 </head>
 <body>
   <?php include '_topbar.php'; ?>

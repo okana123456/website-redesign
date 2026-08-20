@@ -68,7 +68,7 @@ $questions = $attempt['questions'] ?? [];
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/rrda-decision.css?v=20260820a" rel="stylesheet">
+  <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
   <style>
     body { background:#eef3f7; color:#0A2540; min-height:100vh; }

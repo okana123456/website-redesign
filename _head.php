@@ -44,7 +44,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/rrda-decision.css?v=20260819g" rel="stylesheet">
+    <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
     
     <!-- CSS Libraries -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
