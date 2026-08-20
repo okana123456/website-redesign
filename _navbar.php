@@ -56,7 +56,7 @@ $systemsActive = in_array($activePage, ['systems'], true);
                 </div>
             </div>
             <a href="blog.php" class="nav-item nav-link<?= rrda_nav_active('blog', $activePage) ?>">Blog</a>
-            <a href="jobs.php" class="nav-item nav-link<?= rrda_nav_active('jobs', $activePage) ?>">Jobs</a>
+            <a href="jobs.php" class="nav-item nav-link<?= rrda_nav_active('jobs', $activePage) ?>">Careers</a>
             <a href="contact.php" class="nav-item nav-link<?= rrda_nav_active('contact', $activePage) ?>">Contact</a>
         </div>
     </div>

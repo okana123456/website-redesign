@@ -43,7 +43,7 @@
               <h2 class="mt-4">Research and client data</h2>
               <p class="text-muted">Client datasets, research instruments, field records, dashboards and operational files are treated as confidential project information and used only for the agreed assignment.</p>
               <h2 class="mt-4">Job applications</h2>
-              <p class="text-muted">CVs and application details are used for recruitment review, shortlisting and assignment matching. Applicants should submit accurate information and avoid sharing unnecessary sensitive data.</p>
+              <p class="text-muted">CVs, application details, verified email addresses, assessment scores, attempt dates and basic assessment-integrity records are used for recruitment review, shortlisting, assignment matching and enforcement of the 30-day assessment retry period. Recruitment information is kept only for as long as reasonably necessary for these purposes. Applicants should submit accurate information and avoid sharing unnecessary sensitive data.</p>
               <h2 class="mt-4">Contact</h2>
               <p class="text-muted mb-0">For privacy questions, email admin@rudderdatanalytics.co.ke or call +254708095461.</p>
             </div>

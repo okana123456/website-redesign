@@ -2,9 +2,12 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+require_once '_career_assessment.php';
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
+
+career_boot_session();
 
 $configPath = __DIR__ . '/mail-config.php';
 $mailConfig = file_exists($configPath) ? require $configPath : [
@@ -103,10 +106,17 @@ $role = clean_job_value($_POST['role']);
 $availability = clean_job_value($_POST['availability']);
 $experience = clean_job_value($_POST['experience']);
 $portfolio = clean_job_value($_POST['portfolio'] ?? '');
+$assessmentToken = (string) ($_POST['assessment_token'] ?? '');
 
 if (!$email) {
     redirect_job_status('email');
 }
+
+$careerAttempt = career_load_attempt($email);
+if (!career_application_access($careerAttempt, $email, $assessmentToken)) {
+    redirect_job_status('assessment_required');
+}
+$role = $careerAttempt['role'];
 
 check_job_rate_limit($email);
 
@@ -125,7 +135,7 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = (int) $mailConfig['port'];
 
-    $mail->setFrom($mailConfig['username'], 'RRDA Jobs');
+    $mail->setFrom($mailConfig['username'], 'Rudder Research and Data Analytics LTD Careers');
     $mail->addReplyTo($email, $name);
     $mail->addAddress($mailConfig['to_email'], $mailConfig['to_name']);
     if (!empty($mailConfig['cc_email'])) {
@@ -136,9 +146,9 @@ try {
     $mail->addAttachment($fileTmp, $safeFileName);
 
     $mail->isHTML(true);
-    $mail->Subject = 'New Job Application: ' . $role . ' - ' . $name;
+    $mail->Subject = 'New Careers Application: ' . $role . ' - ' . $name;
     $mail->Body = "
-        <h2>New Job Application from RRDA Website</h2>
+        <h2>New Careers Application from Rudder Research and Data Analytics LTD Website</h2>
         <p><strong>Name:</strong> " . htmlspecialchars($name) . "</p>
         <p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>
         <p><strong>Phone:</strong> " . htmlspecialchars($phone) . "</p>
@@ -147,13 +157,16 @@ try {
         <p><strong>Availability:</strong> " . htmlspecialchars($availability) . "</p>
         <p><strong>Portfolio:</strong> " . htmlspecialchars($portfolio ?: 'Not provided') . "</p>
         <p><strong>Experience Summary:</strong><br>" . nl2br(htmlspecialchars($experience)) . "</p>
+        <p><strong>Assessment Score:</strong> " . (int) ($careerAttempt['score'] ?? 0) . "%</p>
+        <p><strong>Assessment window changes:</strong> " . (int) ($careerAttempt['focus_changes'] ?? 0) . "</p>
         <p><strong>CV:</strong> Attached</p>
     ";
 
-    $mail->AltBody = "New Job Application\nName: $name\nEmail: $email\nPhone: $phone\nCounty: $county\nRole: $role\nAvailability: $availability\nPortfolio: $portfolio\nExperience:\n$experience\nCV attached.";
+    $mail->AltBody = "New Careers Application\nName: $name\nEmail: $email\nPhone: $phone\nCounty: $county\nRole: $role\nAssessment score: " . (int) ($careerAttempt['score'] ?? 0) . "%\nAssessment window changes: " . (int) ($careerAttempt['focus_changes'] ?? 0) . "\nAvailability: $availability\nPortfolio: $portfolio\nExperience:\n$experience\nCV attached.";
 
     $mail->send();
     mark_job_rate_limit($email);
+    career_mark_application_submitted($careerAttempt);
     redirect_job_status('success');
 } catch (Exception $e) {
     redirect_job_status('mail');
