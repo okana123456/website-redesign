@@ -18,6 +18,7 @@
   <link href="css/style.css" rel="stylesheet">
     <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
+  <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
 </head>
 <body class="rrda-page">
   <?php include '_topbar.php'; ?>

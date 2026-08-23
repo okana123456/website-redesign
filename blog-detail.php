@@ -48,6 +48,7 @@ $domain = 'https://rudderdatanalytics.co.ke';
     .related-card { display:block; background:#fff; border:1px solid #e3e8ef; border-radius:8px; padding:20px; color:#0A2540; text-decoration:none; }
     .related-card:hover { border-color:var(--primary); color:#0A2540; }
   </style>
+  <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
 </head>
 <body>
   <?php include '_topbar.php'; ?>

@@ -64,6 +64,7 @@ $ratings = array_column($ranking['rows'], 'rating');
     .pool-card:hover { transform:translateY(-4px); border-color:var(--primary); color:#0A2540; }
     .pill { display:inline-flex; padding:8px 12px; border-radius:999px; background:#eef5f9; color:#243b55; font-weight:700; font-size:.84rem; margin:4px 6px 4px 0; }
   </style>
+  <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
 </head>
 <body>
   <?php include '_topbar.php'; ?>

@@ -1,4 +1,5 @@
 mail-config.php
+meta-pixel-config.php
 api/config.php
 subscribers.txt
 *.log

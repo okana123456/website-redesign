@@ -82,3 +82,4 @@
 
 <!-- Web Manifest -->
 <link rel="manifest" href="/img/site.webmanifest"> 
+<?php include_once __DIR__ . '/_meta_pixel.php'; ?>

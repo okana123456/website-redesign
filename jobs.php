@@ -62,6 +62,7 @@ $careerSessionVerified = $careerAttempt
     }
   </style>
     <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
+  <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
 </head>
 <body>
   <?php include '_topbar.php'; ?>

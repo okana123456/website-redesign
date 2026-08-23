@@ -83,6 +83,7 @@ function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
       .photo-panel img { min-height:300px; }
     }
   </style>
+  <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
 </head>
 <body>
   <?php include '_topbar.php'; ?>

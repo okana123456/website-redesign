@@ -111,6 +111,7 @@ $faqSchema = [
       .content-panel { padding: 26px; }
     }
   </style>
+  <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
 </head>
 <body>
   <?php include '_topbar.php'; ?>

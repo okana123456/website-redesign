@@ -28,6 +28,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
 </head>
 
 <div>

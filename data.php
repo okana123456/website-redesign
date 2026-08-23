@@ -26,6 +26,7 @@
     <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
+  <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
 
   <script type="application/ld+json">
   {

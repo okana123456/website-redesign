@@ -70,6 +70,7 @@ $questions = $attempt['questions'] ?? [];
   <link href="css/style.css" rel="stylesheet">
   <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
+  <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
   <style>
     body { background:#eef3f7; color:#0A2540; min-height:100vh; }
     .assessment-header { background:#0A2540; color:#fff; border-bottom:5px solid #00b8d9; }

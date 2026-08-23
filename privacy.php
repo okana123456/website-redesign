@@ -18,6 +18,7 @@
   <link href="css/style.css" rel="stylesheet">
     <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
+  <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
 </head>
 <body class="rrda-page">
   <?php include '_topbar.php'; ?>
@@ -42,6 +43,8 @@
               <p class="text-muted">Information is used to respond to enquiries, prepare quotations, review job applications, deliver research assignments, provide dashboard or system support and improve client communication.</p>
               <h2 class="mt-4">Research and client data</h2>
               <p class="text-muted">Client datasets, research instruments, field records, dashboards and operational files are treated as confidential project information and used only for the agreed assignment.</p>
+              <h2 class="mt-4">Website analytics and advertising pixels</h2>
+              <p class="text-muted">We may use website analytics and advertising tools, including Meta Pixel, to understand visitor activity, measure advert performance, improve campaigns and show more relevant information to people who interact with our website. These tools may collect technical information such as page visits, clicks, browser details and device identifiers according to the provider's own policies.</p>
               <h2 class="mt-4">Job applications</h2>
               <p class="text-muted">CVs, application details, verified email addresses, assessment scores, attempt dates and basic assessment-integrity records are used for recruitment review, shortlisting, assignment matching and enforcement of the 30-day assessment retry period. Recruitment information is kept only for as long as reasonably necessary for these purposes. Applicants should submit accurate information and avoid sharing unnecessary sensitive data.</p>
               <h2 class="mt-4">Contact</h2>

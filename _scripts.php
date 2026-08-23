@@ -6,6 +6,7 @@
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+<script src="js/rrda-meta-pixel.js?v=20260823a"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 <script>
