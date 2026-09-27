@@ -1,6 +1,6 @@
 <?php
 include '_blog_posts.php';
-$posts = rrda_visible_blog_posts($blogPosts);
+$posts = rrda_indexable_blog_posts($blogPosts);
 $selectedCategory = $_GET['category'] ?? '';
 $selectedTopic = $_GET['topic'] ?? '';
 if ($selectedCategory !== '') {
@@ -14,7 +14,13 @@ if ($selectedTopic !== '') {
     }));
 }
 $latest = $posts[0] ?? null;
-$allVisiblePosts = rrda_visible_blog_posts($blogPosts);
+$listingPosts = $latest ? array_slice($posts, 1) : $posts;
+$page = max(1, (int) ($_GET['page'] ?? 1));
+$perPage = 12;
+$totalPages = max(1, (int) ceil(count($listingPosts) / $perPage));
+$page = min($page, $totalPages);
+$posts = array_slice($listingPosts, ($page - 1) * $perPage, $perPage);
+$allVisiblePosts = rrda_indexable_blog_posts($blogPosts);
 $categories = array_values(array_unique(array_map(function ($post) { return $post['category']; }, $allVisiblePosts)));
 $tags = [];
 foreach ($allVisiblePosts as $post) {
@@ -23,6 +29,15 @@ foreach ($allVisiblePosts as $post) {
     }
 }
 function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
+function blog_page_url($page, $category, $topic) {
+    $params = [];
+    if ($category !== '') { $params['category'] = $category; }
+    if ($topic !== '') { $params['topic'] = $topic; }
+    if ($page > 1) { $params['page'] = $page; }
+    return 'blog.php' . ($params ? '?' . http_build_query($params) : '') . '#latest-articles';
+}
+$isFiltered = $selectedCategory !== '' || $selectedTopic !== '';
+$canonicalUrl = 'https://rudderdatanalytics.co.ke/blog.php' . (!$isFiltered && $page > 1 ? '?page=' . $page : '');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,8 +46,10 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research, Data and Business Insights Blog | Rudder Research and Data Analytics LTD</title>
   <meta name="description" content="Practical articles from Rudder Research and Data Analytics LTD on market research, data analytics, field research, import and export data, and business systems in Kenya.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://rudderdatanalytics.co.ke/blog.php">
+  <meta name="robots" content="<?= $isFiltered ? 'noindex, follow' : 'index, follow' ?>, max-image-preview:large">
+  <link rel="canonical" href="<?= blog_e($canonicalUrl) ?>">
+  <?php if (!$isFiltered && $page > 1): ?><link rel="prev" href="https://rudderdatanalytics.co.ke/blog.php<?= $page > 2 ? '?page=' . ($page - 1) : '' ?>"><?php endif; ?>
+  <?php if (!$isFiltered && $page < $totalPages): ?><link rel="next" href="https://rudderdatanalytics.co.ke/blog.php?page=<?= $page + 1 ?>"><?php endif; ?>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rudder Research and Data Analytics LTD Research, Data and Business Insights Blog">
   <meta property="og:description" content="Practical articles for NGOs, SMEs and companies using research, data and field intelligence in Kenya.">
@@ -100,7 +117,7 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
           <?php if ($latest): ?>
           <div class="col-lg-5">
             <a class="featured-post" href="blog-detail.php?post=<?= blog_e($latest['slug']) ?>">
-              <img src="<?= blog_e($latest['image']) ?>" alt="<?= blog_e($latest['image_alt']) ?>">
+              <img src="<?= blog_e($latest['image']) ?>" alt="<?= blog_e($latest['image_alt']) ?>" width="1280" height="720" fetchpriority="high">
               <div class="featured-post-body">
                 <div class="blog-kicker"><?= blog_e($latest['category']) ?></div>
                 <h2 class="h4 mt-2"><?= blog_e($latest['title']) ?></h2>
@@ -119,7 +136,8 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
         <div class="row mb-4">
           <div class="col-lg-8">
             <div class="blog-kicker">Latest articles</div>
-            <h2 class="mt-2">Recent Posts</h2>
+            <h2 class="mt-2"><?= $selectedCategory !== '' ? blog_e($selectedCategory) : ($selectedTopic !== '' ? blog_e($selectedTopic) : 'Recent Posts') ?></h2>
+            <?php if ($totalPages > 1): ?><p class="blog-meta mb-0">Page <?= $page ?> of <?= $totalPages ?></p><?php endif; ?>
           </div>
         </div>
         <div class="row g-5">
@@ -137,7 +155,7 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
               <?php foreach ($posts as $post): ?>
                 <div class="col-md-6" data-aos="fade-up">
                   <a class="blog-card" href="blog-detail.php?post=<?= blog_e($post['slug']) ?>">
-                    <img src="<?= blog_e($post['image']) ?>" alt="<?= blog_e($post['image_alt']) ?>">
+                    <img src="<?= blog_e($post['image']) ?>" alt="<?= blog_e($post['image_alt']) ?>" width="1280" height="720" loading="lazy" decoding="async">
                     <div class="blog-card-body">
                       <div class="blog-kicker"><?= blog_e($post['category']) ?></div>
                       <h3 class="h4 mt-2"><?= blog_e($post['title']) ?></h3>
@@ -149,6 +167,17 @@ function blog_e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); 
                 </div>
               <?php endforeach; ?>
             </div>
+            <?php if ($totalPages > 1): ?>
+              <nav class="mt-5 d-flex justify-content-between align-items-center" aria-label="Blog pagination">
+                <?php if ($page > 1): ?>
+                  <a class="btn btn-outline-primary" href="<?= blog_e(blog_page_url($page - 1, $selectedCategory, $selectedTopic)) ?>"><i class="bi bi-arrow-left"></i> Newer articles</a>
+                <?php else: ?><span></span><?php endif; ?>
+                <span class="blog-meta">Page <?= $page ?> of <?= $totalPages ?></span>
+                <?php if ($page < $totalPages): ?>
+                  <a class="btn btn-outline-primary" href="<?= blog_e(blog_page_url($page + 1, $selectedCategory, $selectedTopic)) ?>">Older articles <i class="bi bi-arrow-right"></i></a>
+                <?php endif; ?>
+              </nav>
+            <?php endif; ?>
           </div>
 
           <div class="col-lg-4">

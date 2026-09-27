@@ -56,7 +56,7 @@ $blogPosts = [
         'image' => 'img/blog/import-export-data-kenya-smes.png',
         'image_alt' => 'Kenyan business team reviewing import and export documents with a laptop',
         'excerpt' => 'Import and export data can help SMEs choose products, compare markets, understand seasonal demand and avoid decisions based only on guesswork.',
-        'meta_title' => 'Import and Export Data in Kenya for SMEs | RRDA',
+        'meta_title' => 'Import and Export Data in Kenya for SMEs',
         'meta_description' => 'Learn how Kenyan SMEs can use import and export data to study demand, suppliers, markets, product categories and trade opportunities.',
         'tags' => ['Import data', 'Export data', 'SMEs', 'Kenya trade'],
         'content' => [
@@ -1056,6 +1056,7 @@ foreach ($scheduledBlogIdeas as $idea) {
         'title' => $idea['title'],
         'category' => $idea['category'],
         'status' => 'scheduled',
+        'indexable' => false,
         'publish_date' => $idea['publish_date'],
         'author' => 'Rudder Research and Data Analytics LTD',
         'image' => $idea['image'],
@@ -1186,6 +1187,7 @@ foreach ($staffingSchedules as $schedule) {
             'title' => $title,
             'category' => $track['category'],
             'status' => 'scheduled',
+            'indexable' => false,
             'publish_date' => $schedule['date'],
             'author' => 'Rudder Research and Data Analytics LTD',
             'image' => $track['image'],
@@ -1209,6 +1211,9 @@ foreach ($staffingSchedules as $schedule) {
         ];
     }
 }
+
+require __DIR__ . '/_mystery_shopping_posts.php';
+$blogPosts = array_merge($blogPosts, $mysteryShoppingPosts);
 
 if (!function_exists('rrda_prepare_blog_posts')) {
     function rrda_prepare_blog_posts(&$posts) {
@@ -1322,11 +1327,13 @@ if (!function_exists('rrda_prepare_blog_posts')) {
                 $group = 'general';
             }
 
-            $images = $imageGroups[$group];
-            $image = $images[$groupCounters[$group] % count($images)];
-            $groupCounters[$group]++;
-            $post['image'] = $image[0];
-            $post['image_alt'] = $image[1];
+            if (empty($post['preserve_image'])) {
+                $images = $imageGroups[$group];
+                $image = $images[$groupCounters[$group] % count($images)];
+                $groupCounters[$group]++;
+                $post['image'] = $image[0];
+                $post['image_alt'] = $image[1];
+            }
             $replaceCompanyName($post);
         }
         unset($post);
@@ -1352,6 +1359,14 @@ if (!function_exists('rrda_visible_blog_posts')) {
             return strcmp($b['publish_date'], $a['publish_date']);
         });
         return $visiblePosts;
+    }
+}
+
+if (!function_exists('rrda_indexable_blog_posts')) {
+    function rrda_indexable_blog_posts($posts) {
+        return array_values(array_filter(rrda_visible_blog_posts($posts), function ($post) {
+            return ($post['indexable'] ?? true) !== false;
+        }));
     }
 }
 

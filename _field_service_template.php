@@ -24,7 +24,7 @@ $faqSchema = [
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= e($page['meta_title']) ?></title>
   <meta name="description" content="<?= e($page['meta_description']) ?>">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="<?= e($domain . '/' . $currentPage) ?>">
   <meta property="og:type" content="website">
   <meta property="og:title" content="<?= e($page['title']) ?>">

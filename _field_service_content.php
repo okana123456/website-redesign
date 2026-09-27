@@ -3,10 +3,10 @@ $fieldServices = [
   'mystery-shopping-store-audits' => [
     'category' => 'Market Research',
     'title' => 'Mystery Shopping & Store Audits in Kenya',
-    'meta_title' => 'Mystery Shopping and Store Audits in Kenya | Nairobi Retail Research',
-    'meta_description' => 'Rudder Research provides mystery shopping and store audits in Kenya, helping brands check service quality, merchandising, pricing, staff conduct and customer experience.',
+    'meta_title' => 'Mystery Shopping Company in Kenya | Store Audits',
+    'meta_description' => 'Rudder Research and Data Analytics LTD provides mystery shopping and store audits in Kenya for service quality, merchandising and customer experience.',
     'image' => 'img/services/field-mystery-shopping.png',
-    'intro' => 'Rudder Research runs mystery shopping and store audits for brands, retailers, distributors and service teams that need to see what is happening at branch level. Our work gives you practical evidence from real outlets, not assumptions from the office.',
+    'intro' => 'Rudder Research and Data Analytics LTD runs mystery shopping and store audits for brands, retailers, distributors and service teams that need to see what is happening at branch level. Our work gives you practical evidence from real outlets, not assumptions from the office.',
     'what_title' => 'A field check of how customers experience your outlet',
     'what' => [
       'Mystery shopping is a structured visit where a trained shopper behaves like an ordinary customer and records what they observe. The shopper may ask questions, check product availability, compare prices, buy an item, review staff conduct or document how a branch handles a normal customer request. Store audits are slightly different. They focus more on shelves, stock, display, signage, competitor presence and outlet conditions.',
@@ -43,6 +43,7 @@ $fieldServices = [
     'related' => [
       ['title' => 'Market Research', 'url' => 'market-research-company-kenya.php', 'text' => 'Use broader market studies to understand customers and competitors.'],
       ['title' => 'Retail Competitor Price Intelligence', 'url' => 'retail-competitor-price-intelligence-kenya.php', 'text' => 'Track competitor pricing and shelf activity across outlets.'],
+      ['title' => 'Mystery Shopping Insights', 'url' => 'blog.php?category=Mystery+Shopping#latest-articles', 'text' => 'Read practical sector guides, scorecards, scenarios and reporting advice.'],
       ['title' => 'Data Analytics', 'url' => 'data-analytics-company-kenya.php', 'text' => 'Turn audit results into dashboards and branch scorecards.']
     ],
     'cta_title' => 'Need independent checks of your outlets?',

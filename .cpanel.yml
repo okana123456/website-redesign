@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/rudderdatanalyti/public_html/
-    - /bin/cp -R api css img js lib phpmailer scss $DEPLOYPATH
-    - /bin/cp *.php *.xml *.json $DEPLOYPATH
+    - /bin/cp -R api blog css img js lib phpmailer scss $DEPLOYPATH
+    - /bin/cp *.php *.xml *.json robots.txt $DEPLOYPATH

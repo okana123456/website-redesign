@@ -22,3 +22,9 @@ The `.cpanel.yml` file copies the top-level website files to:
 `/home/rudderdatanalyti/public_html/`
 
 Review that path in cPanel before pressing **Deploy HEAD Commit**.
+
+## Mystery shopping editorial calendar
+
+The file `_mystery_shopping_posts.php` contains 30 sector-specific articles scheduled daily from 27 September to 26 October 2026. The blog only exposes posts whose Nairobi publish date has arrived.
+
+The 15 optimized WebP covers are stored in `img/blog/mystery-shopping`. Blog pages include pagination, article structured data, breadcrumb structured data, related reading and image sitemap entries. Older mass-generated location variants remain reachable but are marked `noindex` and excluded from the blog sitemap.
