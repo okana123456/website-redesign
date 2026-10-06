@@ -341,6 +341,69 @@ $mysteryShoppingTypes = [
     'reporting' => ['title' => 'How to Turn %s Mystery Shopping Results into Action', 'meta' => '%s Mystery Shopping Reports', 'excerpt' => 'A practical method for validating, analysing and acting on mystery shopping findings from %s.']
 ];
 
+$mysteryShoppingTitles = [
+    'supermarkets' => [
+        'guide' => 'What Kenyan Supermarkets Learn When Mystery Shoppers Walk the Aisles',
+        'checklist' => 'Supermarket Audits Need a Checklist Built Around the Real Shopping Journey'
+    ],
+    'bank-branches' => [
+        'guide' => 'The Customer Journey Kenyan Banks Rarely See for Themselves',
+        'checklist' => 'How to Check Whether Every Bank Branch Delivers the Same Promise'
+    ],
+    'hotels' => [
+        'guide' => 'What a Mystery Guest Notices Before a Hotel Manager Does',
+        'checklist' => 'A Practical Way to Assess the Complete Hotel Guest Experience'
+    ],
+    'restaurants' => [
+        'guide' => 'The Restaurant Service Details Diners Remember Long After the Meal',
+        'kpis' => 'The Restaurant Service Measures That Matter More Than a Single Rating'
+    ],
+    'pharmacies' => [
+        'guide' => 'Why Pharmacy Service Quality Depends on More Than Product Availability',
+        'kpis' => 'Which Pharmacy Experience Measures Deserve Management Attention'
+    ],
+    'telecom-retail' => [
+        'guide' => 'What Telecom Shops Reveal When Staff Think No One Is Auditing',
+        'kpis' => 'The Telecom Retail Measures That Show Whether Advice Is Helping Customers'
+    ],
+    'car-dealerships' => [
+        'guide' => 'The Sales Moments That Quietly Cost Car Dealerships Customers',
+        'failures' => 'Why Promising Car Dealership Leads Disappear Before the Follow Up'
+    ],
+    'private-clinics' => [
+        'guide' => 'What Patients Experience Before They Ever Meet a Clinician',
+        'failures' => 'The Hidden Front Desk Problems That Weaken Private Clinic Trust'
+    ],
+    'petrol-stations' => [
+        'guide' => 'The Forecourt Details That Shape Trust at Kenyan Petrol Stations',
+        'failures' => 'Where Petrol Station Service Breaks Down During an Ordinary Visit'
+    ],
+    'ecommerce-delivery' => [
+        'guide' => 'What Happens After an Online Customer Clicks Buy',
+        'scenario' => 'How to Test an Online Delivery Journey Without Making It Feel Artificial'
+    ],
+    'call-centres' => [
+        'guide' => 'The Call Centre Habits That Decide Whether Customers Stay',
+        'scenario' => 'A Mystery Calling Scenario That Reveals Whether Support Teams Truly Listen'
+    ],
+    'saccos' => [
+        'guide' => 'What SACCO Members Notice When They Walk Into a Branch',
+        'scenario' => 'How to Assess SACCO Service Fairly Without Asking Shoppers to Cross the Line'
+    ],
+    'electronics-stores' => [
+        'guide' => 'How Electronics Stores Win Trust Before the Customer Buys',
+        'reporting' => 'How Electronics Retailers Can Turn Shopper Observations Into Better Sales'
+    ],
+    'fashion-retail' => [
+        'guide' => 'The Small Service Moments That Influence Fashion Store Sales',
+        'reporting' => 'What Fashion Retailers Should Do With Mystery Shopping Findings'
+    ],
+    'multi-branch-services' => [
+        'guide' => 'Why the Same Brand Feels Different From One Branch to Another',
+        'reporting' => 'How Multi Branch Businesses Can Turn Uneven Service Into Consistent Standards'
+    ]
+];
+
 $mysteryShoppingPosts = [];
 $mysteryLaunchDate = new DateTimeImmutable('2026-09-27', new DateTimeZone('Africa/Nairobi'));
 $mysterySequence = 0;
@@ -358,9 +421,13 @@ foreach ($mysteryShoppingTypes as $typeKey => $type) {
             continue;
         }
         $displayLabel = ucwords($sector['short']);
-        $title = sprintf($type['title'], $displayLabel);
+        $legacyTitle = sprintf($type['title'], $displayLabel);
+        $title = isset($mysteryShoppingTitles[$sector['key']][$typeKey])
+            ? $mysteryShoppingTitles[$sector['key']][$typeKey]
+            : $legacyTitle;
         $publishDate = $mysteryLaunchDate->modify('+' . $mysterySequence . ' days')->format('Y-m-d');
-        $slug = rrda_ms_slugify($title);
+        // Keep published URLs stable while giving every article a distinct editorial headline.
+        $slug = rrda_ms_slugify($legacyTitle);
         $guideSlug = rrda_ms_slugify(sprintf($mysteryShoppingTypes['guide']['title'], $displayLabel));
 
         $relatedArticles = [
@@ -384,7 +451,7 @@ foreach ($mysteryShoppingTypes as $typeKey => $type) {
             'image_alt' => $sector['image_alt'],
             'preserve_image' => true,
             'excerpt' => sprintf($type['excerpt'], $sector['label']),
-            'meta_title' => sprintf($type['meta'], $displayLabel) . ' | Kenya',
+            'meta_title' => $title . ' | RRDA',
             'meta_description' => substr(sprintf($type['excerpt'], $sector['label']), 0, 157),
             'tags' => ['Mystery shopping', 'Customer experience', 'Service audits', 'Kenya', ucwords($sector['label'])],
             'content' => rrda_build_mystery_shopping_content($sector, $typeKey),
