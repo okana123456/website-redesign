@@ -23,7 +23,7 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-    <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
+    <link href="css/rrda-decision.css?v=20261006a" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico?v=20260819f" type="image/x-icon">
   <?php include_once __DIR__ . '/_meta_pixel.php'; ?>
@@ -194,6 +194,88 @@
               <div class="rrda-image-card-body"><h4>Field Talent</h4><p>Enumerators, research assistants and data clerks.</p></div>
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rrda-section rrda-clients-section" id="clients-partners">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="rrda-kicker">Clients and partners</div>
+            <h2 class="rrda-title mt-2 mb-0">Selected organisations we have worked with across Africa</h2>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="80">
+            <p class="rrda-lead mb-0">Our experience includes regional assignments and collaborations in East, West and North Africa.</p>
+          </div>
+        </div>
+
+        <div class="rrda-client-grid" aria-label="Selected clients and regional engagements">
+          <article class="rrda-client-card" data-aos="fade-up">
+            <div class="rrda-client-card-top">
+              <span class="rrda-client-mark" aria-hidden="true">K</span>
+              <span class="rrda-client-code">KE</span>
+            </div>
+            <div>
+              <h3>Kerry Limited</h3>
+              <p>Kenya engagement</p>
+            </div>
+          </article>
+          <article class="rrda-client-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="rrda-client-card-top">
+              <span class="rrda-client-mark" aria-hidden="true">K</span>
+              <span class="rrda-client-code">TZ</span>
+            </div>
+            <div>
+              <h3>Kerry Limited</h3>
+              <p>Tanzania engagement</p>
+            </div>
+          </article>
+          <article class="rrda-client-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="rrda-client-card-top">
+              <span class="rrda-client-mark" aria-hidden="true">K</span>
+              <span class="rrda-client-code">EG</span>
+            </div>
+            <div>
+              <h3>Kerry Limited</h3>
+              <p>Egypt engagement</p>
+            </div>
+          </article>
+          <article class="rrda-client-card" data-aos="fade-up">
+            <div class="rrda-client-card-top">
+              <span class="rrda-client-mark" aria-hidden="true">K</span>
+              <span class="rrda-client-code">GH</span>
+            </div>
+            <div>
+              <h3>Kerry Limited</h3>
+              <p>Ghana engagement</p>
+            </div>
+          </article>
+          <article class="rrda-client-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="rrda-client-card-top">
+              <span class="rrda-client-mark" aria-hidden="true">K</span>
+              <span class="rrda-client-code">NG</span>
+            </div>
+            <div>
+              <h3>Kerry Limited</h3>
+              <p>Nigeria engagement</p>
+            </div>
+          </article>
+          <article class="rrda-client-card rrda-client-card-featured" data-aos="fade-up" data-aos-delay="100">
+            <div class="rrda-client-card-top">
+              <span class="rrda-client-mark" aria-hidden="true">SK</span>
+              <span class="rrda-client-code">AFRICA</span>
+            </div>
+            <div>
+              <h3>Sun King</h3>
+              <p>Selected client collaboration</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="rrda-client-footnote" data-aos="fade-up">
+          <span>Growing relationships</span>
+          <p>This is a selection from our wider network of clients, collaborators and fieldwork partners.</p>
         </div>
       </div>
     </section>
