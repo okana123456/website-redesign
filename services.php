@@ -27,9 +27,10 @@
     .extra-content { margin-top: 10px; transition: all 0.3s ease-in-out; }
     .extra-content.show { display: block !important; }
     .seo-link-card {
-      display:block;
+      display:flex;
+      flex-direction:column;
       height:100%;
-      padding:24px;
+      overflow:hidden;
       border:1px solid #e3e8ef;
       border-radius:8px;
       background:#fff;
@@ -43,8 +44,26 @@
       border-color:var(--primary);
       color:#0A2540;
     }
-    .seo-link-card i { color:var(--primary); font-size:1.8rem; }
-    .seo-link-card span { color:var(--primary); font-weight:700; }
+    .seo-link-card-image {
+      display:block;
+      width:100%;
+      aspect-ratio:16 / 9;
+      object-fit:cover;
+      object-position:center;
+      background:#e9eef3;
+    }
+    .seo-link-card-body {
+      display:flex;
+      flex:1;
+      flex-direction:column;
+      padding:22px 24px 24px;
+    }
+    .seo-link-card-body h5 { margin:0 0 10px; }
+    .seo-link-card-body p { margin-bottom:18px; }
+    .seo-link-card span { margin-top:auto; color:var(--primary); font-weight:700; }
+    @media (max-width:575.98px) {
+      .seo-link-card-body { padding:19px 20px 21px; }
+    }
   </style>
     <link href="css/rrda-decision.css?v=20260820b" rel="stylesheet">
 </head>
@@ -105,66 +124,82 @@
     <div class="row g-4">
       <div class="col-lg-4 col-md-6" data-aos="fade-up">
         <a class="seo-link-card" href="field-research-agency-services-kenya.php">
-          <i class="bi bi-clipboard-data"></i>
-          <h5 class="mt-3">Field Research & Agency Services</h5>
-          <p class="text-muted">Mystery shopping, price checks, enumerators, transcription, mobilization and local agency support.</p>
-          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+          <img class="seo-link-card-image" src="img/redesign/field-enumerator-training.png" alt="Field research enumerator training session in Kenya" loading="lazy">
+          <div class="seo-link-card-body">
+            <h5>Field Research & Agency Services</h5>
+            <p class="text-muted">Mystery shopping, price checks, enumerators, transcription, mobilization and local agency support.</p>
+            <span>View service</span>
+          </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
         <a class="seo-link-card" href="focus-group-discussions-kenya.php">
-          <i class="bi bi-people-fill"></i>
-          <h5 class="mt-3">Focus Group Discussions</h5>
-          <p class="text-muted">FGD recruitment, moderation, transcription and reporting for research and programme teams.</p>
-          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+          <img class="seo-link-card-image" src="img/redesign/focus-group-discussion.png" alt="Professionally moderated focus group discussion in Kenya" loading="lazy">
+          <div class="seo-link-card-body">
+            <h5>Focus Group Discussions</h5>
+            <p class="text-muted">FGD recruitment, moderation, transcription and reporting for research and programme teams.</p>
+            <span>View service</span>
+          </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
         <a class="seo-link-card" href="market-research-company-kenya.php">
-          <i class="bi bi-search"></i>
-          <h5 class="mt-3">Market Research</h5>
-          <p class="text-muted">Consumer studies, competitor mapping, brand tracking and market entry research.</p>
-          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+          <img class="seo-link-card-image" src="img/redesign/county-market-opportunity.png" alt="Market researchers analysing county business opportunities" loading="lazy">
+          <div class="seo-link-card-body">
+            <h5>Market Research</h5>
+            <p class="text-muted">Consumer studies, competitor mapping, brand tracking and market entry research.</p>
+            <span>View service</span>
+          </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up">
         <a class="seo-link-card" href="data-analytics-company-kenya.php">
-          <i class="bi bi-bar-chart-line-fill"></i>
-          <h5 class="mt-3">Data Analytics</h5>
-          <p class="text-muted">Data cleaning, analysis, dashboards and business intelligence reporting.</p>
-          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+          <img class="seo-link-card-image" src="img/redesign/survey-data-cleaning-team.png" alt="Data analysts cleaning and reviewing research datasets" loading="lazy">
+          <div class="seo-link-card-body">
+            <h5>Data Analytics</h5>
+            <p class="text-muted">Data cleaning, analysis, dashboards and business intelligence reporting.</p>
+            <span>View service</span>
+          </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
         <a class="seo-link-card" href="pos-system-kenya.php">
-          <i class="bi bi-shop"></i>
-          <h5 class="mt-3">POS System</h5>
-          <p class="text-muted">Point of sale, inventory, receipt and sales reporting systems for retailers.</p>
-          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+          <img class="seo-link-card-image" src="img/redesign/retail-price-intelligence.png" alt="Retail professional managing store inventory with a tablet" loading="lazy">
+          <div class="seo-link-card-body">
+            <h5>POS System</h5>
+            <p class="text-muted">Point of sale, inventory, receipt and sales reporting systems for retailers.</p>
+            <span>View service</span>
+          </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
         <a class="seo-link-card" href="hospital-management-system-kenya.php">
-          <i class="bi bi-hospital"></i>
-          <h5 class="mt-3">Hospital Management System</h5>
-          <p class="text-muted">Patient records, billing, pharmacy, lab and clinic workflow software.</p>
-          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+          <img class="seo-link-card-image" src="img/redesign/clinic-management-consulting.png" alt="Healthcare team reviewing a hospital management system" loading="lazy">
+          <div class="seo-link-card-body">
+            <h5>Hospital Management System</h5>
+            <p class="text-muted">Patient records, billing, pharmacy, lab and clinic workflow software.</p>
+            <span>View service</span>
+          </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up">
         <a class="seo-link-card" href="school-management-system-kenya.php">
-          <i class="bi bi-mortarboard-fill"></i>
-          <h5 class="mt-3">School Management System</h5>
-          <p class="text-muted">Student records, fees, exams, attendance and school reporting systems.</p>
-          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+          <img class="seo-link-card-image" src="img/redesign/school-administration-system.png" alt="School administrators reviewing digital performance reports" loading="lazy">
+          <div class="seo-link-card-body">
+            <h5>School Management System</h5>
+            <p class="text-muted">Student records, fees, exams, attendance and school reporting systems.</p>
+            <span>View service</span>
+          </div>
         </a>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
         <a class="seo-link-card" href="loan-management-system-kenya.php">
-          <i class="bi bi-cash-coin"></i>
-          <h5 class="mt-3">Loan Management System</h5>
-          <p class="text-muted">Borrower records, repayments, arrears and portfolio reporting for lenders.</p>
-          <span>View page <i class="bi bi-arrow-right-short fs-5"></i></span>
+          <img class="seo-link-card-image" src="img/redesign/sacco-decision-intelligence.png" alt="SACCO finance team reviewing loan portfolio reports" loading="lazy">
+          <div class="seo-link-card-body">
+            <h5>Loan Management System</h5>
+            <p class="text-muted">Borrower records, repayments, arrears and portfolio reporting for lenders.</p>
+            <span>View service</span>
+          </div>
         </a>
       </div>
     </div>
