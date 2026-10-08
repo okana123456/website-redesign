@@ -333,12 +333,38 @@ $mysteryShoppingSectors = [
 ];
 
 $mysteryShoppingTypes = [
-    'guide' => ['title' => '%s Mystery Shopping in Kenya: A Practical Guide', 'meta' => '%s Mystery Shopping Guide', 'excerpt' => 'A practical guide to planning credible mystery shopping for %s, from visit design and evidence to management action.'],
+    'guide' => ['title' => 'What Mystery Shopping Reveals About %s', 'legacy_title' => '%s Mystery Shopping in Kenya: A Practical Guide', 'meta' => '%s Mystery Shopping Guide', 'excerpt' => 'Mystery shopping shows how the intended customer experience compares with what people encounter in %s.'],
     'checklist' => ['title' => '%s Mystery Shopping Checklist for Kenya', 'meta' => '%s Service Audit Checklist', 'excerpt' => 'Use this practical checklist to measure the customer journey, evidence service gaps and compare %s locations fairly.'],
     'kpis' => ['title' => '%s Customer Experience KPIs to Measure', 'meta' => '%s Customer Experience KPIs', 'excerpt' => 'The customer-experience KPIs that make mystery shopping useful for managers responsible for %s.'],
     'failures' => ['title' => '%s Service Gaps Mystery Shopping Can Reveal', 'meta' => '%s Mystery Shopping Gaps', 'excerpt' => 'See which hidden service failures mystery shopping can uncover in %s and how managers can respond.'],
     'scenario' => ['title' => 'How to Design Mystery Shopping Scenarios for %s', 'meta' => '%s Mystery Shopping Scenarios', 'excerpt' => 'Learn how to design a realistic, fair and measurable mystery shopping scenario for %s.'],
     'reporting' => ['title' => 'How to Turn %s Mystery Shopping Results into Action', 'meta' => '%s Mystery Shopping Reports', 'excerpt' => 'A practical method for validating, analysing and acting on mystery shopping findings from %s.']
+];
+
+$mysteryShoppingGuideExcerpts = [
+    'supermarkets' => 'A busy supermarket can still lose customers through empty shelves, unclear prices and a frustrating checkout. Mystery shoppers reveal where the journey breaks.',
+    'bank-branches' => 'Customers judge a bank long before a transaction is complete. An independent branch visit shows whether the experience builds confidence or creates doubt.',
+    'hotels' => 'Guests notice the small details that hotel teams can easily overlook. A mystery stay follows those moments from the first enquiry to departure.',
+    'restaurants' => 'Diners remember how a restaurant made them feel as clearly as they remember the meal. Mystery visits uncover the service habits shaping that memory.',
+    'pharmacies' => 'A pharmacy visit depends on trust, discretion and clear guidance. Mystery shopping shows whether those standards remain visible during ordinary customer interactions.',
+    'telecom-retail' => 'Telecom customers often arrive with a problem they cannot solve alone. A mystery visit tests whether staff turn confusion into a clear next step.',
+    'car-dealerships' => 'A promising vehicle enquiry can disappear after one weak sales interaction. Mystery shopping traces the moments that strengthen interest or quietly end it.',
+    'private-clinics' => 'Patient experience begins at the gate, reception desk or telephone rather than in the consultation room. Mystery visits examine those early signals of care.',
+    'petrol-stations' => 'Drivers form quick opinions about safety, honesty and service at the forecourt. Mystery shopping captures the details behind that judgement.',
+    'ecommerce-delivery' => 'The real test of an online purchase begins after the customer clicks buy. A mystery order follows communication, fulfilment and delivery through to resolution.',
+    'call-centres' => 'One telephone conversation can decide whether a customer stays or leaves. Mystery calls reveal how consistently support teams listen, explain and resolve.',
+    'saccos' => 'Members expect a SACCO branch to feel helpful, accurate and respectful. Mystery visits show whether daily service matches that promise.',
+    'electronics-stores' => 'Electronics buyers need more than a list of features before they feel ready to purchase. Mystery shopping tests how well staff build confidence and explain value.',
+    'fashion-retail' => 'Fashion shoppers respond to attention, availability and fitting-room experience as much as display. Mystery visits reveal which details encourage a sale.',
+    'multi-branch-services' => 'A familiar brand should not feel completely different from one location to another. Matched mystery visits expose the gaps between branches and channels.'
+];
+
+$mysteryShoppingSecondaryExcerpts = [
+    'checklist' => 'A reliable audit of %s follows the customer journey in order, records observable facts and gives every location a fair comparison.',
+    'kpis' => 'Managers responsible for %s need measures that show whether customers receive timely, accurate and consistent service.',
+    'failures' => 'Service problems in %s often remain hidden until lost sales, complaints or weak trust make them difficult to ignore.',
+    'scenario' => 'A believable %s scenario reveals how staff respond during an ordinary interaction without making the assessment feel artificial.',
+    'reporting' => 'Findings from %s become useful only when managers can connect each observation to a priority, owner and follow-up action.'
 ];
 
 $mysteryShoppingTitles = [
@@ -421,14 +447,15 @@ foreach ($mysteryShoppingTypes as $typeKey => $type) {
             continue;
         }
         $displayLabel = ucwords($sector['short']);
-        $legacyTitle = sprintf($type['title'], $displayLabel);
+        $generatedTitle = sprintf($type['title'], $displayLabel);
+        $legacyTitle = sprintf($type['legacy_title'] ?? $type['title'], $displayLabel);
         $title = isset($mysteryShoppingTitles[$sector['key']][$typeKey])
             ? $mysteryShoppingTitles[$sector['key']][$typeKey]
-            : $legacyTitle;
+            : $generatedTitle;
         $publishDate = $mysteryLaunchDate->modify('+' . $mysterySequence . ' days')->format('Y-m-d');
         // Keep published URLs stable while giving every article a distinct editorial headline.
         $slug = rrda_ms_slugify($legacyTitle);
-        $guideSlug = rrda_ms_slugify(sprintf($mysteryShoppingTypes['guide']['title'], $displayLabel));
+        $guideSlug = rrda_ms_slugify(sprintf($mysteryShoppingTypes['guide']['legacy_title'], $displayLabel));
 
         $relatedArticles = [
             ['title' => 'How Mystery Shopping Improves Customer Experience in Kenya', 'url' => 'blog-detail.php?post=mystery-shopping-customer-experience-kenya'],
@@ -437,6 +464,10 @@ foreach ($mysteryShoppingTypes as $typeKey => $type) {
         if ($typeKey === 'guide') {
             $relatedArticles[1] = ['title' => 'Why Retail Price Checks Matter for Businesses in Kenya', 'url' => 'blog-detail.php?post=retail-price-checks-kenya'];
         }
+
+        $excerpt = $typeKey === 'guide'
+            ? $mysteryShoppingGuideExcerpts[$sector['key']]
+            : sprintf($mysteryShoppingSecondaryExcerpts[$typeKey], $sector['label']);
 
         $mysteryShoppingPosts[] = [
             'slug' => $slug,
@@ -450,9 +481,9 @@ foreach ($mysteryShoppingTypes as $typeKey => $type) {
             'image' => $sector['image'],
             'image_alt' => $sector['image_alt'],
             'preserve_image' => true,
-            'excerpt' => sprintf($type['excerpt'], $sector['label']),
+            'excerpt' => $excerpt,
             'meta_title' => $title . ' | RRDA',
-            'meta_description' => substr(sprintf($type['excerpt'], $sector['label']), 0, 157),
+            'meta_description' => substr($excerpt, 0, 157),
             'tags' => ['Mystery shopping', 'Customer experience', 'Service audits', 'Kenya', ucwords($sector['label'])],
             'content' => rrda_build_mystery_shopping_content($sector, $typeKey),
             'faqs' => [
