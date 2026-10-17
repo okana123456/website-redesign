@@ -360,11 +360,21 @@ $mysteryShoppingGuideExcerpts = [
 ];
 
 $mysteryShoppingSecondaryExcerpts = [
-    'checklist' => 'A reliable audit of %s follows the customer journey in order, records observable facts and gives every location a fair comparison.',
-    'kpis' => 'Managers responsible for %s need measures that show whether customers receive timely, accurate and consistent service.',
-    'failures' => 'Service problems in %s often remain hidden until lost sales, complaints or weak trust make them difficult to ignore.',
-    'scenario' => 'A believable %s scenario reveals how staff respond during an ordinary interaction without making the assessment feel artificial.',
-    'reporting' => 'Findings from %s become useful only when managers can connect each observation to a priority, owner and follow-up action.'
+    'supermarkets|checklist' => 'A supermarket audit works best when it mirrors how shoppers enter, browse, seek help, compare prices and pay.',
+    'bank-branches|checklist' => 'Branch audits need to capture queue management, privacy, explanation quality and the clarity of each customer\'s next step.',
+    'hotels|checklist' => 'Hotel assessment should follow the guest from the first enquiry through reservation, arrival, the stay and departure.',
+    'restaurants|kpis' => 'Restaurant leaders need more than one satisfaction score. Waiting time, order accuracy, attentiveness and recovery show what service really feels like.',
+    'pharmacies|kpis' => 'Trust in a pharmacy is shaped by discretion, accurate guidance and whether customers leave knowing what to do next.',
+    'telecom-retail|kpis' => 'Telecom retail performance becomes clearer when managers track needs discovery, advice quality, total-cost explanation and after-sales guidance.',
+    'car-dealerships|failures' => 'Vehicle buyers rarely announce the exact moment they lose confidence. Independent visits expose the sales behaviours that quietly push serious leads away.',
+    'private-clinics|failures' => 'A patient can lose trust before meeting a clinician. Front-desk conduct, privacy, waiting information and payment explanations often reveal why.',
+    'petrol-stations|failures' => 'Small forecourt failures can weaken confidence quickly, from unsafe vehicle guidance and unclear charges to missing receipts and neglected facilities.',
+    'ecommerce-delivery|scenario' => 'Testing online delivery requires a believable order, clear evidence rules and a journey that continues beyond checkout to fulfilment and resolution.',
+    'call-centres|scenario' => 'A useful mystery call gives the agent a realistic problem and then observes listening, accuracy, ownership and the quality of the promised next step.',
+    'saccos|scenario' => 'SACCO assessments should feel like ordinary member enquiries while staying within fair, lawful and clearly defined boundaries.',
+    'electronics-stores|reporting' => 'Electronics retailers gain value from shopper findings when product advice, warranty explanations and missed sales opportunities are tied to specific actions.',
+    'fashion-retail|reporting' => 'Fashion retail findings become actionable when managers can see where assistance, size availability, fitting rooms and returns guidance affected the sale.',
+    'multi-branch-services|reporting' => 'Branch comparisons should explain why customers receive different answers, waiting times or levels of ownership under the same brand.'
 ];
 
 $mysteryShoppingTitles = [
@@ -378,7 +388,7 @@ $mysteryShoppingTitles = [
     ],
     'hotels' => [
         'guide' => 'What a Mystery Guest Notices Before a Hotel Manager Does',
-        'checklist' => 'A Practical Way to Assess the Complete Hotel Guest Experience'
+        'checklist' => 'What a Complete Hotel Guest Experience Audit Should Follow'
     ],
     'restaurants' => [
         'guide' => 'The Restaurant Service Details Diners Remember Long After the Meal',
@@ -465,9 +475,10 @@ foreach ($mysteryShoppingTypes as $typeKey => $type) {
             $relatedArticles[1] = ['title' => 'Why Retail Price Checks Matter for Businesses in Kenya', 'url' => 'blog-detail.php?post=retail-price-checks-kenya'];
         }
 
+        $excerptKey = $sector['key'] . '|' . $typeKey;
         $excerpt = $typeKey === 'guide'
             ? $mysteryShoppingGuideExcerpts[$sector['key']]
-            : sprintf($mysteryShoppingSecondaryExcerpts[$typeKey], $sector['label']);
+            : $mysteryShoppingSecondaryExcerpts[$excerptKey];
 
         $mysteryShoppingPosts[] = [
             'slug' => $slug,
