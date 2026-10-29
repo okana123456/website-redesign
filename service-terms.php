@@ -33,6 +33,7 @@
     .terms-meta strong { color:#0a2540; font-size:.92rem; }
     .terms-title { margin-bottom:12px; color:#0a2540; font-size:1.35rem; letter-spacing:0; text-transform:uppercase; }
     .terms-caption { margin-bottom:38px; padding:18px 20px; border-left:3px solid #ff6b00; background:#f7f9fb; color:#344b60; }
+    .terms-history-note { display:block; margin:-22px 0 38px; color:#84919e; font-size:.72rem; letter-spacing:.02em; }
     .terms-section { padding:28px 0; border-top:1px solid #dbe2e8; }
     .terms-section:first-of-type { border-top:0; }
     .terms-section h2 { margin-bottom:14px; color:#0a2540; font-size:1.12rem; line-height:1.35; }
@@ -80,6 +81,7 @@
         <h2 class="terms-title" id="terms-document-title">🔒 Standard Commercial Engagement &amp; Recovery Policies</h2>
         <p><strong>Document Reference:</strong> RRDA/OP-POL-04</p>
         <p class="terms-caption"><strong>Authorized Caption:</strong> This schedule forms part of the standard commercial terms of Rudder Research and Data Analytics Ltd and governs all signed letters of intent, operational briefs, and Local Purchase Orders (LPOs) in accordance with the Laws of Kenya.</p>
+        <small class="terms-history-note">Commercial terms update recorded May 2026.</small>
 
         <section class="terms-section">
           <h2>Section 4.1: Standalone Specialised Technical Rates</h2>
