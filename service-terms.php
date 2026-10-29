@@ -75,7 +75,7 @@
         <div class="terms-meta">
           <div><span>Document reference</span><strong>RRDA/OP-POL-04</strong></div>
           <div><span>Policy owner</span><strong>Commercial Operations</strong></div>
-          <div><span>Last reviewed</span><strong>29 October 2026</strong></div>
+          <div><span>Last reviewed</span><strong>June 2026</strong></div>
         </div>
 
         <h2 class="terms-title" id="terms-document-title">🔒 Standard Commercial Engagement &amp; Recovery Policies</h2>
