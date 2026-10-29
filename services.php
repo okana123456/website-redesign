@@ -511,6 +511,18 @@
   </div>
   <!-- Case Studies Carousel End -->
 
+  <!-- Commercial Terms -->
+  <section class="border-top bg-white py-4" aria-labelledby="commercial-terms-link-title">
+    <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+      <div>
+        <p class="small text-uppercase text-muted fw-bold mb-1" style="letter-spacing:.08em;">Commercial governance</p>
+        <h2 class="h6 mb-0" id="commercial-terms-link-title">Engagement terms for technical work and committed project resources</h2>
+      </div>
+      <a href="service-terms.php" class="small fw-bold text-decoration-underline text-md-end" style="max-width:420px; overflow-wrap:anywhere; line-height:1.5;">Standard Service Terms &amp; Scheduled Resource Commitments</a>
+    </div>
+  </section>
+  <!-- Commercial Terms End -->
+
   <!-- Call To Action Start -->
   <div class="container-fluid bg-primary text-white p-5">
     <div class="row g-5">

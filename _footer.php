@@ -86,6 +86,7 @@ document.getElementById("subscribeForm").addEventListener("submit", function(e) 
     </div>
 </footer>
 <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(255, 255, 255, .1) !important;">
+    <p class="mb-2"><a class="text-secondary text-decoration-underline" href="service-terms.php">Standard Service Terms &amp; Scheduled Resource Commitments</a></p>
     <p class="m-0">&copy; <span id="year"></span> Rudder Research and Data Analytics LTD. All rights reserved.</p>
 </div>
 <script>
