@@ -5,6 +5,7 @@ $page = [
   'keywords' => 'loan management system Kenya, microfinance software Kenya, SACCO loan system Kenya, lending software Kenya, repayment tracking Kenya, M-Pesa loan system',
   'og_title' => 'Loan Management System in Kenya | Rudder Research',
   'service_name' => 'Loan Management System in Kenya',
+  'parent_url' => 'business-management-systems-kenya.php',
   'eyebrow' => 'Financial systems',
   'h1' => 'Loan management systems in Kenya for lenders who need control',
   'intro' => 'We build lending systems that help SACCOs, microfinance teams and private lenders manage applications, approvals, disbursements, repayments and arrears reporting.',

@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rudder Research and Data Analytics LTD | Research, Data and Business Systems in Kenya</title>
-  <meta name="description" content="Rudder Research and Data Analytics LTD helps organisations in Kenya collect field evidence, analyse market data, build dashboards and deploy practical business systems.">
-  <meta name="keywords" content="market research Kenya, data analytics Kenya, data dashboard Kenya, field data collection Kenya, business systems Kenya, POS system Kenya, loan management system Kenya">
+  <meta name="description" content="Rudder Research and Data Analytics LTD provides field research, data analytics and business management systems in Kenya for companies, NGOs and institutions.">
+  <meta name="keywords" content="market research Kenya, data analytics Kenya, data dashboard Kenya, field data collection Kenya, business management systems Kenya, business software Kenya, POS system Kenya, loan management system Kenya">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rudder Research and Data Analytics LTD">
-  <meta property="og:description" content="Research, data dashboards and business systems for organisations across Kenya and East Africa.">
+  <meta property="og:description" content="Field research, data analytics and business management systems for organisations across Kenya and East Africa.">
   <meta property="og:url" content="https://rudderdatanalytics.co.ke/">
   <meta property="og:image" content="https://rudderdatanalytics.co.ke/img/redesign/decision-intelligence-boardroom.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -39,7 +39,7 @@
     "telephone": "+254708095461",
     "address": {"@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE"},
     "areaServed": ["Kenya", "East Africa"],
-    "description": "Research, analytics, dashboards and business systems company in Kenya."
+    "description": "Research, analytics, dashboards and business management systems company in Kenya."
   }
   </script>
 </head>
@@ -123,11 +123,11 @@
             </a>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140">
-            <a class="rrda-image-card" href="services.php#ruddertrack">
+            <a class="rrda-image-card" href="business-management-systems-kenya.php">
               <img src="img/redesign/business-systems-dashboard.png" alt="Business systems dashboard by Rudder Research and Data Analytics LTD">
               <div class="rrda-image-card-body">
                 <span class="rrda-badge">Systems</span>
-                <h3>Business Systems</h3>
+                <h3>Business Management Systems</h3>
                 <p>POS, loan, school, hospital, clinic, payroll, booking and custom business systems.</p>
               </div>
             </a>
@@ -264,11 +264,11 @@
           <article class="rrda-client-card rrda-client-card-featured" data-aos="fade-up" data-aos-delay="100">
             <div class="rrda-client-card-top">
               <span class="rrda-client-mark" aria-hidden="true">SK</span>
-              <span class="rrda-client-code">AFRICA</span>
+              <span class="rrda-client-code">PARTNER</span>
             </div>
             <div>
               <h3>Sun King</h3>
-              <p>Selected client collaboration</p>
+              <p>Research and fieldwork partner</p>
             </div>
           </article>
         </div>

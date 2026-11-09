@@ -5,6 +5,7 @@ $page = [
   'keywords' => 'POS system Kenya, point of sale system Kenya, retail POS Kenya, supermarket POS Kenya, restaurant POS Kenya, inventory system Kenya, eTIMS POS Kenya',
   'og_title' => 'POS System in Kenya | Rudder Research',
   'service_name' => 'POS System in Kenya',
+  'parent_url' => 'business-management-systems-kenya.php',
   'eyebrow' => 'Retail systems',
   'h1' => 'POS systems in Kenya built around real shop operations',
   'intro' => 'We design point of sale systems for retail shops, supermarkets, restaurants, pharmacies and service businesses that need clean sales, stock and cash reports.',

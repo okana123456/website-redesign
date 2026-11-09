@@ -5,6 +5,7 @@ $page = [
   'keywords' => 'school management system Kenya, student information system Kenya, fees management system Kenya, exam management system Kenya, parent portal Kenya, college management system Kenya',
   'og_title' => 'School Management System in Kenya | Rudder Research',
   'service_name' => 'School Management System in Kenya',
+  'parent_url' => 'business-management-systems-kenya.php',
   'eyebrow' => 'Education software',
   'h1' => 'School management systems in Kenya for cleaner administration',
   'intro' => 'We help schools manage student records, fees, exams, attendance, communication and reports in one system that administrators and teachers can actually use.',

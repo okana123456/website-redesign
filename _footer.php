@@ -64,11 +64,12 @@ document.getElementById("subscribeForm").addEventListener("submit", function(e) 
         <div class="col-lg-3 col-md-6">
             <h3 class="text-white mb-4" style="font-size:1.15rem;">Business Systems</h3>
             <div class="d-flex flex-column">
+                <a class="text-secondary mb-2" href="business-management-systems-kenya.php"><i class="bi bi-arrow-right text-primary me-2"></i>Systems Overview</a>
                 <a class="text-secondary mb-2" href="pos-system-kenya.php"><i class="bi bi-arrow-right text-primary me-2"></i>POS & Inventory</a>
                 <a class="text-secondary mb-2" href="loan-management-system-kenya.php"><i class="bi bi-arrow-right text-primary me-2"></i>Loan Management</a>
                 <a class="text-secondary mb-2" href="hospital-management-system-kenya.php"><i class="bi bi-arrow-right text-primary me-2"></i>Hospital & Clinic System</a>
                 <a class="text-secondary mb-2" href="school-management-system-kenya.php"><i class="bi bi-arrow-right text-primary me-2"></i>School Administration</a>
-                <a class="text-secondary" href="services.php#ruddertrack"><i class="bi bi-arrow-right text-primary me-2"></i>View All Systems</a>
+                <a class="text-secondary" href="business-management-systems-kenya.php#systems-we-build"><i class="bi bi-arrow-right text-primary me-2"></i>View All Systems</a>
             </div>
         </div>
         <div class="col-lg-3 col-md-6">

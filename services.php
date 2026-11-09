@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <?php include '_head.php'?>
-  <title>Focus Group Discussions, System Design, Research & Data Services in Kenya | Rudder Research & Data Analytics</title>
-  <meta name="description" content="Rudder Research & Data Analytics offers focus group discussions (FGDs), custom system design and software development including Point of Sale (POS), Hospital Management Systems, School Management Systems, Loan Management Systems, Inventory, HR, Payroll and ERP systems, plus market research, data collection, survey programming and data analytics." />
-  <meta name="keywords" content="focus group discussions, FGD services Kenya, qualitative research, system design company, point of sale system, POS system Kenya, hospital management system, school management system, loan management system, inventory management system, HR system, payroll system, church management system, hotel management system, restaurant management system, clinic management system, pharmacy management system, microfinance system, SACCO management system, custom software development, market research company, data collection, data analytics, survey programming, KoBoToolbox, ODK, CAPI, CATI, mystery shopping, baseline survey, endline survey, monitoring and evaluation, Rudder Research" />
+  <title>Research, Data and Business Management Systems in Kenya | Rudder</title>
+  <meta name="description" content="Rudder provides research, data analytics and business management systems in Kenya, including POS, inventory, loan, school, hospital, HR, payroll and custom software." />
+  <meta name="keywords" content="business management systems Kenya, business management software Kenya, focus group discussions, FGD services Kenya, qualitative research, system design company, point of sale system, POS system Kenya, hospital management system, school management system, loan management system, inventory management system, HR system, payroll system, church management system, hotel management system, restaurant management system, clinic management system, pharmacy management system, microfinance system, SACCO management system, custom software development, market research company, data collection, data analytics, survey programming, KoBoToolbox, ODK, CAPI, CATI, mystery shopping, baseline survey, endline survey, monitoring and evaluation, Rudder Research" />
   <meta name="author" content="Rudder Research & Data Analytics" />
-  <meta property="og:title" content="Focus Group Discussions, System Design & Research Services | Rudder Research & Data Analytics" />
-  <meta property="og:description" content="FGD moderation, custom POS, hospital, school and loan management systems, plus market research and data analytics services across Kenya and East Africa." />
+  <meta property="og:title" content="Research, Data and Business Management Systems in Kenya | Rudder" />
+  <meta property="og:description" content="Research, analytics and business management systems including POS, inventory, hospital, school and loan software across Kenya and East Africa." />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://rudderdatanalytics.co.ke/services.php" />
 
@@ -123,6 +123,16 @@
     </div>
     <div class="row g-4">
       <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <a class="seo-link-card" href="business-management-systems-kenya.php">
+          <img class="seo-link-card-image" src="img/redesign/business-systems-dashboard.png" alt="Business management systems dashboard for organisations in Kenya" loading="lazy">
+          <div class="seo-link-card-body">
+            <h5>Business Management Systems</h5>
+            <p class="text-muted">POS, inventory, loan, school, hospital, HR, payroll, CRM and custom operational software.</p>
+            <span>Explore systems</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
         <a class="seo-link-card" href="field-research-agency-services-kenya.php">
           <img class="seo-link-card-image" src="img/redesign/field-enumerator-training.png" alt="Field research enumerator training session in Kenya" loading="lazy">
           <div class="seo-link-card-body">
@@ -237,7 +247,10 @@
           <h2>System Design and Custom Software Development</h2>
           <p>We design, build and deploy business management systems for organisations of every size. Our developers deliver secure, scalable and easy to use software that runs on web, desktop and mobile. Every system is built around your workflow and ships with training, hosting and ongoing support.</p>
           <p class="text-muted">Whether you need a <strong>Point of Sale system</strong> for a retail shop, a <strong>Hospital Management System</strong> for a clinic, a <strong>School Management System</strong> for an academy, or a <strong>Loan Management System</strong> for a microfinance, we have you covered.</p>
-          <a href="contact.php" class="btn btn-primary mt-2 px-4 py-2">Get a System Quote</a>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a href="business-management-systems-kenya.php" class="btn btn-primary px-4 py-2">Explore Business Systems</a>
+            <a href="contact.php" class="btn btn-outline-primary px-4 py-2">Get a System Quote</a>
+          </div>
         </div>
         <div class="col-lg-6 order-lg-1" data-aos="fade-right">
           <div class="row g-3">

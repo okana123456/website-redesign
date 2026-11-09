@@ -5,6 +5,7 @@ $page = [
   'keywords' => 'hospital management system Kenya, clinic management system Kenya, pharmacy management system Kenya, lab system Kenya, HMS Kenya, SHA NHIF hospital software',
   'og_title' => 'Hospital Management System in Kenya | Rudder Research',
   'service_name' => 'Hospital Management System in Kenya',
+  'parent_url' => 'business-management-systems-kenya.php',
   'eyebrow' => 'Healthcare software',
   'h1' => 'Hospital management systems in Kenya for clinics that need order and visibility',
   'intro' => 'We build healthcare systems that help facilities manage patients, billing, pharmacy, lab requests, appointments and operational reports from one organised workflow.',

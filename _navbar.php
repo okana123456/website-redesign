@@ -46,13 +46,14 @@ $systemsActive = in_array($activePage, ['systems'], true);
                 </div>
             </div>
             <div class="nav-item dropdown">
-                <a href="services.php#ruddertrack" class="nav-link dropdown-toggle<?= $systemsActive ? ' active' : '' ?>" data-bs-toggle="dropdown" aria-expanded="false">Systems</a>
+                <a href="business-management-systems-kenya.php" class="nav-link dropdown-toggle<?= $systemsActive ? ' active' : '' ?>" data-bs-toggle="dropdown" aria-expanded="false">Systems</a>
                 <div class="dropdown-menu dropdown-menu-end rrda-services-menu">
+                    <a href="business-management-systems-kenya.php" class="dropdown-item">Business Systems Overview</a>
                     <a href="pos-system-kenya.php" class="dropdown-item">POS & Inventory</a>
                     <a href="loan-management-system-kenya.php" class="dropdown-item">Loan Management</a>
                     <a href="hospital-management-system-kenya.php" class="dropdown-item">Hospital & Clinic System</a>
                     <a href="school-management-system-kenya.php" class="dropdown-item">School Management</a>
-                    <a href="services.php#ruddertrack" class="dropdown-item">View All Systems</a>
+                    <a href="business-management-systems-kenya.php#systems-we-build" class="dropdown-item">View All Systems</a>
                 </div>
             </div>
             <a href="blog.php" class="nav-item nav-link<?= rrda_nav_active('blog', $activePage) ?>">Blog</a>

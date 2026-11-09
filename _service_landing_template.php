@@ -102,6 +102,7 @@ function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
         <div class="hero-actions">
           <a class="hero-action primary" href="contact.php"><i class="bi bi-send"></i>Request a quote</a>
           <a class="hero-action secondary" href="services.php"><i class="bi bi-grid"></i>View all services</a>
+          <?php if (!empty($page['parent_url'])): ?><a class="hero-action secondary" href="<?= e($page['parent_url']) ?>"><i class="bi bi-diagram-3"></i>Business systems overview</a><?php endif; ?>
         </div>
       </div>
     </section>
